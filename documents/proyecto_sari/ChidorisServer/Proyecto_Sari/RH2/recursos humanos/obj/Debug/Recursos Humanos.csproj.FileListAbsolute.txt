@@ -1,0 +1,31 @@
+c:\users\josue\documents\visual studio 2010\Projects\Recursos Humanos\Recursos Humanos\bin\Recursos Humanos.dll
+c:\users\josue\documents\visual studio 2010\Projects\Recursos Humanos\Recursos Humanos\bin\Recursos Humanos.pdb
+c:\users\josue\documents\visual studio 2010\Projects\Recursos Humanos\Recursos Humanos\obj\Debug\Recursos Humanos.dll
+c:\users\josue\documents\visual studio 2010\Projects\Recursos Humanos\Recursos Humanos\obj\Debug\Recursos Humanos.pdb
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\bin\Recursos Humanos.dll.config
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\bin\Recursos Humanos.dll
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\bin\Recursos Humanos.pdb
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\bin\ClassLibrary1.dll
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\bin\ClassLibrary1.pdb
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\obj\Debug\Recursos Humanos.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\obj\Debug\Recursos Humanos.dll
+C:\Users\Carlos Lara\Documents\Recursos Humanos\Recursos Humanos\obj\Debug\Recursos Humanos.pdb
+F:\7to\SARI\RH2\Recursos Humanos\bin\Recursos Humanos.dll
+F:\7to\SARI\RH2\Recursos Humanos\bin\Recursos Humanos.pdb
+F:\7to\SARI\RH2\Recursos Humanos\bin\ClassLibrary1.pdb
+F:\7to\SARI\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.csprojResolveAssemblyReference.cache
+F:\7to\SARI\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.dll
+F:\7to\SARI\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.pdb
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\bin\Recursos Humanos.dll.config
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\bin\Recursos Humanos.dll
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\bin\Recursos Humanos.pdb
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\bin\ClassLibrary1.dll
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\bin\ClassLibrary1.pdb
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.dll
+C:\Users\Carlos Lara\Documents\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.pdb
+C:\Users\Daniel\Desktop\Proyecto Sari\RH2\Recursos Humanos\bin\Recursos Humanos.dll.config
+C:\Users\Daniel\Desktop\Proyecto Sari\RH2\Recursos Humanos\bin\Recursos Humanos.dll
+C:\Users\Daniel\Desktop\Proyecto Sari\RH2\Recursos Humanos\bin\Recursos Humanos.pdb
+C:\Users\Daniel\Desktop\Proyecto Sari\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.dll
+C:\Users\Daniel\Desktop\Proyecto Sari\RH2\Recursos Humanos\obj\Debug\Recursos Humanos.pdb

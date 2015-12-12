@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E9B1ECC-368B-4BEC-A9E7-6C462A450169}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SARI</RootNamespace>
+    <AssemblyName>SARI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Buscar.aspx" />
+    <Content Include="images\1422013694_user-admin.png" />
+    <Content Include="images\1422194782_old-edit-find.png" />
+    <Content Include="images\1422260694_Delete.png" />
+    <Content Include="images\1422260733_handshake-2-32.png" />
+    <Content Include="images\1422260769_system-file-manager-32.png" />
+    <Content Include="images\1422260776_edit-delete-128.png" />
+    <Content Include="images\1422260797_sign-up.png" />
+    <Content Include="images\1422260817_Log Out.png" />
+    <Content Include="images\1422279555_empty_filter.png" />
+    <Content Include="images\1422279573_filter-32.png" />
+    <Content Include="images\1422287602_Print.png" />
+    <Content Include="images\1424338721_BeOS_Query.png" />
+    <Content Include="images\1424339322_palet02.png" />
+    <Content Include="images\1424339382_Wood2.png" />
+    <Content Include="images\1424339395_Shipping3.png" />
+    <Content Include="images\1424339419_Shipping1.png" />
+    <Content Include="images\1424339458_client.png" />
+    <Content Include="images\1424339483_people.png" />
+    <Content Include="images\1424339510_provider.png" />
+    <Content Include="images\1424339524_cashbox.png" />
+    <Content Include="images\1424339537_cashbox.png" />
+    <Content Include="images\1424339577_shopping_bag-128.png" />
+    <Content Include="images\1426422640_shop-in.png" />
+    <Content Include="images\1426422649_shop-out.png" />
+    <Content Include="images\1426422696_shopping-next-128.png" />
+    <Content Include="images\1426422705_shopping-warning-128.png" />
+    <Content Include="images\1426422718_shopping-previous-128.png" />
+    <Content Include="images\1426422731_shopping-edit-128.png" />
+    <Content Include="images\1426422738_shopping-search-128.png" />
+    <Content Include="images\1426422746_shopping-cancel-128.png" />
+    <Content Include="images\1426422757_shopping-filter-128.png" />
+    <Content Include="images\1426422923_lock.png" />
+    <Content Include="images\1426476809_tick.png" />
+    <Content Include="images\1426476820_error.png" />
+    <Content Include="images\1426476834_trash.png" />
+    <Content Include="images\1426476846_view.png" />
+    <Content Include="images\1426476854_view.png" />
+    <Content Include="images\1426476865_attach.png" />
+    <Content Include="images\1426476894_pencil-128.png" />
+    <Content Include="images\1426476900_wrench-128.png" />
+    <Content Include="images\1426476909_box-128.png" />
+    <Content Include="images\1426579638_Trash.png" />
+    <Content Include="images\1426579709_678126-box-in-128.png" />
+    <Content Include="images\1426579721_678091-box-out-128.png" />
+    <Content Include="images\1426579760_678124-wrench-screwdriver-128.png" />
+    <Content Include="images\1426579846_678102-cog-128.png" />
+    <Content Include="images\1426579853_user-128.png" />
+    <Content Include="images\1426579860_678080-shield-error-128.png" />
+    <Content Include="images\1439283678_icon-ios7-people.png" />
+    <Content Include="images\1439283695_business.png" />
+    <Content Include="images\1439283758_profile-filled.png" />
+    <Content Include="images\1439283768_user-alt.png" />
+    <Content Include="images\1439283774_user-group.png" />
+    <Content Include="images\1439283793_address-book-alt.png" />
+    <Content Include="images\1439283808_sign-info.png" />
+    <Content Include="images\1439283815_computer.png" />
+    <Content Include="images\1439283823_search.png" />
+    <Content Include="images\1439283837_sign-check.png" />
+    <Content Include="images\1439283851_book.png" />
+    <Content Include="images\1439283880_english_ime.png" />
+    <Content Include="images\1439283904_notebook.png" />
+    <Content Include="images\1439283919_health.png" />
+    <Content Include="images\1439283926_partner_search.png" />
+    <Content Include="images\1439283948_classifieds.png" />
+    <Content Include="images\1439283970_books.png" />
+    <Content Include="images\1439283984_sync.png" />
+    <Content Include="images\1439284004_synced.png" />
+    <Content Include="images\1439285367_Log Out.png" />
+    <Content Include="images\1439285376_Disconnect.png" />
+    <Content Include="images\add_item.png" />
+    <Content Include="images\Administrative Tools.png" />
+    <Content Include="images\affiliation_employee.png" />
+    <Content Include="images\agt_update_recommended1.png" />
+    <Content Include="images\alerta.png" />
+    <Content Include="images\angie.png" />
+    <Content Include="images\angie2.png" />
+    <Content Include="images\angie3.png" />
+    <Content Include="images\angie4.png" />
+    <Content Include="images\bar_chart.png" />
+    <Content Include="images\bien.png" />
+    <Content Include="images\bookmark.png" />
+    <Content Include="images\bookmark_add %281%29.png" />
+    <Content Include="images\bookmark_add %282%29.png" />
+    <Content Include="images\bookmark_add %283%29.png" />
+    <Content Include="images\bookmark_add %284%29.png" />
+    <Content Include="images\bookmark_add %285%29.png" />
+    <Content Include="images\bookmark_add.png" />
+    <Content Include="images\bookmark_delete %281%29.png" />
+    <Content Include="images\bookmark_delete %282%29.png" />
+    <Content Include="images\bookmark_delete %283%29.png" />
+    <Content Include="images\bookmark_delete %284%29.png" />
+    <Content Include="images\bookmark_delete %285%29.png" />
+    <Content Include="images\bookmark_delete.png" />
+    <Content Include="images\box.png" />
+    <Content Include="images\buy.png" />
+    <Content Include="images\caargo_256.png" />
+    <Content Include="images\cabinet.png" />
+    <Content Include="images\calculator.png" />
+    <Content Include="images\calendar %281%29.png" />
+    <Content Include="images\calendar %282%29.png" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\cash_register.png" />
+    <Content Include="images\coins.png" />
+    <Content Include="images\contact_new.png" />
+    <Content Include="images\correcto.png" />
+    <Content Include="images\credit_card %281%29.png" />
+    <Content Include="images\credit_card %282%29.png" />
+    <Content Include="images\credit_card.png" />
+    <Content Include="images\Cubo.png" />
+    <Content Include="images\delete %281%29.png" />
+    <Content Include="images\delete %282%29.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\error.png" />
+    <Content Include="images\folder_with_contents.png" />
+    <Content Include="images\fondo.jpg" />
+    <Content Include="images\form.png" />
+    <Content Include="images\generate_keys.png" />
+    <Content Include="images\gnome_edit_delete.png" />
+    <Content Include="images\highlightmarker.png" />
+    <Content Include="images\highlightmarker_red.png" />
+    <Content Include="images\invoice.png" />
+    <Content Include="images\license_manager.png" />
+    <Content Include="images\line_chart.png" />
+    <Content Include="images\mal.png" />
+    <Content Include="images\map.png" />
+    <Content Include="images\money %281%29.png" />
+    <Content Include="images\money.png" />
+    <Content Include="images\money_safe1.png" />
+    <Content Include="images\moodle.png" />
+    <Content Include="images\my_briefcase.png" />
+    <Content Include="images\new_edit_find_replace.png" />
+    <Content Include="images\pencil.png" />
+    <Content Include="images\perfil.png" />
+    <Content Include="images\pie_chart.png" />
+    <Content Include="images\portada.jpg" />
+    <Content Include="images\printer_inkjet.png" />
+    <Content Include="images\product_documentation.png" />
+    <Content Include="images\save %281%29.png" />
+    <Content Include="images\save %282%29.png" />
+    <Content Include="images\save %283%29.png" />
+    <Content Include="images\save %284%29.png" />
+    <Content Include="images\save %285%29.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\save_as %281%29.png" />
+    <Content Include="images\save_as %282%29.png" />
+    <Content Include="images\save_as %283%29.png" />
+    <Content Include="images\save_as %284%29.png" />
+    <Content Include="images\save_as %285%29.png" />
+    <Content Include="images\save_as.png" />
+    <Content Include="images\shipping_box_new_york.png" />
+    <Content Include="images\shopcart.png" />
+    <Content Include="images\shopcartadd %281%29.png" />
+    <Content Include="images\shopcartadd.png" />
+    <Content Include="images\shopcartapply.png" />
+    <Content Include="images\shopcartdown.png" />
+    <Content Include="images\shopcartexclude.png" />
+    <Content Include="images\shoping_cart.png" />
+    <Content Include="images\shop_24_2x.png" />
+    <Content Include="images\shop_icon.png" />
+    <Content Include="images\user.png" />
+    <Content Include="images\zoom_out.png" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Insertar.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MVC\Controlador\Controlador.cs" />
+    <Compile Include="MVC\Modelo\Empleado.cs" />
+    <Compile Include="MVC\Modelo\Modelo.cs" />
+    <Compile Include="MVC\Modelo\SQL.cs" />
+    <Compile Include="MVC\Vista\Vista.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar.aspx.cs">
+      <DependentUpon>Insertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insertar.aspx.designer.cs">
+      <DependentUpon>Insertar.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1942</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

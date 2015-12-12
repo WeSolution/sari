@@ -1,0 +1,448 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>obout_Interface</name>
+    </assembly>
+    <members>
+        <member name="P:Obout.Interface.OboutTextBoxClientSideEvents.OnTextChanged">
+            <summary>
+            Client-side function to be executed after the text is changed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxClientSideEvents.OnKeyDown">
+            <summary>
+            Client-side function to be executed when a key is pressed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxClientSideEvents.OnKeyPress">
+            <summary>
+            Client-side function to be executed when a key is pressed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxClientSideEvents.OnKeyUp">
+            <summary>
+            Client-side function to be executed after a key is pressed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBox.CssSettings">
+            <summary> 
+            Property used to define the CSS Settings
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBox.ClientSideEvents">
+            <summary> 
+            Property used to define the Client-Side Events
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBox.ControlsToEnable">
+            <summary>
+            Gets or sets a value indicating the list of controls that will be enabled when the text is changed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBox.FolderStyle">
+            <summary>
+            The folder containing the css stylesheet.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBox.WatermarkText">
+            <summary>
+            The watermark text of the text box.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.ControlsToDisable">
+            <summary>
+            Gets or sets a value indicating the list of controls that will be disabled when the selection is changed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.ControlsToEnable">
+            <summary>
+            Gets or sets a value indicating the list of controls that will be enabled when the selection is changed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.CssSettings">
+            <summary> 
+            Property used to define the CSS Settings
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.ClientSideEvents">
+            <summary> 
+            Property used to define the Client-Side Events
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.DisablingValues">
+            <summary>
+            Gets or sets a list of item values that when selected will disable the controls specified with the ControlsToDisable property.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.EnablingValues">
+            <summary>
+            Gets or sets a list of item values that when selected will enable the controls specified with the ControlsToEnable property.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.MenuWidth">
+            <summary>
+            The width of the drop down menu.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownList.FolderStyle">
+            <summary>
+            The folder containing the css stylesheet.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButton.CssSettings">
+            <summary> 
+            Property used to define the CSS Settings
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButton.ClientSideEvents">
+            <summary> 
+            Property used to define the Client-Side Events
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButton.FolderStyle">
+            <summary>
+            The folder containing the css stylesheet.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBox.CssSettings">
+            <summary> 
+            Property used to define the CSS Settings
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBox.ClientSideEvents">
+            <summary> 
+            Property used to define the Client-Side Events
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBox.ControlsToDisable">
+            <summary>
+            Gets or sets a value indicating the list of controls that will be disabled when the control is checked.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBox.ControlsToEnable">
+            <summary>
+            Gets or sets a value indicating the list of controls that will be enabled when the control is checked.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBox.FolderStyle">
+            <summary>
+            The folder containing the css stylesheet.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBox.ParentCheckBoxID">
+            <summary>
+            The ID of the parent check box.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBox.State">
+            <summary>
+            Gets or sets a value indicating the state of the check box.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListClientSideEvents.OnSelectedIndexChanged">
+            <summary>
+            Client-side function to be executed after the selected index is changed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButtonCssSettings.Container_Normal">
+            <summary>
+            CSS Class for the Container - Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButtonCssSettings.Container_Over">
+            <summary>
+            CSS Class for the Container - Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButtonCssSettings.Container_Pressed">
+            <summary>
+            CSS Class for the Container - Pressed State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButtonCssSettings.Container_Focused">
+            <summary>
+            CSS Class for the Container - Focused State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButtonCssSettings.Container_Disabled">
+            <summary>
+            CSS Class for the Container - Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutButtonCssSettings.InputElement">
+            <summary>
+            CSS Class for the Input Element
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_Normal">
+            <summary>
+            CSS Class for the Container - Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_Over">
+            <summary>
+            CSS Class for the Container - Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_Active">
+            <summary>
+            CSS Class for the Container - Active State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_Disabled">
+            <summary>
+            CSS Class for the Container - Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_MultiLine_Normal">
+            <summary>
+            CSS Class for the Container - MultiLine mode - Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_MultiLine_Over">
+            <summary>
+            CSS Class for the Container - MultiLine mode - Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_MultiLine_Focused">
+            <summary>
+            CSS Class for the Container - MultiLine mode - Focused State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.Container_MultiLine_Disabled">
+            <summary>
+            CSS Class for the Container - MultiLine mode - Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutTextBoxCssSettings.InputElement">
+            <summary>
+            CSS Class for the Input Element
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutImageButton.ImageUrl_Over">
+            <summary>
+            The url to the image file used for the 'over' state.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutImageButton.ImageUrl_Focused">
+            <summary>
+            The url to the image file used for the 'focused' state.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutImageButton.ImageUrl_Pressed">
+            <summary>
+            The url to the image file used for the 'pressed' state.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutImageButton.ImageUrl_Disabled">
+            <summary>
+            The url to the image file used for the 'disabled' state.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButton.CssSettings">
+            <summary> 
+            Property used to define the CSS Settings
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButton.ClientSideEvents">
+            <summary> 
+            Property used to define the Client-Side Events
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButton.FolderStyle">
+            <summary>
+            The folder containing the css stylesheet.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxClientSideEvents.OnCheckedChanged">
+            <summary>
+            Client-side function to be executed when the checked state of the radio button is changed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxClientSideEvents.OnClick">
+            <summary>
+            Client-side function to be executed when the radio button is clicked.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxClientSideEvents.OnFocus">
+            <summary>
+            Client-side function to be executed when the radio button is focused.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxClientSideEvents.OnBlur">
+            <summary>
+            Client-side function to be executed when the radio button loses the focus.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_UncheckedNormal">
+            <summary>
+            CSS Class for the Container - Unchecked Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_UncheckedOver">
+            <summary>
+            CSS Class for the Container - Unchecked Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_UncheckedFocused">
+            <summary>
+            CSS Class for the Container - Unchecked Focused State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_UncheckedDisabled">
+            <summary>
+            CSS Class for the Container - Unchecked Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_CheckedNormal">
+            <summary>
+            CSS Class for the Container - Checked Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_CheckedOver">
+            <summary>
+            CSS Class for the Container - Checked Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_CheckedFocused">
+            <summary>
+            CSS Class for the Container - Checked Focused State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonCssSettings.Container_CheckedDisabled">
+            <summary>
+            CSS Class for the Container - Checked Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonClientSideEvents.OnCheckedChanged">
+            <summary>
+            Client-side function to be executed when the checked state of the radio button is changed.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonClientSideEvents.OnClick">
+            <summary>
+            Client-side function to be executed when the radio button is clicked.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonClientSideEvents.OnFocus">
+            <summary>
+            Client-side function to be executed when the radio button is focused.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutRadioButtonClientSideEvents.OnBlur">
+            <summary>
+            Client-side function to be executed when the radio button loses the focus.
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_UncheckedNormal">
+            <summary>
+            CSS Class for the Container - Unchecked Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_UncheckedOver">
+            <summary>
+            CSS Class for the Container - Unchecked Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_UncheckedFocused">
+            <summary>
+            CSS Class for the Container - Unchecked Focused State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_UncheckedDisabled">
+            <summary>
+            CSS Class for the Container - Unchecked Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_CheckedNormal">
+            <summary>
+            CSS Class for the Container - Checked Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_CheckedOver">
+            <summary>
+            CSS Class for the Container - Checked Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_CheckedFocused">
+            <summary>
+            CSS Class for the Container - Checked Focused State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_CheckedDisabled">
+            <summary>
+            CSS Class for the Container - Checked Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_PartiallyChecked">
+            <summary>
+            CSS Class for the Container - Partially Checked Normal State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_PartiallyCheckedOver">
+            <summary>
+            CSS Class for the Container - Partially Checked Over State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_PartiallyCheckedFocused">
+            <summary>
+            CSS Class for the Container - Partially Checked Focused State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutCheckBoxCssSettings.Container_PartiallyCheckedDisabled">
+            <summary>
+            CSS Class for the Container - Partially Checked Disabled State
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_Normal">
+            <summary>
+            CSS Class for the top container - Normal state
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_Over">
+            <summary>
+            CSS Class for the top container - Over state
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_ActiveClosed">
+            <summary>
+            CSS Class for the top container - ActiveClosed state
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_ActiveOpen">
+            <summary>
+            CSS Class for the top container - ActiveOpen state
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_Disabled">
+            <summary>
+            CSS Class for the top container - Disabled state
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.InputElement">
+            <summary>
+            CSS Class for the Input Element
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_LeftSide">
+            <summary>
+            CSS Class for the Left Side of the Top Container
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_Content">
+            <summary>
+            CSS Class for the Content of the Top Container
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.TopContainer_RightSide">
+            <summary>
+            CSS Class for the Right Side of the Top Container
+            </summary>
+        </member>
+        <member name="P:Obout.Interface.OboutDropDownListCssSettings.ItemsContainer">
+            <summary>
+            CSS Class for the Items Container
+            </summary>
+        </member>
+    </members>
+</doc>
