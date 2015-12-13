@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://sari.servehttp.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>01/12/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>01/12/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>01/12/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/12/2015 17:23:10</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="login.css">
+      <publishTime>12/05/2015 11:18:44</publishTime>
+    </File>
+    <File Include="Register.aspx">
+      <publishTime>06/12/2015 00:04:28</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/08/2015 12:36:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

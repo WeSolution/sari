@@ -1,0 +1,18 @@
+C:\Users\Josue\Documents\Visual Studio 2010\Projects\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Documents\Visual Studio 2010\Projects\Recursos Materiales\Recursos Materiales\bin\Recursos Materiales.dll
+C:\Users\Josue\Documents\Visual Studio 2010\Projects\Recursos Materiales\Recursos Materiales\bin\Recursos Materiales.pdb
+C:\Users\Josue\Documents\Visual Studio 2010\Projects\Recursos Materiales\Recursos Materiales\bin\itextsharp.dll
+C:\Users\Josue\Documents\Visual Studio 2010\Projects\Recursos Materiales\Recursos Materiales\bin\itextsharp.pdfa.dll
+C:\Users\Josue\Documents\Visual Studio 2010\Projects\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.dll
+C:\Users\Josue\Documents\Visual Studio 2010\Projects\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.pdb
+F:\7to\SARI\Recursos Materiales\Recursos Materiales\bin\Recursos Materiales.dll
+F:\7to\SARI\Recursos Materiales\Recursos Materiales\bin\Recursos Materiales.pdb
+F:\7to\SARI\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.csprojResolveAssemblyReference.cache
+F:\7to\SARI\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.dll
+F:\7to\SARI\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.pdb
+C:\Users\Daniel\Desktop\Proyecto Sari\Recursos Materiales\Recursos Materiales\bin\Recursos Materiales.dll.config
+C:\Users\Daniel\Desktop\Proyecto Sari\Recursos Materiales\Recursos Materiales\bin\Recursos Materiales.dll
+C:\Users\Daniel\Desktop\Proyecto Sari\Recursos Materiales\Recursos Materiales\bin\Recursos Materiales.pdb
+C:\Users\Daniel\Desktop\Proyecto Sari\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Desktop\Proyecto Sari\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.dll
+C:\Users\Daniel\Desktop\Proyecto Sari\Recursos Materiales\Recursos Materiales\obj\Debug\Recursos Materiales.pdb

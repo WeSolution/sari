@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62D6E55D-6D8E-4841-85C6-4AC39CD9D54B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Recursos_Materiales</RootNamespace>
+    <AssemblyName>Recursos Materiales</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.8.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\..\Downloads\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BootStrap\bootstrap-theme.css" />
+    <Content Include="BootStrap\bootstrap-theme.min.css" />
+    <Content Include="BootStrap\bootstrap.css" />
+    <Content Include="BootStrap\bootstrap.min.css" />
+    <Content Include="BootStrap\MiEstilo.css" />
+    <Content Include="Almacén\Consultas.aspx" />
+    <Content Include="Entradas\Consultas.aspx" />
+    <Content Include="Entradas\Nueva Entrada.aspx" />
+    <Content Include="Entradas\Reportes.aspx" />
+    <Content Include="Imágenes\imagen1.jpg" />
+    <Content Include="Imágenes\imagen2.png" />
+    <Content Include="Imágenes\in.png" />
+    <Content Include="Imágenes\new.png" />
+    <Content Include="Imágenes\out.png" />
+    <Content Include="itextsharp.xtra.dll" />
+    <Content Include="JQuery\bootstrap.js" />
+    <Content Include="JQuery\bootstrap.min.js" />
+    <Content Include="JQuery\jquery.js" />
+    <Content Include="JQuery\js_miscript.js" />
+    <Content Include="JQuery\npm.js" />
+    <Content Include="JQuery\validaciones.js" />
+    <Content Include="MasterPage\Default.aspx" />
+    <Content Include="Requisiciones\Busqueda de Requisiciones.aspx" />
+    <Content Include="Requisiciones\Carrito.aspx" />
+    <Content Include="Requisiciones\Detalle de Requisicion.aspx" />
+    <Content Include="Requisiciones\Nueva Requisicion.aspx" />
+    <Content Include="Requisiciones\Producto.aspx" />
+    <Content Include="Requisiciones\Servicio.aspx" />
+    <Content Include="Salidas\Consultas.aspx" />
+    <Content Include="Salidas\Nueva Salida.aspx" />
+    <Content Include="Salidas\Reportes.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacén\Catalogo.master.cs">
+      <DependentUpon>Catalogo.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almacén\Catalogo.master.designer.cs">
+      <DependentUpon>Catalogo.master</DependentUpon>
+    </Compile>
+    <Compile Include="Almacén\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almacén\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\Conexion1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\ConexionBL.cs" />
+    <Compile Include="Clases\ConsultarTablas.cs" />
+    <Compile Include="Clases\DatosPedido.cs" />
+    <Compile Include="Clases\DetalleProducto.cs" />
+    <Compile Include="Clases\DetalleServicio.cs" />
+    <Compile Include="Clases\Metodos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\MetodosCarrito.cs" />
+    <Compile Include="Entradas\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entradas\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entradas\Document.cs" />
+    <Compile Include="Entradas\Entradas.master.cs">
+      <DependentUpon>Entradas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entradas\Entradas.master.designer.cs">
+      <DependentUpon>Entradas.master</DependentUpon>
+    </Compile>
+    <Compile Include="Entradas\HTMLWorker.cs" />
+    <Compile Include="Entradas\Nueva Entrada.aspx.cs">
+      <DependentUpon>Nueva Entrada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entradas\Nueva Entrada.aspx.designer.cs">
+      <DependentUpon>Nueva Entrada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entradas\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entradas\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requisiciones\Busqueda de Requisiciones.aspx.cs">
+      <DependentUpon>Busqueda de Requisiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requisiciones\Busqueda de Requisiciones.aspx.designer.cs">
+      <DependentUpon>Busqueda de Requisiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requisiciones\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requisiciones\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requisiciones\Detalle de Requisicion.aspx.cs">
+      <DependentUpon>Detalle de Requisicion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requisiciones\Detalle de Requisicion.aspx.designer.cs">
+      <DependentUpon>Detalle de Requisicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requisiciones\Nueva Requisicion.aspx.cs">
+      <DependentUpon>Nueva Requisicion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requisiciones\Nueva Requisicion.aspx.designer.cs">
+      <DependentUpon>Nueva Requisicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requisiciones\Producto.aspx.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requisiciones\Producto.aspx.designer.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requisiciones\Requisiciones.master.cs">
+      <DependentUpon>Requisiciones.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requisiciones\Requisiciones.master.designer.cs">
+      <DependentUpon>Requisiciones.master</DependentUpon>
+    </Compile>
+    <Compile Include="Requisiciones\Servicio.aspx.cs">
+      <DependentUpon>Servicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requisiciones\Servicio.aspx.designer.cs">
+      <DependentUpon>Servicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salidas\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salidas\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salidas\Nueva Salida.aspx.cs">
+      <DependentUpon>Nueva Salida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salidas\Nueva Salida.aspx.designer.cs">
+      <DependentUpon>Nueva Salida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salidas\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salidas\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salidas\Salidas.master.cs">
+      <DependentUpon>Salidas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salidas\Salidas.master.designer.cs">
+      <DependentUpon>Salidas.master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BootStrap\bootstrap-theme.css.map" />
+    <None Include="BootStrap\bootstrap.css.map" />
+    <Content Include="MasterPage\Principal.Master" />
+    <Content Include="Entradas\Entradas.master" />
+    <Content Include="Salidas\Salidas.master" />
+    <Content Include="Almacén\Catalogo.master" />
+    <Content Include="Requisiciones\Requisiciones.master" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2840</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/Materiales/MasterPage/Principal.Master" Inherits="Recursos_Materiales.MasterPage.Principal" %>
+
+<!DOCTYPE>
+
+<html>
+<head id="Head1" runat="server">
+
+    <title>S.A.R.I - Recursos Materiales</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/Materiales/Bootstrap/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="/Materiales/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/Materiales/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Materiales/Bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Materiales/JQuery/jquery.js" type="text/javascript"></script>
+    <script src="/Materiales/JQuery/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/jscript">
+         javascript: window.history.forward(1);
+    </script>
+</head>
+<body>
+    <form id="frmPrincipal" runat="server">
+    <div class="container-fluid">
+    <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-exa
+                            <span class="icon-bar"></span>mple-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="../Default.aspx">S.A.R.I - Recursos Materiales</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <asp:Literal ID="LiteralMenu" runat="server"></asp:Literal>
+                         
+                        <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><asp:Label ID="NameUsuario" runat="server" ></asp:Label><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><asp:Button ID="Cerrar" runat="server" 
+                                            class="btn btn-lg btn-primary btn-block" Text="Cerrar Sesión" OnClick="Cerrar_Click" 
+                                            ></asp:Button></a></li>
+                                    <li><a href="#">Configuración</a></li>
+                                </ul>
+                         </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="Contenedor" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

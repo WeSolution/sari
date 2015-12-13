@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19E3CEA1-50C6-4131-AB63-C86797905498}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Recursos_Financieros</RootNamespace>
+    <AssemblyName>Recursos Financieros</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>G:\SARI\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Validacion">
+      <HintPath>..\..\Validacion\Validacion\bin\Validacion.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Formularios\AltaProducto.aspx" />
+    <Content Include="BootStrap\bootstrap-theme.css" />
+    <Content Include="BootStrap\bootstrap-theme.min.css" />
+    <Content Include="BootStrap\bootstrap.css" />
+    <Content Include="BootStrap\bootstrap.min.css" />
+    <Content Include="BootStrap\MiEstilo.css" />
+    <Content Include="Formularios\AltaProveedor.aspx" />
+    <Content Include="Formularios\AltaServicio.aspx" />
+    <Content Include="Formularios\ReporteMensual.aspx" />
+    <Content Include="Formularios\Solicitudes.aspx" />
+    <Content Include="Formularios\ValidarProveedor.aspx" />
+    <Content Include="Imagenes\cuenta_icon.png" />
+    <Content Include="Imagenes\finance.ico" />
+    <Content Include="Imagenes\ico-finanzas.png" />
+    <Content Include="Imagenes\prod-icon.png" />
+    <Content Include="Imagenes\provider-icon.png" />
+    <Content Include="Imagenes\requi-icon.png" />
+    <Content Include="Imagenes\reports-icon.png" />
+    <Content Include="Imagenes\serv_icon.png" />
+    <Content Include="JQuery\bootstrap.js" />
+    <Content Include="JQuery\bootstrap.min.js" />
+    <Content Include="JQuery\jquery-1.11.2.js" />
+    <Content Include="JQuery\jquery.js" />
+    <Content Include="JQuery\js_miscript.js" />
+    <Content Include="JQuery\npm.js" />
+    <Content Include="JQuery\validaciones.js" />
+    <Content Include="MasterPage\Default.aspx" />
+    <Content Include="validacion.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion\DocumentoPDF.cs" />
+    <Compile Include="Conexion\Estandar.cs" />
+    <Compile Include="Conexion\AccesoDatos.cs" />
+    <Compile Include="Conexion\AccesoLogica.cs" />
+    <Compile Include="Conexion\Conexion.cs" />
+    <Compile Include="Conexion\ConsultarBD.cs" />
+    <Compile Include="Conexion\DBMetodos.cs" />
+    <Compile Include="Formularios\AltaProducto.aspx.cs">
+      <DependentUpon>AltaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaProducto.aspx.designer.cs">
+      <DependentUpon>AltaProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaProveedor.aspx.cs">
+      <DependentUpon>AltaProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaProveedor.aspx.designer.cs">
+      <DependentUpon>AltaProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaServicio.aspx.cs">
+      <DependentUpon>AltaServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaServicio.aspx.designer.cs">
+      <DependentUpon>AltaServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ReporteMensual.aspx.cs">
+      <DependentUpon>ReporteMensual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\ReporteMensual.aspx.designer.cs">
+      <DependentUpon>ReporteMensual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Solicitudes.aspx.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Solicitudes.aspx.designer.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ValidarProveedor.aspx.cs">
+      <DependentUpon>ValidarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\ValidarProveedor.aspx.designer.cs">
+      <DependentUpon>ValidarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerlogin.cs" />
+    <Compile Include="validacion.aspx.cs">
+      <DependentUpon>validacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="validacion.aspx.designer.cs">
+      <DependentUpon>validacion.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BootStrap\bootstrap-theme.css.map" />
+    <None Include="BootStrap\bootstrap.css.map" />
+    <Content Include="MasterPage\Principal.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2693</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

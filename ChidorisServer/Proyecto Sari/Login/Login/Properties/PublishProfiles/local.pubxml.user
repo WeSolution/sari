@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>08/11/2010 01:19:20</publishTime>
+    </File>
+    <File Include="bin/ClassLibrary1.dll">
+      <publishTime>08/13/2015 07:11:04</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>06/05/2014 19:35:12</publishTime>
+    </File>
+    <File Include="bin/Login.dll">
+      <publishTime>12/09/2015 19:14:34</publishTime>
+    </File>
+    <File Include="bin/Obout.Ajax.UI.dll">
+      <publishTime>11/11/2014 07:24:36</publishTime>
+    </File>
+    <File Include="bin/obout_Calendar2_Net.dll">
+      <publishTime>11/11/2014 07:24:16</publishTime>
+    </File>
+    <File Include="bin/obout_Grid_NET.dll">
+      <publishTime>11/11/2014 07:24:22</publishTime>
+    </File>
+    <File Include="bin/obout_ImageZoom_NET.dll">
+      <publishTime>06/26/2013 23:36:06</publishTime>
+    </File>
+    <File Include="bin/obout_Interface.dll">
+      <publishTime>08/22/2011 03:25:08</publishTime>
+    </File>
+    <File Include="CSS/bootstrap-theme.min.css">
+      <publishTime>12/06/2015 00:02:00</publishTime>
+    </File>
+    <File Include="CSS/bootstrap.min.css">
+      <publishTime>12/07/2015 04:31:06</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/12/2015 17:23:10</publishTime>
+    </File>
+    <File Include="Finanzas/BootStrap/bootstrap-theme.css">
+      <publishTime>12/05/2015 22:20:06</publishTime>
+    </File>
+    <File Include="Finanzas/BootStrap/bootstrap-theme.css.map">
+      <publishTime>12/05/2015 22:20:06</publishTime>
+    </File>
+    <File Include="Finanzas/BootStrap/bootstrap-theme.min.css">
+      <publishTime>12/05/2015 22:20:06</publishTime>
+    </File>
+    <File Include="Finanzas/BootStrap/bootstrap.css">
+      <publishTime>12/05/2015 22:20:06</publishTime>
+    </File>
+    <File Include="Finanzas/BootStrap/bootstrap.css.map">
+      <publishTime>12/05/2015 22:20:06</publishTime>
+    </File>
+    <File Include="Finanzas/BootStrap/bootstrap.min.css">
+      <publishTime>12/05/2015 22:20:06</publishTime>
+    </File>
+    <File Include="Finanzas/BootStrap/MiEstilo.css">
+      <publishTime>12/05/2015 22:20:06</publishTime>
+    </File>
+    <File Include="Finanzas/Default.aspx">
+      <publishTime>12/09/2015 15:50:44</publishTime>
+    </File>
+    <File Include="Finanzas/Formularios/AltaProducto.aspx">
+      <publishTime>12/05/2015 22:26:42</publishTime>
+    </File>
+    <File Include="Finanzas/Formularios/AltaProveedor.aspx">
+      <publishTime>12/07/2015 01:30:46</publishTime>
+    </File>
+    <File Include="Finanzas/Formularios/AltaServicio.aspx">
+      <publishTime>12/07/2015 17:40:54</publishTime>
+    </File>
+    <File Include="Finanzas/Formularios/ReporteMensual.aspx">
+      <publishTime>12/05/2015 22:28:16</publishTime>
+    </File>
+    <File Include="Finanzas/Formularios/Solicitudes.aspx">
+      <publishTime>12/07/2015 20:17:20</publishTime>
+    </File>
+    <File Include="Finanzas/Formularios/ValidarProveedor.aspx">
+      <publishTime>12/05/2015 22:28:16</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/cuenta_icon.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/finance.ico">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/ico-finanzas.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/prod-icon.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/product.ico">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/provider-icon.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/provider.ico">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/reports-icon.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/reports.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/requi-icon.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/service.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/Imagenes/serv_icon.png">
+      <publishTime>12/05/2015 22:20:50</publishTime>
+    </File>
+    <File Include="Finanzas/JQuery/bootstrap.js">
+      <publishTime>12/05/2015 22:21:38</publishTime>
+    </File>
+    <File Include="Finanzas/JQuery/bootstrap.min.js">
+      <publishTime>12/05/2015 22:21:38</publishTime>
+    </File>
+    <File Include="Finanzas/JQuery/jquery-1.11.2.js">
+      <publishTime>12/05/2015 22:21:38</publishTime>
+    </File>
+    <File Include="Finanzas/JQuery/jquery.js">
+      <publishTime>12/05/2015 22:21:38</publishTime>
+    </File>
+    <File Include="Finanzas/JQuery/js_miscript.js">
+      <publishTime>12/05/2015 22:21:38</publishTime>
+    </File>
+    <File Include="Finanzas/JQuery/npm.js">
+      <publishTime>12/05/2015 22:21:38</publishTime>
+    </File>
+    <File Include="Finanzas/JQuery/validaciones.js">
+      <publishTime>12/05/2015 22:21:38</publishTime>
+    </File>
+    <File Include="Finanzas/Principal.Master">
+      <publishTime>12/09/2015 15:25:52</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="JQuery/bootstrap.js">
+      <publishTime>12/06/2015 02:08:56</publishTime>
+    </File>
+    <File Include="JQuery/bootstrap.min.js">
+      <publishTime>12/06/2015 02:08:56</publishTime>
+    </File>
+    <File Include="JQuery/jquery.js">
+      <publishTime>12/06/2015 02:08:56</publishTime>
+    </File>
+    <File Include="JQuery/js_miscript.js">
+      <publishTime>12/06/2015 02:08:56</publishTime>
+    </File>
+    <File Include="JQuery/npm.js">
+      <publishTime>12/06/2015 02:08:56</publishTime>
+    </File>
+    <File Include="JQuery/validaciones.js">
+      <publishTime>12/06/2015 02:08:56</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>12/04/2015 00:39:54</publishTime>
+    </File>
+    <File Include="login.css">
+      <publishTime>12/05/2015 11:18:46</publishTime>
+    </File>
+    <File Include="Materiales/Almacén/Catalogo.master">
+      <publishTime>12/08/2015 17:52:16</publishTime>
+    </File>
+    <File Include="Materiales/Almacén/Consultas.aspx">
+      <publishTime>12/08/2015 17:04:48</publishTime>
+    </File>
+    <File Include="Materiales/BootStrap/bootstrap-theme.css">
+      <publishTime>12/08/2015 16:48:54</publishTime>
+    </File>
+    <File Include="Materiales/BootStrap/bootstrap-theme.css.map">
+      <publishTime>12/08/2015 16:48:54</publishTime>
+    </File>
+    <File Include="Materiales/BootStrap/bootstrap-theme.min.css">
+      <publishTime>12/08/2015 16:48:54</publishTime>
+    </File>
+    <File Include="Materiales/BootStrap/bootstrap.css">
+      <publishTime>12/08/2015 16:48:54</publishTime>
+    </File>
+    <File Include="Materiales/BootStrap/bootstrap.css.map">
+      <publishTime>12/08/2015 16:48:54</publishTime>
+    </File>
+    <File Include="Materiales/BootStrap/bootstrap.min.css">
+      <publishTime>12/09/2015 19:12:52</publishTime>
+    </File>
+    <File Include="Materiales/BootStrap/MiEstilo.css">
+      <publishTime>12/08/2015 16:48:54</publishTime>
+    </File>
+    <File Include="Materiales/Default.aspx">
+      <publishTime>12/09/2015 15:51:52</publishTime>
+    </File>
+    <File Include="Materiales/Entradas/Consultas.aspx">
+      <publishTime>05/12/2015 23:24:20</publishTime>
+    </File>
+    <File Include="Materiales/Entradas/Entradas.master">
+      <publishTime>12/08/2015 17:50:28</publishTime>
+    </File>
+    <File Include="Materiales/Entradas/Nueva Entrada.aspx">
+      <publishTime>12/08/2015 18:28:22</publishTime>
+    </File>
+    <File Include="Materiales/Entradas/Reportes.aspx">
+      <publishTime>12/08/2015 18:30:06</publishTime>
+    </File>
+    <File Include="Materiales/Imagenes/imagen1.jpg">
+      <publishTime>12/08/2015 16:50:26</publishTime>
+    </File>
+    <File Include="Materiales/Imagenes/imagen2.png">
+      <publishTime>12/08/2015 16:50:26</publishTime>
+    </File>
+    <File Include="Materiales/Imagenes/in.png">
+      <publishTime>12/08/2015 16:50:26</publishTime>
+    </File>
+    <File Include="Materiales/Imagenes/new.png">
+      <publishTime>12/08/2015 16:50:26</publishTime>
+    </File>
+    <File Include="Materiales/Imagenes/out.png">
+      <publishTime>12/08/2015 16:50:26</publishTime>
+    </File>
+    <File Include="Materiales/Imágenes/imagen1.jpg">
+      <publishTime>12/05/2015 23:06:44</publishTime>
+    </File>
+    <File Include="Materiales/Imágenes/imagen2.png">
+      <publishTime>12/05/2015 23:06:44</publishTime>
+    </File>
+    <File Include="Materiales/Imágenes/in.png">
+      <publishTime>12/05/2015 23:06:44</publishTime>
+    </File>
+    <File Include="Materiales/Imágenes/new.png">
+      <publishTime>12/05/2015 23:06:44</publishTime>
+    </File>
+    <File Include="Materiales/Imágenes/out.png">
+      <publishTime>12/05/2015 23:06:44</publishTime>
+    </File>
+    <File Include="Materiales/itextsharp.xtra.dll">
+      <publishTime>12/08/2015 16:44:46</publishTime>
+    </File>
+    <File Include="Materiales/JQuery/bootstrap.js">
+      <publishTime>12/08/2015 16:50:50</publishTime>
+    </File>
+    <File Include="Materiales/JQuery/bootstrap.min.js">
+      <publishTime>12/08/2015 16:50:50</publishTime>
+    </File>
+    <File Include="Materiales/JQuery/jquery.js">
+      <publishTime>12/08/2015 16:50:50</publishTime>
+    </File>
+    <File Include="Materiales/JQuery/js_miscript.js">
+      <publishTime>12/08/2015 16:50:50</publishTime>
+    </File>
+    <File Include="Materiales/JQuery/npm.js">
+      <publishTime>12/08/2015 16:50:50</publishTime>
+    </File>
+    <File Include="Materiales/JQuery/validaciones.js">
+      <publishTime>12/08/2015 16:50:50</publishTime>
+    </File>
+    <File Include="Materiales/MasterPage/Principal.Master">
+      <publishTime>12/09/2015 15:50:00</publishTime>
+    </File>
+    <File Include="Materiales/Recursos Materiales.csproj">
+      <publishTime>12/08/2015 16:44:46</publishTime>
+    </File>
+    <File Include="Materiales/Recursos Materiales.csproj.user">
+      <publishTime>12/08/2015 16:44:46</publishTime>
+    </File>
+    <File Include="Materiales/Recursos Materiales.Publish.xml">
+      <publishTime>12/08/2015 16:44:46</publishTime>
+    </File>
+    <File Include="Materiales/Requisiciones/Busqueda de Requisiciones.aspx">
+      <publishTime>12/08/2015 18:30:58</publishTime>
+    </File>
+    <File Include="Materiales/Requisiciones/Carrito.aspx">
+      <publishTime>12/08/2015 18:31:10</publishTime>
+    </File>
+    <File Include="Materiales/Requisiciones/Detalle de Requisicion.aspx">
+      <publishTime>12/08/2015 18:31:22</publishTime>
+    </File>
+    <File Include="Materiales/Requisiciones/Nueva Requisicion.aspx">
+      <publishTime>12/08/2015 18:31:34</publishTime>
+    </File>
+    <File Include="Materiales/Requisiciones/Producto.aspx">
+      <publishTime>12/08/2015 18:31:48</publishTime>
+    </File>
+    <File Include="Materiales/Requisiciones/Requisiciones.master">
+      <publishTime>12/08/2015 17:52:34</publishTime>
+    </File>
+    <File Include="Materiales/Requisiciones/Servicio.aspx">
+      <publishTime>12/08/2015 18:32:06</publishTime>
+    </File>
+    <File Include="Materiales/Salidas/Consultas.aspx">
+      <publishTime>12/08/2015 18:32:30</publishTime>
+    </File>
+    <File Include="Materiales/Salidas/Nueva Salida.aspx">
+      <publishTime>12/09/2015 19:12:52</publishTime>
+    </File>
+    <File Include="Materiales/Salidas/Reportes.aspx">
+      <publishTime>12/08/2015 18:32:46</publishTime>
+    </File>
+    <File Include="Materiales/Salidas/Salidas.master">
+      <publishTime>12/08/2015 17:52:54</publishTime>
+    </File>
+    <File Include="Register.aspx">
+      <publishTime>06/12/2015 00:04:28</publishTime>
+    </File>
+    <File Include="RH/BootStrap/bootstrap-theme.css">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/BootStrap/bootstrap-theme.css.map">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/BootStrap/bootstrap-theme.min.css">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/BootStrap/bootstrap.css">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/BootStrap/bootstrap.css.map">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/BootStrap/bootstrap.min.css">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/BootStrap/MiEstilo.css">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/Buscar.aspx">
+      <publishTime>12/08/2015 12:36:12</publishTime>
+    </File>
+    <File Include="RH/ClassDiagram1.cd">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/Consulta.aspx">
+      <publishTime>12/08/2015 08:43:06</publishTime>
+    </File>
+    <File Include="RH/Default.aspx">
+      <publishTime>12/05/2015 17:52:42</publishTime>
+    </File>
+    <File Include="RH/es.xml">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/Global.asax">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/1422194782_old-edit-find.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1422260694_Delete.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1422260797_sign-up.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1422260817_Log Out.png">
+      <publishTime>12/05/2015 20:40:48</publishTime>
+    </File>
+    <File Include="RH/images/1422279555_empty_filter.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1422279573_filter-32.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1426422923_lock.png">
+      <publishTime>12/05/2015 21:14:36</publishTime>
+    </File>
+    <File Include="RH/images/1426476809_tick.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1426476820_error.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1426579860_678080-shield-error-128.png">
+      <publishTime>05/12/2015 09:05:23</publishTime>
+    </File>
+    <File Include="RH/images/1439283695_business.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1439283768_user-alt.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1439283774_user-group.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1439283793_address-book-alt.png">
+      <publishTime>12/05/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1439283815_computer.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/1439283823_search.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/1439283880_english_ime.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/1439283984_sync.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/1439285367_Log Out.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/alerta.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/bar_chart.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/calendar %282%29.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/calendar.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/consulta %282%29.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/consulta.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/correcto.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/delete.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/empleado.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/error.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/favicon.ico">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/folder_with_contents.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/fondo.jpg">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/generate_keys.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/gnome_edit_delete.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/human-resources.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/Human_resource_icons-09-512.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/Human_resource_strategy-05-512.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/invoice.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/license_manager.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/line_chart.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/login.png">
+      <publishTime>12/06/2015 00:13:00</publishTime>
+    </File>
+    <File Include="RH/images/map.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/money %281%29.png">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/perfil.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/pie_chart.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/portada.jpg">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/images/product_documentation.png">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/images/recursos_humanos.png">
+      <publishTime>12/05/2015 21:47:38</publishTime>
+    </File>
+    <File Include="RH/Insertar.aspx">
+      <publishTime>12/08/2015 12:35:16</publishTime>
+    </File>
+    <File Include="RH/JQuery/bootstrap.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/JQuery/bootstrap.min.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/JQuery/jquery.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/JQuery/js_miscript.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/JQuery/npm.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/JQuery/validaciones.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/MasterPage/Principal.Master">
+      <publishTime>12/08/2015 06:58:06</publishTime>
+    </File>
+    <File Include="RH/MVC/Academico.cs">
+      <publishTime>05/12/2015 09:05:24</publishTime>
+    </File>
+    <File Include="RH/MVC/Direccion.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Empleado.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Habilidad.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Idioma.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Jornada.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Modelo.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Persona.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/SQL.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Telefono.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/MVC/Vista.cs">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/SARI.csproj">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>05/12/2015 09:05:25</publishTime>
+    </File>
+    <File Include="RH/Scripts/jquery-1.4.1.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/Scripts/jquery-1.4.1.min.js">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/Site.Master">
+      <publishTime>06/12/2015 03:37:49</publishTime>
+    </File>
+    <File Include="RH/Styles/Site.css">
+      <publishTime>12/05/2015 09:05:26</publishTime>
+    </File>
+    <File Include="RH/Web.config">
+      <publishTime>05/12/2015 09:10:52</publishTime>
+    </File>
+    <File Include="RH2/BootStrap/bootstrap-theme.css">
+      <publishTime>12/05/2015 19:58:40</publishTime>
+    </File>
+    <File Include="RH2/BootStrap/bootstrap-theme.css.map">
+      <publishTime>12/05/2015 19:58:40</publishTime>
+    </File>
+    <File Include="RH2/BootStrap/bootstrap-theme.min.css">
+      <publishTime>12/05/2015 19:58:40</publishTime>
+    </File>
+    <File Include="RH2/BootStrap/bootstrap.css">
+      <publishTime>12/05/2015 19:58:40</publishTime>
+    </File>
+    <File Include="RH2/BootStrap/bootstrap.css.map">
+      <publishTime>12/05/2015 19:58:40</publishTime>
+    </File>
+    <File Include="RH2/BootStrap/bootstrap.min.css">
+      <publishTime>12/05/2015 21:49:36</publishTime>
+    </File>
+    <File Include="RH2/BootStrap/MiEstilo.css">
+      <publishTime>12/05/2015 19:58:40</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/Direccion.aspx">
+      <publishTime>12/05/2015 20:16:42</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/Estudios.aspx">
+      <publishTime>12/05/2015 20:16:32</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/HistoriaLaboral.aspx">
+      <publishTime>12/05/2015 20:16:22</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/Mas_Info.aspx">
+      <publishTime>12/05/2015 20:16:52</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/PreferenciasLaborales.aspx">
+      <publishTime>12/05/2015 20:16:10</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/Referencias.aspx">
+      <publishTime>12/05/2015 20:16:02</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/Registro.aspx">
+      <publishTime>12/05/2015 20:15:52</publishTime>
+    </File>
+    <File Include="RH2/Capsule152/Test_Psic.aspx">
+      <publishTime>12/05/2015 20:17:18</publishTime>
+    </File>
+    <File Include="RH2/Default.aspx">
+      <publishTime>12/07/2015 02:57:38</publishTime>
+    </File>
+    <File Include="RH2/JQuery/bootstrap.js">
+      <publishTime>12/05/2015 19:59:22</publishTime>
+    </File>
+    <File Include="RH2/JQuery/bootstrap.min.js">
+      <publishTime>12/05/2015 19:59:22</publishTime>
+    </File>
+    <File Include="RH2/JQuery/jquery.js">
+      <publishTime>12/05/2015 19:59:22</publishTime>
+    </File>
+    <File Include="RH2/JQuery/js_miscript.js">
+      <publishTime>12/05/2015 19:59:22</publishTime>
+    </File>
+    <File Include="RH2/JQuery/npm.js">
+      <publishTime>12/05/2015 19:59:22</publishTime>
+    </File>
+    <File Include="RH2/JQuery/validaciones.js">
+      <publishTime>12/05/2015 19:59:22</publishTime>
+    </File>
+    <File Include="RH2/Principal.Master">
+      <publishTime>12/07/2015 03:51:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>12/01/2015 00:07:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/09/2015 18:52:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

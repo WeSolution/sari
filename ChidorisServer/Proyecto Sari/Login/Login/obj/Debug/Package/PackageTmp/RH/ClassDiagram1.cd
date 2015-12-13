@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SARI.Account.ChangePassword">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePassword.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.Account.ChangePasswordSuccess">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePasswordSuccess.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.Account.Login">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAE=</HashCode>
+      <FileName>Account\Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.Account.Register">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\Register.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.WebForm2">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>fGGacVQA2CUWHsHCVRzEV8EhKDj/dIgT5lCHlDIOScI=</HashCode>
+      <FileName>Buscar.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.Global">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAECIBAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.WebForm1">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>dGGaYVQA2AUUHsDAVRTEU8EhIDj/dAgTZlCGlDIOScI=</HashCode>
+      <FileName>Insertar.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.SiteMaster">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACABAACAAAAAAQAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Site.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Academico">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAAAAAAAAAAAAABACAAAAAAAQCAAAAAAAAA=</HashCode>
+      <FileName>MVC\Academico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Direccion">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCQAAAAAAAAAEAAAAAAAAAAAAEAAAAIAAEAAAAgA=</HashCode>
+      <FileName>MVC\Direccion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Empleado">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAkE=</HashCode>
+      <FileName>MVC\Empleado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Habilidad">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAgQ=</HashCode>
+      <FileName>MVC\Habilidad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Idioma">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAEAAAAAAgAABAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>MVC\Idioma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Jornada">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAEAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>MVC\Jornada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Modelo">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgFBAAAAgAAAAAQBAJACAFARAAAEAAgAACQGAAhAAI=</HashCode>
+      <FileName>MVC\Modelo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Persona">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAABAAAAAAAAAAAgAAAgEAAAAAAAAAAAAAQEAAAggA=</HashCode>
+      <FileName>MVC\Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.SQL">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAACAAAAAAAAAAEAAAiAAAAAAAAAAAA=</HashCode>
+      <FileName>MVC\SQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.SqlParameterOut">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVC\SQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.Telefono">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>MVC\Telefono.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.VistaInserta">
+    <Position X="5.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAQAAIAIAggAAAIAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>MVC\Vista.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SARI.MVC.VistaBuscar">
+    <Position X="2.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAQAAIAIAAgAAAIAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>MVC\Vista.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

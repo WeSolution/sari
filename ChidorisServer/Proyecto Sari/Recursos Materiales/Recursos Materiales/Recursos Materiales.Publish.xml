@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="Ftp://sari.servehttp.com/RECURSOS MATERIALES" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FTP" replaceMatchingFiles="True" userName="Server" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="MasterPage/Default.aspx" publishTime="11/23/2015 19:05:10" />
+    <file relUrl="Requisiciones/Requisiciones.master" publishTime="11/22/2015 19:34:00" />
+    <file relUrl="bin/Recursos Materiales.dll" publishTime="12/01/2015 12:11:08" />
+    <file relUrl="Entradas/Consultas.aspx" publishTime="11/30/2015 23:49:20" />
+    <file relUrl="Salidas/Salidas.master" publishTime="11/17/2015 01:20:30" />
+    <file relUrl="BootStrap/bootstrap-theme.css" publishTime="11/14/2015 09:28:22" />
+    <file relUrl="JQuery/validaciones.js" publishTime="11/14/2015 09:28:33" />
+    <file relUrl="bin/Recursos Materiales.pdb" publishTime="12/01/2015 12:11:08" />
+    <file relUrl="Imágenes/out.png" publishTime="11/15/2015 22:21:18" />
+    <file relUrl="Salidas/Consultas.aspx" publishTime="11/20/2015 00:59:56" />
+    <file relUrl="Salidas/Nueva Salida.aspx" publishTime="12/01/2015 02:23:28" />
+    <file relUrl="bin/itextsharp.pdfa.dll" publishTime="11/27/2015 09:01:00" />
+    <file relUrl="JQuery/bootstrap.min.js" publishTime="11/14/2015 09:28:33" />
+    <file relUrl="Requisiciones/Busqueda de Requisiciones.aspx" publishTime="12/01/2015 01:31:14" />
+    <file relUrl="JQuery/bootstrap.js" publishTime="11/14/2015 09:28:33" />
+    <file relUrl="BootStrap/bootstrap-theme.min.css" publishTime="11/14/2015 09:28:22" />
+    <file relUrl="Imágenes/in.png" publishTime="11/15/2015 22:21:18" />
+    <file relUrl="Imágenes/new.png" publishTime="11/15/2015 22:21:18" />
+    <file relUrl="BootStrap/MiEstilo.css" publishTime="11/14/2015 09:28:22" />
+    <file relUrl="Almacén/Catalogo.master" publishTime="11/20/2015 00:59:55" />
+    <file relUrl="itextsharp.xtra.dll" publishTime="11/30/2015 21:56:58" />
+    <file relUrl="bin/itextsharp.dll" publishTime="11/27/2015 09:00:57" />
+    <file relUrl="JQuery/js_miscript.js" publishTime="11/14/2015 09:28:33" />
+    <file relUrl="Requisiciones/Detalle de Requisicion.aspx" publishTime="11/30/2015 23:55:24" />
+    <file relUrl="JQuery/npm.js" publishTime="11/14/2015 09:28:33" />
+    <file relUrl="Imágenes/imagen1.jpg" publishTime="11/22/2015 21:32:27" />
+    <file relUrl="Salidas/Reportes.aspx" publishTime="11/20/2015 00:59:55" />
+    <file relUrl="Imágenes/imagen2.png" publishTime="11/22/2015 21:32:27" />
+    <file relUrl="Entradas/Entradas.master" publishTime="11/15/2015 22:41:53" />
+    <file relUrl="Web.config" publishTime="12/01/2015 12:17:27" />
+    <file relUrl="Almacén/Consultas.aspx" publishTime="11/23/2015 19:07:49" />
+    <file relUrl="BootStrap/bootstrap.css" publishTime="11/22/2015 17:10:12" />
+    <file relUrl="Entradas/Reportes.aspx" publishTime="11/18/2015 05:03:37" />
+    <file relUrl="Requisiciones/Nueva Requisicion.aspx" publishTime="11/30/2015 23:49:20" />
+    <file relUrl="BootStrap/bootstrap.min.css" publishTime="11/20/2015 00:07:44" />
+    <file relUrl="Entradas/Nueva Entrada.aspx" publishTime="12/01/2015 08:28:50" />
+    <file relUrl="MasterPage/Principal.Master" publishTime="12/01/2015 12:06:48" />
+    <file relUrl="JQuery/jquery.js" publishTime="11/14/2015 09:28:33" />
+  </publishProfile>
+</publishData>

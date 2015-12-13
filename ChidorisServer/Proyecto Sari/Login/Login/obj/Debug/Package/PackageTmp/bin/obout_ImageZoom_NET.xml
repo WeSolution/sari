@@ -1,0 +1,1164 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>obout_ImageZoom_NET</name>
+    </assembly>
+    <members>
+        <member name="T:OboutInc.ImageZoom.ImageFactory.ImageZoomWaterMark">
+            <summary>
+            Manages watermarking
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.ImageZoomPager">
+            <summary>
+            Image zoom pager control
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.DefaultPagerLayout">
+            <summary>
+            Image zoom pager template
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.PageChangedEventArgs">
+            <summary>
+            page event arguments
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.AdapterCollection">
+            <summary>
+            Summary description for AdapterCollection.
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.Enums.RenderingModes">
+            <summary>
+            Default. Rendering on pageload
+            HttpHandler. Render using httphandler
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.Enums.BigImageSize">
+            <summary>
+            Big image size 
+            can be set using BigImageHeight and BigImageWidth only if it is set to Custom
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.ImageZoom">
+            <summary>
+            ImageZoom control class
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GeneratePagers">
+            <summary>
+            Generates pager buttons 
+            </summary>
+        </member>
+        <member name="F:OboutInc.ImageZoom.ImageZoom.GridPageIndex">
+            <summary>
+            Current page index of gallery
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.#ctor">
+            <summary>
+            ImageZoom - initialize objects
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.SetImageZoomProperties(OboutInc.ImageZoom.ImageZoomEntry)">
+            <summary>
+            Sets proprties of ImagezoomEntry object
+            </summary>
+            <param name="zoom">returns ImagezoomEntry object</param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetImageZoomEntryByIndex(System.Int32)">
+            <summary>
+            Returns small image object by index
+            </summary>
+            <param name="index">zero base index</param>
+            <returns>ImagezoomEntry object, null if not found </returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetFiles">
+            <summary>
+            Get all files in the folder - if imageUrl is set to folder
+            </summary>
+            <returns>List of image files - types supported -jpg, png, gif, tif, bmp, tiff </returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetDescriptions">
+            <summary>
+            Get all descriptions in the folder - if imageUrl is set to folder and 'DescriptionExtension' is set
+            </summary>
+            <returns>List of descriptions </returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.CreateChildControls">
+            <summary>
+            CreateChildControls overridden
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.CreateHeaderRow">
+            <summary>
+            Adding header control - top div
+            </summary>
+            
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.CreateFooter">
+            <summary>
+            Adding footer controls - footer div
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetGalleryControl">
+            <summary>
+            Adding zoom items to middle div - gallery container
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.CreateControlHierarchy(System.Boolean)">
+            <summary>
+            Create 
+            </summary>
+            <param name="useDataSource"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetGalleryPagerControls(System.Web.UI.Control)">
+            <summary>
+            Creates pager elements and addes to footer
+            </summary>
+            <param name="element">footer element</param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetZoomEntry(System.String,System.String,System.String)">
+            <summary>
+            Creates zoom object - small image - 
+            </summary>
+            <param name="id">zoom image id</param>
+            <param name="imgUrl">small image url</param>
+            <param name="description">Description of image </param>
+            <returns>returns ImageZoomEntry object </returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.PerformDataBinding(System.Collections.IEnumerable)">
+            <summary>
+            PerformDataBinding overridden
+            </summary>
+            <param name="retrievedData"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.ApplyDataSensitivityRules">
+            <summary>
+            Manage visibility and rendering of footer controls
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GeneratePagers(System.Web.UI.Control)">
+            <summary>
+            Creates pager buttons
+            </summary>
+            <param name="control">container control</param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.SetPagingImages">
+            <summary>
+            Adding image buttons in pager buttons
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetPageSizeSelector">
+            <summary>
+            Sets selected values of page size dropdown
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetImageSizeSelector">
+            <summary>
+            Sets selected values of image size dropdown
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RaiseEvent(System.EventHandler,System.Object)">
+            <summary>
+            Raise event
+            </summary>
+            <param name="e"></param>
+            <param name="sender"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RaiseEvent(System.EventHandler,System.Object,OboutInc.ImageZoom.PageChangedEventArgs)">
+            <summary>
+            Raise event with PageChangedEventArgs
+            </summary>
+            <param name="e"></param>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RaiseEvent(OboutInc.ImageZoom.PageDelegate,System.Object,OboutInc.ImageZoom.PageChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.BindParent">
+            <summary>
+            Creats paged datasource for gallery
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetBuilder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.BoundControl_DataBound(System.Object,System.EventArgs)">
+            <summary>
+            calls on databound
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.InstantiateTemplate">
+            <summary>
+            Instantiate in footer controls
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.Update">
+            <summary>
+            Updates image zoom control
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.SerializeDataSource(System.Collections.IEnumerable)">
+            <summary>
+            Serialize DataSource
+            </summary>
+            <param name="enumerableDataSource"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.DeserializeDataSource">
+            <summary>
+            Deserialize DataSource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.CompressDataSet(System.Data.DataSet)">
+            <summary>
+            Compress DataSet
+            </summary>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.DecompressDataSet(System.Byte[])">
+            <summary>
+            Decompress DataSet
+            </summary>
+            <param name="bytDs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.ReadFullStream(System.IO.Stream)">
+            <summary>
+            Using in Data Compression
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.ConvertDataViewToDataSet(System.Data.DataView)">
+            <summary>
+            Convert DataView To DataSet
+            </summary>
+            <param name="dv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.CheckAjaxPageInheritance">
+            <summary>
+            Check if page is inherited from oboutAJAXPage
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RegisterScript">
+            <summary>
+            Register Script
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RegisterCallbackScript">
+            <summary>
+            Register CallbackScript
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RegisterCss">
+            <summary>
+            Register Css
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RegisterScriptLib">
+            <summary>
+            Register main script library
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.SaveViewState">
+            <summary>
+            Save ViewState
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.LoadViewState(System.Object)">
+            <summary>
+            Load ViewState
+            </summary>
+            <param name="savedState"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.SaveControlState">
+            <summary>
+            Save ControlState
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.LoadControlState(System.Object)">
+            <summary>
+            Load ControlState
+            </summary>
+            <param name="savedState"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.OnInit(System.EventArgs)">
+            <summary>
+            On Init
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.OnPreRender(System.EventArgs)">
+            <summary>
+            OnPreRender
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            OnRender
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.AddAttributesToRender(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            AddAttributes To Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.GetCallbackResult">
+            <summary>
+            Returns callback results
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.RaiseCallbackEvent(System.String)">
+            <summary>
+            Raise callback event
+            </summary>
+            <param name="eventArgument"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.ImageSizeSelectorSelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            On Image size drop-down selected
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.PageSizeSelectorSelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            On page size drop-down selected
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.Pager_Click(System.Object,System.EventArgs)">
+            <summary>
+            On pager button click - page number buttons
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.Next_Click(System.Object,System.EventArgs)">
+            <summary>
+            On next click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.Previous_Click(System.Object,System.EventArgs)">
+            <summary>
+            On previous button click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.First_Click(System.Object,System.EventArgs)">
+            <summary>
+            On First button click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoom.Last_Click(System.Object,System.EventArgs)">
+            <summary>
+            On Last button click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the Web server control is enabled.
+            </summary>
+            <returns>
+            true if control is enabled; otherwise, false. The default is true.
+            </returns>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.EnableTheming">
+            <summary>
+            Gets or sets a value indicating whether themes apply to this control.
+            </summary>
+            <returns>
+            true to use themes; otherwise, false. The default is false.
+            </returns>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.TagKey">
+            <summary>
+            Tag to be rendered
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.StyleFolder">
+            <summary>
+            Gets or sets style folder
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.SizeSelectorStyle">
+            <summary>
+            size selector dropdown style
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.DisplayStyle">
+            <summary>
+            Uses to identify rendering style - 
+            gallery can be in tabular model
+            it can be explaned for different themes - msn - google image - bing image etc
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ImageUrl">
+            <summary>
+            Image path - for single image
+            Folder path - for image gallery view - it will show all images in folder
+            Absolute path - 
+            External links - should start with 'http://'
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.IsPathAbsolute">
+            <summary>
+            Using for internal purpose
+            checks if the image path is absolute
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.IsImageStream">
+            <summary>
+            future plan - 
+            image stream can be used instread of imageUrl
+            plan was to load image directly from file uploader
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.BigImageUrl">
+            <summary>
+            -Gets or sets the big image url in single mode.
+            -Different images can be used in small and Big modes
+            -helps to use icons in small mode and will show actual image onclick
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ImageStream">
+            <summary>
+            future plan - 
+            image stream can be used instread of imageUrl
+            plan was to load image directly from file uploader
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailHeight">
+            <summary>
+            Thumbnail image size - Height
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailWidth">
+            <summary>
+            Thumbnail image size - Width
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.BigImageSize">
+            <summary>
+            Zoomed image size - Actual or Custome
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.BigImageHeight">
+            <summary>
+            Zoomed image size - Height
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.BigImageWidth">
+            <summary>
+            Zoomed image size - Width
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Description">
+            <summary>
+            Gets or sets image description which will be shown in zooming panel
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ShowLoading">
+            <summary>
+            Gets or sets whether loading will be shown while image is being loaded
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailFixedSize">
+            <summary>
+            Gets or sets whether loading will be shown while image is being loaded
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.zIndex">
+             <summary>
+            Gets or sets z-index of zoom image
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Effect">
+            <summary>
+            Gets or sets effect
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.RenderingMode">
+            <summary>
+            Describe the way by which image is served.
+            Default: RenderingMethods.Default
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.HttpHandlerName">
+            <summary>
+            Name of ImageHandler if using custom HttpHandler.
+            Default: ImageZoomHandler.ashx
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ShowWaterMark">
+            <summary>
+            Uses to check if WatermarText is set or not
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.WatermarkText">
+            <summary>
+            String. Watermark text shown on big image
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.BackgroundOpacity">
+             <summary>
+            Gets or sets opacity of background
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ZoomTime">
+            <summary>
+            Gets or sets zooming time
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.NumberOfFrames">
+             <summary>
+            Gets or sets number of frame render
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Position">
+            <summary>
+            Gets or sets position
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.RelativeLeft">
+             <summary>
+            Gets or sets relative left of imagezoom
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.RelativeTop">
+             <summary>
+            Gets or sets relative top of imagezoom
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ShowFooter">
+            <summary>
+            Property used for showing/hiding the footer of the ImageGallery. 
+            Default: true 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailWatermark">
+            <summary>
+            Gets or sets a value indicating whether to show the image's description in the watermark of the thumbnail. 
+            Default: false 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailWatermarkColor">
+            <summary>
+            Gets or sets the color of the thumbnail's watermark. 
+            Default:  Color.WhiteSmoke 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailWatermarkFontFamily">
+            <summary>
+            Gets or sets the font family of the thumbnail's watermark. 
+            Default: "verdana" 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailWatermarkFontSize">
+            <summary>
+            Gets or sets the font size of the thumbnail's watermark. 
+            Default: 12 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ThumbnailWatermarkFontStyle">
+            <summary>
+            Gets or sets the font style of the thumbnail's watermark. 
+            Default: false 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ShowHeader">
+            <summary>
+            Property used for showing/hiding the header of the ImageGallery. 
+            Default: true 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Columns">
+            <summary>
+            Number of columns per page in table layout mode.
+            Default: 4
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Rows">
+            <summary>
+            Number of rows per page in table layout.
+            Default:4
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.InternalDataSource">
+            <summary>
+            Internal data source
+            - loads database data if datasaource is set
+            - loads file list in folder path is set in imageUrl
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.DataSource">
+            <summary>
+            Gets or sets the object from which the data-bound control retrieves its list of data items.
+            </summary>
+            <returns>
+            An object that represents the data source from which the data-bound control retrieves its data. The default is null.
+            </returns>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.MultiMode">
+            <summary>
+            Uses to identify if the control is in single or gallery mode
+            - sets true id databound or imageUrl is set to folder
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.CallbackMode">
+            <summary>
+            Enables/disables the callback mode
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.EntryScripts">
+            <summary>
+            For script building purpose in call back mode
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.IsCallback">
+            <summary>
+            Checks id image zoom is in call back mode or in post back
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.DataUrlField">
+            <summary>
+            string. Image url field in datasource.
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.DescriptionExtension">
+            <summary>
+            string. Image description field in datasource.
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.DataDescriptionField">
+            <summary>
+            string. Image description field in datasource.
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.DataCategoryField">
+            <summary>
+            string. Image category field in datasource.
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.DataDescriptionList">
+            <summary>
+            Lists the descriptions in databound mode
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.AllowImageSizeSelection">
+            <summary>
+            Show/Hide the Image Size selection drop-down
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.ImageSizeOptions">
+            <summary>
+            String. The options for the "Image size" drop-down list. 
+            Default: 50X50,100X100,150X150,200X200 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.AllowPaging">
+            <summary>
+            Bool. Show/Hide the buttons for changing the page. 
+            Default: true 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.PageSizeOptions">
+            <summary>
+            String. The options for the "Images per page" drop-down list. 
+            Default: 5,10,15,20,30,40,50 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.CurrentPageIndex">
+            <summary>
+            Int. The one starting index of page that is displayed in the ImageZoom. 
+            Default: 1 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.NumberOfPagesShown">
+            <summary>
+            Int. Sets the number of pages displayed in the footer. 
+            Default: 5 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.PageSize">
+            <summary>
+            Int. The number of images to be displayed on a page. Default: 10 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.AllowPageSizeSelection">
+            <summary>
+            Bool. Show/Hide the Page Size selection drop-down. Default: true 
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Layout">
+            <summary>
+            Pager template
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.PagerContainer">
+            <summary>
+            Pager container
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.Adapters">
+            <summary>
+            Adapters
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.TotalPage">
+            <summary>
+            Returns total pages
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.TotalPagesToShow">
+            <summary>
+            Pager buttons shown
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.StartRow">
+            <summary>
+            Starting count of current gallery page - 1 to 5 of 10 - so 1
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.EnableCacheDirectory">
+            <summary>
+            Bool. Enable/disable disk caching. If enabled the 
+            Image zoom will create a cache 
+            folder in image folder which will store 
+            all resized images that shows in gallery.
+            Default:false
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.CacheDirectory">
+            <summary>
+            String. Sets a particular folder to save cached images.
+            Usefull when folder has write permission issue in shared hostings.
+            Default:"Image containing folder"
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.HasParentControlCalledDataBinding">
+            <summary>
+            Checks if builder object created
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBeforeZoomIn">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBeforeZoomOut">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnZoomIn">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnZoomOut">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBeforeImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBigImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBeforeBigImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBackgroundClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBeforeBackgroundClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnCloseButtonClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoom.OnBeforeCloseButtonClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="F:OboutInc.ImageZoom.IzCssSettings.CssGalleryFooterItemContainer">
+            <summary>
+            pager CssClasses
+            </summary>
+            
+        </member>
+        <member name="T:OboutInc.ImageZoom.ImageZoomEntry">
+            <summary>
+            Imagezoom Entry class
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.SetStyle">
+            <summary>
+            Sets style for zoom element
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.#ctor(OboutInc.ImageZoom.ImageZoom)">
+            <summary>
+            Constructors
+            </summary>
+            <param name="iz"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.StartupScript">
+            <summary>
+            Creates start-up scripts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.RenderImageZoom">
+            <summary>
+            Creates image zoom elements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.RenderInDesign(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Render In Design
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.CheckAjaxPageInheritance">
+            <summary>
+            Check if it is inherited from obout ajaxpage
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.OnInit(System.EventArgs)">
+            <summary>
+            OnInit
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Render
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.OnLoad(System.EventArgs)">
+            <summary>
+            On page load
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.GetImageDir(System.String)">
+            <summary>
+            Finds directory name
+            Uses to store thumnail cache folder
+            </summary>
+            <param name="imgUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomEntry.SetCacheDir(System.String)">
+            <summary>
+            Creates cache directory in image folder by default
+            - uses custom folder if it is set.
+            </summary>
+            <param name="imageDir"></param>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.StyleFolder">
+            <summary>
+            Gets or sets style folder
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.AlternateText">
+            <summary>
+            Alternate text
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.ImageUrl">
+            <summary>
+            Get or Sets the ImageUrl
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.BigImageUrl">
+            <summary>
+            Gets or sets the big image url
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.ImageStream">
+            <summary>
+            Image in bynary format
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.ThumnailHeight">
+            <summary>
+            Thumbnail Height
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.Thumnailwidth">
+            <summary>
+            Thumbnail Width
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.Description">
+            <summary>
+            Gets or sets image description which will be shown in zooming panel
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.ShowLoading">
+            <summary>
+            Gets or sets whether loading will be shown while image is being loaded
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.zIndex">
+             <summary>
+            Gets or sets z-index of zoom image
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.Effect">
+            <summary>
+            Gets or sets effect
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.BackgroundOpacity">
+             <summary>
+            Gets or sets opacity of background
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.ZoomTime">
+            <summary>
+            Gets or sets zooming time
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.NumberOfFrames">
+             <summary>
+            Gets or sets number of frame render
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.Position">
+            <summary>
+            Gets or sets position
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.RelativeLeft">
+             <summary>
+            Gets or sets relative left of imagezoom
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.RelativeTop">
+             <summary>
+            Gets or sets relative top of imagezoom
+             </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBeforeZoomIn">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBeforeZoomOut">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnZoomIn">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnZoomOut">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBeforeImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBigImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBeforeBigImageClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBackgroundClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBeforeBackgroundClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnCloseButtonClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="P:OboutInc.ImageZoom.ImageZoomEntry.OnBeforeCloseButtonClick">
+            <summary>
+             Gets or sets client-side event handle
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.ImageZoomEntryDesigner">
+            <summary>
+            Designer class
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.ImageFactory.ImageZoomResize">
+            <summary>
+            Image resize class
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageFactory.ImageZoomResize.GetResizedImage(System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Resizes image
+            </summary>
+            <param name="imgIn">Bitmap</param>
+            <param name="width">new width</param>
+            <param name="height">new height</param>
+            <param name="type">image format</param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageFactory.ImageZoomResize.GetResizedImageWithWaterMark(System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Imaging.ImageFormat,System.String,System.Boolean,System.Drawing.Color,System.String,System.Int32,System.Drawing.FontStyle)">
+            <summary>
+            Resizes image
+            </summary>
+            <param name="imgIn"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="type"></param>
+            <param name="watermarkText">watermark text</param>
+            <param name="isBig"></param>
+            <param name="watermarkColor"></param>
+            <param name="watermarkFontFamily"></param>
+            <param name="watermarkFontSize"></param>
+            <param name="watermarkFontStyle"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OboutInc.ImageZoom.DisplayStyle">
+            <summary>
+            Manages different gallery display styles - it can be extended when more themes are applied
+            </summary>
+        </member>
+        <member name="F:OboutInc.ImageZoom.DisplayStyle.TableView">
+            <summary>
+            Tabular view
+            </summary>
+        </member>
+        <member name="F:OboutInc.ImageZoom.DisplayStyle.ListView">
+            <summary>
+            Listview - rendered as ul-li
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.Enums.ImageZoomPositions">
+            <summary>
+            Big image position
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.Handlers.ImageZoomHandler">
+            <summary>
+            Used to load image when Rendering mode is set to HttpHandler
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.Enums.ControlerPosition">
+            <summary>
+            position the pager elements and other controls
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.Enums.ImageZoomEffects">
+            <summary>
+            Imagezoom Effects
+            </summary>
+        </member>
+        <member name="T:OboutInc.ImageZoom.Encryption.Encryption">
+            <summary>
+            Used for image url encription
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.Encryption.Encryption.Base64Encode(System.String)">
+            <summary>
+            64 bit encoder
+            </summary>
+            <param name="sString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.ImageZoom.Encryption.Encryption.Base64Decode(System.String)">
+            <summary>
+            64 bit decoder
+            </summary>
+            <param name="sBase64String"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OboutInc.ImageZoom.ImageZoomImageFactory">
+            <summary>
+            Manages all the image features
+            </summary>
+        </member>
+        <member name="M:OboutInc.ImageZoom.ImageZoomImageFactory.Draw">
+            <summary>
+            Draws image
+            </summary>
+        </member>
+    </members>
+</doc>
