@@ -1,8 +1,0 @@
-﻿<%@ Master Language="C#" MasterPageFile="~/Materiales/MasterPage/Principal.Master" AutoEventWireup="true" CodeBehind="Requisiciones.master.cs" Inherits="Recursos_Materiales.Requisiciones.Requisiciones" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Contenedor" runat="server">
-    <asp:ContentPlaceHolder ID="Contenedor2" runat="server">
-
-    </asp:ContentPlaceHolder>
-</asp:Content>
