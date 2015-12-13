@@ -1,3 +1,4 @@
+--modificado por daniel --
 --Crear Base de datos SARI_BD--
 create database SARI_BD;
 go
@@ -51,15 +52,15 @@ create table More_Info(
 id_MoreInfo int identity,
 Idiomas varchar(255),
 Herra_Ofi varchar(255), --Herramientas de Oficina
-Herra_Info varchar(255), --Herramientas Inform·ticas.
+Herra_Info varchar(255), --Herramientas Inform√°ticas.
 Cursos varchar(255),
-Cono_Tec varchar(255), --Conocimientos de TecnologÌa.
+Cono_Tec varchar(255), --Conocimientos de Tecnolog√≠a.
 Cono_Fina varchar(255), --Conocimientos Financieros.
 primary key (id_MoreInfo)
 );
 go
 --Crear Tabla Candidatos--
-create table Candidatos( --En esta tabla, se ingresar·n los datos pincipales del candidato.
+create table Candidatos( --En esta tabla, se ingresar√°n los datos pincipales del candidato.
 id_Candidato int identity,
 Nacionalidad varchar(50),
 E_Mail varchar(100),
@@ -78,13 +79,13 @@ id_Persona int,
 primary key (id_Candidato),
 foreign key (id_PrefLab) references Preferencias_Laborales (id_PrefLab) --Se hace un foreign key a la tabla Preferencias_Laborales, ya que el Candidato solo puede tener una sola preferencia.
 on delete set null --Cuando el registro al que hace referencia es borrado, el campo de esta tabla se deja en NULL.
-on update cascade, --Cuando se haga alguna actualizaciÛn al registro al que hace referencia, este tambien se actualiza.
-foreign key (id_MoreInfo) references More_Info (id_MoreInfo)--Se hace un foreign key a la tabla More_Info, ya que el Candidato solo puede tener una referencia a mas informaciÛn.
+on update cascade, --Cuando se haga alguna actualizaci√≥n al registro al que hace referencia, este tambien se actualiza.
+foreign key (id_MoreInfo) references More_Info (id_MoreInfo)--Se hace un foreign key a la tabla More_Info, ya que el Candidato solo puede tener una referencia a mas informaci√≥n.
 on delete set null --Cuando el registro al que hace referencia es borrado, el campo de esta tabla se deja en NULL.
-on update cascade, --Cuando se haga alguna actualizaciÛn al registro al que hace referencia, este tambien se actualiza.
+on update cascade, --Cuando se haga alguna actualizaci√≥n al registro al que hace referencia, este tambien se actualiza.
 foreign key (id_Persona) references Persona (idpersona)--Se hace un foreign key a la tabla Direcciones, ya que el Candidato solo puede tener una sola direccion.
 on delete set null --Cuando el registro de Direccion al que hace referencia es borrado, el campo id_Direccion de esta tabla se deja en NULL.
-on update cascade, --Cuando se haga alguna actualizaciÛn al registro de Direccion al que hace referencia, este tambien se actualiza.
+on update cascade, --Cuando se haga alguna actualizaci√≥n al registro de Direccion al que hace referencia, este tambien se actualiza.
 );
 go
 --Crear Tabla Historia_Laboral--
@@ -94,8 +95,8 @@ Puesto varchar(50),
 Empresa varchar(50),
 Fecha_I date, --Fecha de ingreso.
 Fecha_T date, --Fecha de Termino.
-Area varchar(50), --AdministraciÛn, Compras, etc.
-Industria varchar(50), --Arquitectura, Comercio, DiseÒo, etc.
+Area varchar(50), --Administraci√≥n, Compras, etc.
+Industria varchar(50), --Arquitectura, Comercio, Dise√±o, etc.
 Sueldo money,
 Motivo_Salida varchar(255),
 Jefe_In varchar(50),
@@ -148,14 +149,14 @@ Capacidad int, --Esto es la habilidad o capacidad que se evalua en la pregunta.
 --2 Capacidad de decicion en las relaciones humanas
 --3 Capacidad de evaluacion de problemas interpersonales
 --4 Habilidad para establecer relaciones interpersonales.
---5 Sentido com˙n y tacto en las relaciones interpersonales.
-Valor int, --El valor o porcentaje que se le dar· a la respuesta.
+--5 Sentido com√∫n y tacto en las relaciones interpersonales.
+Valor int, --El valor o porcentaje que se le dar√° a la respuesta.
 primary key (id_Pregunta)
 );
 go
 --Crear Tabla Respuestas_Test--
 create table Respuestas_Test(
-Inciso int, --Inciso que tendr· (0,1,2,3)
+Inciso int, --Inciso que tendr√° (0,1,2,3)
 Pregunta int, --A que pregunta pertenece.
 Respuesta varchar(255), --Respuesta de la pregunta.
 foreign key (Pregunta) references Preguntas_Test(id_Pregunta)
