@@ -74,6 +74,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -180,6 +181,7 @@
     <Content Include="RH2\Capsule152\Referencias.aspx" />
     <Content Include="RH2\Capsule152\Registro.aspx" />
     <Content Include="RH2\Capsule152\Test_Psic.aspx" />
+    <Content Include="RH2\Capsule152\Test_Psic_Show.aspx" />
     <Content Include="RH2\Default.aspx" />
     <Content Include="RH2\JQuery\bootstrap.js" />
     <Content Include="RH2\JQuery\bootstrap.min.js" />
@@ -598,6 +600,13 @@
     </Compile>
     <Compile Include="RH2\Capsule152\Test_Psic.aspx.designer.cs">
       <DependentUpon>Test_Psic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Test_Psic_Show.aspx.cs">
+      <DependentUpon>Test_Psic_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Test_Psic_Show.aspx.designer.cs">
+      <DependentUpon>Test_Psic_Show.aspx</DependentUpon>
     </Compile>
     <Compile Include="RH2\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

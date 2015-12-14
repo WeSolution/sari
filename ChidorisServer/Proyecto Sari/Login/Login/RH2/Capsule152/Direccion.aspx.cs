@@ -32,9 +32,10 @@ namespace Recursos_Humanos.Capsule152
         protected void Button1_Click(object sender, EventArgs e)
         {
             int IDCandidato = Convert.ToInt32(Request.QueryString["IDCandidato"]);
+            int IDPersona = Convert.ToInt32(Request.QueryString["IDPersona"]);
+            int IDDireccion = 0;
             if (TBCalle.Text == "" || TBNoInt.Text == "" || TBColonia.Text == "" ||
-                TBCP.Text == "" || TBCiudad.Text == "" || TBProvin.Text == "" ||
-                TBMuni.Text == "" || DDLPais.SelectedIndex == -1)
+                TBCP.Text == "" || TBCiudad.Text == "" || DDLPais.SelectedIndex == -1)
             {
                 String Mensaje = "Algún campo (Excepto el numero exterior) dejaste en blanco.";
                 MessageBox.Show(this, Mensaje);
@@ -46,22 +47,21 @@ namespace Recursos_Humanos.Capsule152
                     SqlConnection cn = S.Conect(ref men);
 
                     SqlCommand comando = new SqlCommand();
-                    SqlParameter Calle = new SqlParameter("@Calle", SqlDbType.VarChar);
-                    SqlParameter Num_Int = new SqlParameter("@Num_Int", SqlDbType.Int);
-                    SqlParameter Num_Ext = new SqlParameter("@Num_Ext", SqlDbType.Int);
-                    SqlParameter Colonia = new SqlParameter("@Colonia", SqlDbType.VarChar);
-                    SqlParameter CP = new SqlParameter("@CP", SqlDbType.Int);
-                    SqlParameter Ciudad = new SqlParameter("@Ciudad", SqlDbType.VarChar);
-                    SqlParameter Provincia = new SqlParameter("@Provincia", SqlDbType.VarChar);
-                    SqlParameter Municipio = new SqlParameter("@Municipio", SqlDbType.VarChar);
-                    SqlParameter Pais = new SqlParameter("@Pais", SqlDbType.VarChar);
-                    SqlParameter Candidato = new SqlParameter("@IDCandidato", SqlDbType.Int);
+                    SqlParameter Calle = new SqlParameter("@calle", SqlDbType.VarChar);
+                    SqlParameter Num_Int = new SqlParameter("@numerointerior", SqlDbType.Int);
+                    SqlParameter Num_Ext = new SqlParameter("@numeroexterior", SqlDbType.Int);
+                    SqlParameter Colonia = new SqlParameter("@colonia", SqlDbType.VarChar);
+                    SqlParameter CP = new SqlParameter("@codigopostal", SqlDbType.Int);
+                    SqlParameter Ciudad = new SqlParameter("@estado", SqlDbType.VarChar);
+                    SqlParameter Pais = new SqlParameter("@pais", SqlDbType.VarChar);
+                    SqlParameter idnuevo = new SqlParameter("@return", SqlDbType.Int);
+                    idnuevo.Direction = ParameterDirection.Output;
 
                     if (cn != null)
                     {
                         comando.Connection = cn;
                         comando.CommandType = CommandType.StoredProcedure;
-                        comando.CommandText = "InsertarDireccion";
+                        comando.CommandText = "insertarDireccion";
 
                         Calle.Value = TBCalle.Text;
                         Num_Int.Value = TBNoInt.Text;
@@ -69,10 +69,8 @@ namespace Recursos_Humanos.Capsule152
                         Colonia.Value = TBColonia.Text;
                         CP.Value = TBCP.Text;
                         Ciudad.Value = TBCiudad.Text;
-                        Provincia.Value = TBProvin.Text;
-                        Municipio.Value = TBMuni.Text;
                         Pais.Value = DDLPais.SelectedValue;
-                        Candidato.Value = IDCandidato;
+                        idnuevo.Value = 0;
 
                         comando.Parameters.Add(Calle);
                         comando.Parameters.Add(Num_Int);
@@ -80,14 +78,15 @@ namespace Recursos_Humanos.Capsule152
                         comando.Parameters.Add(Colonia);
                         comando.Parameters.Add(CP);
                         comando.Parameters.Add(Ciudad);
-                        comando.Parameters.Add(Provincia);
-                        comando.Parameters.Add(Municipio);
                         comando.Parameters.Add(Pais);
-                        comando.Parameters.Add(Candidato);
+                        comando.Parameters.Add(idnuevo);
 
                         try
                         {
                             comando.ExecuteNonQuery();
+                            IDDireccion = (int)idnuevo.Value;
+                            String sentencia = "UPDATE Persona SET Persona.fkdireccion = " + IDDireccion 
+                                + " WHERE idpersona = " + IDPersona + ";";
                         }
                         catch (Exception w)
                         {

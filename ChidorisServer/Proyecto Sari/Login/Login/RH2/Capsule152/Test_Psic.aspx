@@ -200,7 +200,7 @@
                 <img src="../loading_spinner.gif" id="procesando_gif" style="text-align:center" />
             </span>
             
-            <asp:Button ID="BTNFinish" runat="server" Height="55px" OnClick="BTNFinish_Click" Text="Terminar" Width="867px"  class="btn btn-lg btn-primary btn-block"/>
+            <asp:Button ID="BTNFinish" runat="server" Height="55px" OnClick="BTNFinish_Click" Text="Terminar y Ver Resultados" Width="867px"  class="btn btn-lg btn-primary btn-block"/>
 
     </div>
 </asp:Content>

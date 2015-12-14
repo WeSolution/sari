@@ -32,14 +32,6 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TBCiudad" runat="server" class="form-control" Width="371px"></asp:TextBox>
             <p></p>
-            <asp:Label ID="LBProvin" runat="server" Text="Provincia"></asp:Label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TBProvin" runat="server" Width="371px" class="form-control"></asp:TextBox>
-            <p></p>
-            <asp:Label ID="LBMuni" runat="server" Text="Municipio"  ></asp:Label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TBMuni" runat="server" Width="371px" class="form-control"></asp:TextBox>
-            <p></p>
             <asp:Label ID="LBPais" runat="server" Text="País"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:DropDownList ID="DDLPais"   runat="server" class="form-control" Width="219px">
         </asp:DropDownList>

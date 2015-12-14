@@ -121,42 +121,6 @@ namespace Recursos_Humanos.Capsule152 {
         protected global::System.Web.UI.WebControls.TextBox TBCiudad;
         
         /// <summary>
-        /// Control LBProvin.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBProvin;
-        
-        /// <summary>
-        /// Control TBProvin.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBProvin;
-        
-        /// <summary>
-        /// Control LBMuni.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBMuni;
-        
-        /// <summary>
-        /// Control TBMuni.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBMuni;
-        
-        /// <summary>
         /// Control LBPais.
         /// </summary>
         /// <remarks>

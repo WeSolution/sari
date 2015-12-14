@@ -80,3 +80,16 @@ F:\ELCHIDORIS\ChidorisServer\Proyecto Sari\Login\Login\bin\obout_Interface.xml
 F:\ELCHIDORIS\ChidorisServer\Proyecto Sari\Login\Login\obj\Debug\Login.csprojResolveAssemblyReference.cache
 F:\ELCHIDORIS\ChidorisServer\Proyecto Sari\Login\Login\obj\Debug\Login.dll
 F:\ELCHIDORIS\ChidorisServer\Proyecto Sari\Login\Login\obj\Debug\Login.pdb
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\Login.dll.config
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\Login.dll
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\Login.pdb
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\ClassLibrary1.dll
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\itextsharp.dll
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\Obout.Ajax.UI.xml
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\obout_Calendar2_Net.xml
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\obout_Grid_NET.xml
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\obout_ImageZoom_NET.xml
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\bin\obout_Interface.xml
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\obj\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\obj\Debug\Login.dll
+C:\Users\Carlos Lara\Source\Repos\sari\ChidorisServer\Proyecto Sari\Login\Login\obj\Debug\Login.pdb

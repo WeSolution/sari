@@ -11,7 +11,7 @@ namespace Recursos_Humanos.Capsule152
 {
     public class SQLServer
     {
-        public string cadConexion = System.Configuration.ConfigurationManager.ConnectionStrings[4].ToString();
+        public string cadConexion = System.Configuration.ConfigurationManager.ConnectionStrings["Login.Properties.Settings.RH2LocalPruebas"].ToString();
 
         public SqlConnection Conect(ref String m)
         {

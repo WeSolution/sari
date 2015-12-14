@@ -10,12 +10,12 @@ namespace Recursos_Humanos.Capsule152
     {
         public static void Show(Page Page, String Message)
         {
-            //Page.ClientScript.RegisterStartupScript(
-            // Page.GetType(),
-            //"MessageBox",
-            //"<script language='javascript'>alert('" + Message + "');</script>"
-            // );
-            Page.Response.Write("<script>alert('" + Message + "');</script>");
+            Page.ClientScript.RegisterStartupScript(
+             Page.GetType(),
+            "MessageBox",
+            "<script lang='javascript'>alert('" + Message + "');</script>"
+             );
+            //Page.Response.Write("<script>alert('" + Message + "');</script>");
         }
     }
 }

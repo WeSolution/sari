@@ -134,6 +134,7 @@ namespace Recursos_Humanos.Capsule152
 
         protected void BTNFinish_Click(object sender, EventArgs e)
         {
+            int IDCandidato = Convert.ToInt32(Request.QueryString["IDCandidato"]);
             int Valor1 = 0;
             int Valor2 = 0;
             int Valor3 = 0;
@@ -300,8 +301,7 @@ namespace Recursos_Humanos.Capsule152
                 "Sentido común y tacto en las relaciones interpersonales " + Valor5 + "% /n";
             MessageBox.Show(this, mensaje);
             Update(Valor1, Valor2, Valor3, Valor4, Valor5);
-            MessageBox.Show(this, "Gracias por participar! \n Nosotros le llamamos. :D");
-            Response.Redirect("/RH2/Default.aspx");
+            Response.Redirect("/RH2/Capsule152/Test_Psic_Show.aspx?IDCandidato=" + IDCandidato);
         }
     }
 }
