@@ -9,7 +9,7 @@ namespace SARI.MVC
 {
     public class Modelo
     {
-        public string cadConexion =System.Configuration.ConfigurationManager.ConnectionStrings[0].ToString();
+        public string cadConexion =System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
         private SqlDataReader result;
         public int AlmacenaPersona(Persona p) 
         {
