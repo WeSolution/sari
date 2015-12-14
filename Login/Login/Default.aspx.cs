@@ -15,8 +15,7 @@ namespace Login
         
         DataSet almacen = new DataSet();
         string usuario = "";
-        string pass = "";
-       // string area = "";
+        string pass = ""; 
         string privilegios = "";
         string id_usuario = "";
 
