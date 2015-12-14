@@ -26,8 +26,7 @@ namespace Login
         }
 
         protected void btningresar_Click(object sender, EventArgs e)
-        {
-            /*
+        { 
             registerclass obj1 = new registerclass();
             obj1.cadena = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
            
@@ -74,7 +73,7 @@ namespace Login
 
                     }
 
-                }*/
+                } 
         }
 
         protected void LBTNRH2_Click(object sender, EventArgs e)
