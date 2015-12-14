@@ -72,8 +72,7 @@ namespace Login
                     {
                         lblerror.Text = "¡Error de Inicio de Sesion los datos porporcionados son incorrectos!";
 
-                    }
-                    /**/
+                    } 
                 } 
         }
 
