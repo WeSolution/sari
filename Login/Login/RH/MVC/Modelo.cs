@@ -14,7 +14,7 @@ namespace SARI.MVC
         public int AlmacenaPersona(Persona p) 
         {
             SqlParameterOut r = new SqlParameterOut();
-            new SQL(cadConexion).ProcedimientoAl("insertaPersona", new SqlParameter("@nombre", p.Nombre), new SqlParameter("@apaterno", p.ApPaterno), new SqlParameter("@amaterno", p.ApMaterno), new SqlParameter("@curp", p.Curp), new SqlParameter("@rfc", p.RFC), new SqlParameter("@fechaNac", p.FechaNac.ToShortDateString()), new SqlParameter("@sexo", p.Sexo), new SqlParameter("@estadocivil", p.EstCivil), new SqlParameter("@fkdireccion", p.idDir), r.getSqlParameterOut("@return"));
+            new SQL(cadConexion).ProcedimientoAl("insertaPersona", new SqlParameter("@nombre", p.Nombre), new SqlParameter("@apaterno", p.ApPaterno), new SqlParameter("@amaterno", p.ApMaterno), new SqlParameter("@curp", p.Curp), new SqlParameter("@rfc", p.RFC), new SqlParameter("@fechaNac", p.FechaNac.ToShortDateString()), new SqlParameter("@sexo", p.Sexo), new SqlParameter("@estadocivil", p.EstCivil), new SqlParameter("@estatus", p.estatus), new SqlParameter("@fkdireccion", p.idDir), r.getSqlParameterOut("@return"));
             return (int)r.SqlParameterOutput.Value;
         }
         public int AlmacenaDireccion(Direccion d)
