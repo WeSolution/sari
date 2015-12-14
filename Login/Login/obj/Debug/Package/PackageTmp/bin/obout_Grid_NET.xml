@@ -1,0 +1,2375 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>obout_Grid_NET</name>
+    </assembly>
+    <members>
+        <member name="T:Obout.Grid.Design.GridDesigner">
+            <summary> 
+            Extends design-time behavior.
+            </summary>
+        </member>
+        <member name="M:Obout.Grid.Design.GridDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary> 
+            Generates design-time HTML for control.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.AppendTimeStamp">
+            <summary>
+            Gets or sets a value indicating whether a timestamp should be appended to the name of the exported file.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ColumnsToExport">
+            <summary>
+            Gets or sets a value indicating which columns will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.Encoding">
+            <summary>
+            Gets or sets a value indicating the encoding type that will be used for exporting.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportAllPages">
+            <summary>
+            Gets or sets a value indicating whether all the pages from the Grid will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportColumnsFooter">
+            <summary>
+            Gets or sets a value indicating whether the columns footer row will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportDetails">
+            <summary>
+            Gets or sets a value indicating whether the detail grids will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportedFilesLifeTime">
+            <summary>
+            Sets the life time for the exported files
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportedFilesTargetWindow">
+            <summary>
+            The browser window where the exported file should be opened.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportGroupFooter">
+            <summary>
+            Gets or sets a value indicating whether the group footer rows will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportGroupHeader">
+            <summary>
+            Gets or sets a value indicating whether the group header rows will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportHiddenColumns">
+            <summary>
+            Gets or sets a value indicating whether the hidden columns will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.ExportTemplates">
+            <summary>
+            Gets or sets a value indicating whether the templates will be exported.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.FileName">
+            <summary>
+            Gets or sets a value indicating the name of the exported file.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridExportingSettings.KeepColumnSettings">
+            <summary>
+            Gets or sets a value indicating whether the settings of the columns will be kept when exporting.
+            </summary>
+        </member>
+        <member name="T:Obout.Grid.GridRuntimeTemplateEventArgs">
+            <summary>
+            Holds the data for the <see cref="!:GridRuntimeTemplate.CreateTemplate"/> event.
+            </summary>
+        </member>
+        <member name="M:Obout.Grid.GridRuntimeTemplateEventArgs.#ctor(Obout.Grid.TemplateContainer)">
+            <summary>
+            Creates a new instance of the RuntimeTemplateEventArgs class.
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="P:Obout.Grid.GridRuntimeTemplateEventArgs.Container">
+            <summary>
+            The Control into which the template should be instantiated.
+            </summary>
+        </member>
+        <member name="T:Obout.Grid.GridRuntimeTemplateEventHandler">
+            <summary>
+            The signature of a handler of the <see cref="!:GridRuntimeTemplate.CreateTemplate"/> event.
+            </summary>
+        </member>
+        <member name="T:Obout.Grid.InvalidTemplateIDException">
+            <summary>
+            Summary description for InvalidTemplateIDException.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.Width">
+            <summary>
+            Width of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.Align">
+            <summary>
+            Align of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.HeaderAlign">
+            <summary>
+            Align attribute for the header of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.AllowEdit">
+            <summary>
+            Show/Hide the Edit link
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.AllowDelete">
+            <summary>
+            Show/Hide the Delete link
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.HeaderText">
+            <summary>
+            Text used for the header of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.TemplateId">
+            <summary>
+            The id of the template that is used for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.EditTemplateId">
+            <summary>
+            The id of the template that is used for the column in edit mode.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.HeaderTemplateId">
+            <summary>
+            The id of the template that is used for the header of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.FilterTemplateId">
+            <summary>
+            The id of the template that is used for the filter of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.ID">
+            <summary>
+            The index of the column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.Index">
+            <summary>
+            The index of the column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.Wrap">
+            <summary>
+            Enable/disable text wrapping on multiple lines for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.ParseHTML">
+            <summary>
+            Enables/disables html parsing for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.AllowFilter">
+            <summary>
+            Enables/disables filtering for the column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.ShowFilterCriterias">
+            <summary>
+            Show/Hide the Filter Criterias Selector
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.FilterCriteria">
+            <summary>
+            Gets/sets the filter criteria for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.SortOrder">
+            <summary>
+            The SortOrder for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.SortPriority">
+            <summary>
+            The priority of the Column in the sort expression.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.GroupBy">
+            <summary>
+            The GroupBy for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.GroupByPriority">
+            <summary>
+            The priority of the Column in the GroupBy expression.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.AllowGroupBy">
+            <summary>
+            Enables/disables the grouping feature for the column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.AllowSorting">
+            <summary>
+            Gets or sets a value indicating whether sorting is enabled for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.DataFormatString_GroupHeader">
+            <summary>
+            The DataFormatString used for the group header
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.FilterOptions">
+            <summary>
+            Collection of FilterOption objects.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.RealVisible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.ExportAsText">
+            <summary>
+            Gets or sets a value indicating whether the data from the column should be exported as text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Column.TemplateSettings">
+            <summary> 
+            Property used to define the Templates related settings for the Column
+            </summary>
+        </member>
+        <member name="F:Obout.Grid.Design.GridTemplateSettingsSetupControl.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Obout.Grid.Design.GridTemplateSettingsSetupControl.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Obout.Grid.Design.GridTemplateSettingsSetupControl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.ScrollHeight">
+            <summary>
+            The height for the body containing the records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.ScrollWidth">
+            <summary>
+            The width for the body containing the records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.ScrollTop">
+            <summary>
+            The number of pixels that will be used to scroll the Grid vertically.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.ScrollLeft">
+            <summary>
+            The number of pixels that will be used to scroll the Grid horizontally.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.NumberOfFixedColumns">
+            <summary>
+            The number of freezed (fixed) columns.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.FixedColumnsPosition">
+            <summary>
+            The position of the fixed columns (left/right).
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.EnableVirtualScrolling">
+            <summary>
+            Gets or sets a property indicating whether the virtual scrolling feature is enabled.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridScrollingSettings.UsePagingForVirtualScrolling">
+            <summary>
+            Gets or sets a property indicating whether paging will be used for the virtual scrolling feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridFilteringSettings.FilterLinksPosition">
+            <summary>
+            Gets or sets a value indicating the location where the filter links will be displayed.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridFilteringSettings.FilterPosition">
+            <summary>
+            The position of the filter.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridFilteringSettings.InitialState">
+            <summary>
+            The initial state of the filter.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridFilteringSettings.MatchingType">
+            <summary>
+            Indicates the way in which the results are matched against the specified filters.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridMasterDetailSettings.DetailsCountField">
+            <summary>
+            Gets or sets a value indicating the name of the column that stores the number of records for the detail grids.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridMasterDetailSettings.LoadingMode">
+            <summary>
+            The loading mode used to load the detail grids.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridMasterDetailSettings.ShowEmptyDetails">
+            <summary>
+            If set to false, the detail grids that don't contain any records won't be displayed.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridMasterDetailSettings.State">
+            <summary>
+            The initial state for the detail grids.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridAddEditDeleteSettings.AddLinksPosition">
+            <summary>
+            Gets or sets a value indicating the location where the add links will be displayed.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridAddEditDeleteSettings.NewRecordPosition">
+            <summary>
+            Gets or sets a value indicating the location where the new record will be displayed in add mode.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.FilterOptionTemplateSettings.FilterTemplateId">
+            <summary>
+            Template that will be used for the filter when the current option is selected.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.FilterOptionTemplateSettings.FilterControlsIds">
+            <summary>
+            The ids of the controls from the filter template which will be used to filter the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.FilterOptionTemplateSettings.FilterControlsPropertyNames">
+            <summary>
+            The property names of the controls from the filter template which will be used to filter the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.FilterOption.Type">
+            <summary>
+            The type of the filter option.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.FilterOption.IsDefault">
+            <summary>
+            Indicates whether the current filter option is the default one.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.CustomFilterOption.Type">
+            <summary>
+            The type of the filter option.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.CustomFilterOption.TemplateSettings">
+            <summary> 
+            Property used to define the template settings for the FilterOption.
+            </summary>
+        </member>
+        <member name="T:Obout.Grid.RuntimeTemplate">
+            <summary>
+            Generic implementation of ITemplate that simply raises an event when the template needs to be created.
+            </summary>
+        </member>
+        <member name="M:Obout.Grid.RuntimeTemplate.OnCreateTemplate(Obout.Grid.GridRuntimeTemplateEventArgs)">
+            <summary>
+            Raises the CreateTemplate event.
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.RuntimeTemplate.CreateTemplate">
+            <summary>
+            The event that is raised when a template instantiation is required.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.FilterShowButton_TemplateId">
+            <summary>
+            Template for the "Show Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.FilterHideButton_TemplateId">
+            <summary>
+            Template for the "Hide Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.FilterApplyButton_TemplateId">
+            <summary>
+            Template for the "Apply Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.FilterRemoveButton_TemplateId">
+            <summary>
+            Template for the "Remove Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.GroupHeaderTemplateId">
+            <summary>
+            Template that will be used for the group headers.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.ManualPagingTemplateId">
+            <summary>
+            Template for the manual paging section from the footer.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.NewRecord_TemplateId">
+            <summary>
+            Template for the "Add new" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.NewRecord_EditTemplateId">
+            <summary>
+            Template for the \"Save | Cancel\" buttons.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.MultiRecordSaveCancel_TemplateId">
+            <summary>
+            Template for the \"Save All | Cancel All\" buttons.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.RowEditTemplateId">
+            <summary>
+            Template that will be used for the entire row.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplateSettings.HeadingTemplateId">
+            <summary>
+            Gets or sets the ID of the template for the heading section.
+            </summary>
+        </member>
+        <member name="T:Obout.Grid.GridRow">
+            <summary>
+            Represents a table row in a GridView control
+            </summary>
+        </member>
+        <member name="M:Obout.Grid.GridRow.#ctor(System.Int32,System.Int32,Obout.Grid.GridRowType,System.Web.UI.WebControls.DataControlRowState)">
+            <summary>
+            Instantiates and initializes a GridViewRow
+            </summary>
+            <param name="rowIndex">
+            Index of the GridViewRow being created
+            </param>
+            <param name="dataItemIndex">
+            Index of the data item to which the row is bound
+            </param>
+            <param name="rowType">
+            Row type of the GridViewRow being created
+            </param>
+            <param name="rowState">
+            Row state of the GridViewRow being created
+            </param>
+        </member>
+        <member name="P:Obout.Grid.GridRow.DataItem">
+            <summary>
+            Data row to which the row is bound
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridRow.System#Web#UI#IDataItemContainer#DataItemIndex">
+            <summary>
+            Index of the data row to which the table row is bound
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridRow.DataItemIndex">
+            <summary>
+            Index of the data row to which the GridRow is bound
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridRow.RowIndex">
+            <summary>
+            Index of the table row
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridRow.RowState">
+            <summary>
+            State of the row
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridRow.RowType">
+            <summary>
+            Type of the row
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridRow.GroupLevel">
+            <summary>
+            Level of group
+            </summary>
+        </member>
+        <member name="F:Obout.Grid.Design.ColumnTemplateSettingsSetupControl.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Obout.Grid.Design.ColumnTemplateSettingsSetupControl.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Obout.Grid.Design.ColumnTemplateSettingsSetupControl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.ExposeSender">
+            <summary>
+            If set to true, the client-side events will expose a parameter for accessing the grid that raised the event.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientSelect">
+            <summary>
+            Client-side function to be executed before a record is selected.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientDelete">
+            <summary>
+            Client-side function to be executed before a record is deleted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientEdit">
+            <summary>
+            Client-side function to be executed before a record is edited.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientUpdate">
+            <summary>
+            Client-side function to be executed before a record is updated.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientAdd">
+            <summary>
+            Client-side function to be executed before a new record is added.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientInsert">
+            <summary>
+            Client-side function to be executed before a new record is inserted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientSelect">
+            <summary>
+            Client-side function to be executed when a record is selected.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientDelete">
+            <summary>
+            Client-side function to be executed when a record is deleted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientEdit">
+            <summary>
+            Client-side function which is executed when a record is edited.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientUpdate">
+            <summary>
+            Client-side function to be executed when a record is updated.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientAdd">
+            <summary>
+            Client-side function which is executed when a record is put in add mode.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientInsert">
+            <summary>
+            Client-side function to be executed when a new record is inserted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientCancelEdit">
+            <summary>
+            Client-side function which is executed before the editing for a record is canceled.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientCancelEdit">
+            <summary>
+            Client-side function which is executed after the editing for a record is canceled.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnBeforeClientCancelAdd">
+            <summary>
+            Client-side function which is executed before the adding of a new record is canceled.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientCancelAdd">
+            <summary>
+            Client-side function which is executed after the adding of a new record is canceled.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientPopulateControls">
+            <summary>
+            Client-side function which is executed when the controls for adding/editing records are populated with data.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientCallback">
+            <summary>
+            Client-side function to be executed after a callback.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientCallbackError">
+            <summary>
+            Client-side function to be executed when an error appears after a callback.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientDblClick">
+            <summary>
+            Client-side event which fires when a record is double-clicked.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientExportStart">
+            <summary>
+            Client-side event which fires when the grid exporting is started.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnClientExportFinish">
+            <summary>
+            Client-side event which fires when the grid exporting is finished.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnFiltering">
+            <summary>
+            Client-side event which fires before the filters are applied.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridClientSideEvents.OnPopulatingFilterFields">
+            <summary>
+            Client-side event which fires when the filter fields are populated with data.
+            </summary>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnRowCreated(Obout.Grid.GridRowEventArgs)">
+            <summary>
+            Raises the RowCreated event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnRowDataBound(Obout.Grid.GridRowEventArgs)">
+            <summary>
+            Raises the RowDataBound event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnColumnsCreating">
+            <summary>
+            Raises the ColumnsCreating event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnColumnsCreated">
+            <summary>
+            Raises the ColumnsCreated event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnFiltering">
+            <summary>
+            Raises the Filtering event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnDataSourceNeeded">
+            <summary>
+            Raises the DataSourceNeeded event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnTemplatesCreated">
+            <summary>
+            Raises the TemplatesCreated event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.CheckAjaxPageInheritance">
+            <summary>
+            Renders the Detail Grids
+            </summary>
+            <param name="oWriter">
+            The HtmlTextWriter object used to render the detail grids
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnExporting(System.Web.UI.WebControls.Table)">
+            <summary>
+            Raises the Exporting event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnExported(System.Web.UI.WebControls.Table)">
+            <summary>
+            Raises the Exported event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Obout.Grid.Grid.OnRowExported(System.Web.UI.WebControls.TableRow,Obout.Grid.GridRow)">
+            <summary>
+            Raises the RowExported event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:Obout.Grid.Grid.RowCreated">
+            <summary>
+            Event raised after a row is created
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.RowDataBound">
+            <summary>
+            Event raised after data binding
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.ColumnsCreating">
+            <summary>
+            Event raised after the columns are created
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.ColumnsCreated">
+            <summary>
+            Event raised after the columns are created
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.Filtering">
+            <summary>
+            Event raised before the grid is filtered
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.DataSourceNeeded">
+            <summary>
+            Event raised when a data source is needed
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.TemplatesCreated">
+            <summary>
+            Event raised after the columns are created
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowKeyNavigation">
+            <summary>
+            Enables the Key Navigation feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowAddingRecords">
+            <summary>
+            Enable adding new records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowMultiRecordAdding">
+            <summary>
+            Enables/disables the multi-record adding feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowMultiRecordDeleting">
+            <summary>
+            Enables/disables the multi-record deleting feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowMultiRecordEditing">
+            <summary>
+            Enables/disables the multi-record editing feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.EnableTypeValidation">
+            <summary>
+            Enable type validation for the grid - this is used for add/edit actions
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AddEditDeleteSettings">
+            <summary> 
+            Property used to define the add/edit/delete settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FolderStyle">
+            <summary>
+            Path to folder with Grid style.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CssSettings">
+            <summary> 
+            Property used to define the CSS Settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowAlternatingRecords">
+            <summary>
+            Enables/disables alternating records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSContainer">
+            <summary>
+            CSS class for the grid container
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSHeaderContainer">
+            <summary>
+            CSS class for the DIV containing the grid header
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSHeader">
+            <summary>
+            CSS class for the grid header
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSColumnHeader">
+            <summary>
+            CSS class for the header of each column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSColumnHeaderArrow">
+            <summary>
+            CSS class for the up/down arrows (from the header)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSBodyHeader">
+            <summary>
+            CSS class for the small horizontal bar at the top of the grid's body
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSScrollingSpacer">
+            <summary>
+            CSS class for the small cell above the vertical scrollbar
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSResizingTooltip">
+            <summary>
+            CSS Class for the tooltip that appears when columns are resized
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupingArea">
+            <summary>
+            CSS Class for the area where columns are dropped in order to group them
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupingAreaDefaultColumn">
+            <summary>
+            CSS Class for the default column which appears in the grouping area
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupingAreaColumn">
+            <summary>
+            CSS Class for the columns in the grouping area.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupingAreaColumnSpacer">
+            <summary>
+            CSS Class for the spacer that is placed between the columns moved in the grouping area.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupDraggingColumn">
+            <summary>
+            CSS Class for the moving column that is dragged with the mouse for grouping.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSHeaderColumnHighlightedWhenGrouping">
+            <summary>
+            CSS Class that is used to highlight the column from the header when it's dragged with the mouse.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupingAreaColumnHighlightedWhenDragging">
+            <summary>
+            CSS Class that is used to highlight the column from the grouping area when it's dragged with the mouse.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupingAreaTopArrow">
+            <summary>
+            CSS Class for the top arrow which indicates the destination of the moving column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSGroupingAreaBottomArrow">
+            <summary>
+            CSS Class for the bottom arrow which indicates the destination of the moving column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSBodyContainer">
+            <summary>
+            CSS class for the DIV containing the body of the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSBody">
+            <summary>
+            CSS class for the body of the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRecordGroupHeader">
+            <summary>
+            CSS class for the header of a group of records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRecordGroupHeaderCell">
+            <summary>
+            CSS class for the cell inside header of a group of records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRecordGroupHeaderButton">
+            <summary>
+            CSS class for the +/- image from the header of a group of records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRecord">
+            <summary>
+            CSS class for the records of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRecordAlternate">
+            <summary>
+            CSS class for the alternate records of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRecordSelected">
+            <summary>
+            CSS class for the selected records of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRecordHover">
+            <summary>
+            The background of the records when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSCellPadding">
+            <summary>
+            CSS Class for the small div used as left padding for the cells
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSCell">
+            <summary>
+            CSS class for the cells of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSSelectionArea">
+            <summary>
+            CSS class for the selection area that appears when dragging with the mouse for selecting records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSActionLink">
+            <summary>
+            CSS class for the add/edit/delete/cancel/update links
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSEditControl">
+            <summary>
+            CSS class for the default controls used in the templates for edit
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSLoadingMessage">
+            <summary>
+            CSS class for loading message that is displayed when the grid loads data.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSResizeLines">
+            <summary>
+            CSS class for the resizing vertical bars.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSNoRecordsMessage">
+            <summary>
+            CSS class for the cell containing the message displayed when the grid has no records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSRowEditTemplate">
+            <summary>
+            CSS class for the row edit template
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSCellTemporaryAdded">
+            <summary>
+            CSS class for the temporary added records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSCellTemporaryEdited">
+            <summary>
+            CSS class for the temporary edited records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSCellTemporaryDeleted">
+            <summary>
+            CSS class for the temporary deleted records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSBodyFooter">
+            <summary>
+            CSS class for the small horizontal bar at the bottom of the grid's body
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFooter">
+            <summary>
+            CSS class for the footer of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFooterPageNavContainer">
+            <summary>
+            CSS class for the container of the pagination/navigation buttons
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSPageSizeText">
+            <summary>
+            CSS class for the text near the page size selector.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSPageSizeSelector">
+            <summary>
+            CSS class for the page size selector
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSActionLinkFooter">
+            <summary>
+            CSS class for the add/save/cancel links from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFooterRecordsPages">
+            <summary>
+            CSS class for the "Records: ... Pages: ..." text from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSNavigationImage">
+            <summary>
+            CSS class for the navigation buttons inside the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSNavigationLink">
+            <summary>
+            CSS class for the paging links from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSNavigationText">
+            <summary>
+            CSS class for the selected page from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSNavigationSeparator">
+            <summary>
+            CSS class for the pages separator from the footer.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFilterCell">
+            <summary>
+            CSS class for the cells of the filter.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFilterCriteriaTextbox">
+            <summary>
+            CSS class for the textbox which contains the filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFilterCriteriasButton">
+            <summary>
+            CSS class for the button that opens the filter criterias selector.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFilterScrollingSpacer">
+            <summary>
+            CSS class for the small cell of the filter under the vertical scrollbar.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFilterCriteriasContainer">
+            <summary>
+            CSS class for the container of the filter criterias.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFilterCriteria">
+            <summary>
+            CSS class for the filter criterias.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFilterCriteriaHover">
+            <summary>
+            CSS class for the filter criterias.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSExportTableStyle">
+            <summary>
+            Style for the table with data from the exported file (Excel / Word)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSExportHeaderCellStyle">
+            <summary>
+            Style for the header cells from the exported file (Excel / Word)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSExportCellStyle">
+            <summary>
+            Style for the cells from the exported file (Excel / Word)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CSSFolderImages">
+            <summary>
+            Path to folder with images
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ClientSideEvents">
+            <summary> 
+            Property used to define the Client-Side Events for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnBeforeClientDelete">
+            <summary>
+            Client-side function to be executed before a record is deleted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnBeforeClientUpdate">
+            <summary>
+            Client-side function to be executed before a record is updated.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnBeforeClientInsert">
+            <summary>
+            Client-side function to be executed before a new record is inserted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnClientSelect">
+            <summary>
+            Client-side function to be executed when a record is selected.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnClientDelete">
+            <summary>
+            Client-side function to be executed when a record is deleted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnClientUpdate">
+            <summary>
+            Client-side function to be executed when a record is updated.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnClientInsert">
+            <summary>
+            Client-side function to be executed when a new record is inserted.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnClientCallback">
+            <summary>
+            Client-side function to be executed after a callback.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.OnClientCallbackError">
+            <summary>
+            Client-side function to be executed when an error appears after a callback.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowColumnReordering">
+            <summary>
+            Gets or sets a value indicating whether the column reordering feature is enabled.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowColumnResizing">
+            <summary>
+            Enable column resizing.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AutoGenerateColumns">
+            <summary>
+            Enable/disable auto generation of columns.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.Columns">
+            <summary>
+            A collection containing all columns from the grid.
+            <remarks>
+            Each column is of type Column.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowTooltipOnResize">
+            <summary>
+            Show/hide the tooltip that appears when columns are resized
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowDataAccessOnServer">
+            <summary>
+            If true, the data from the grid can be accessed on the server-side.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowGrouping">
+            <summary>
+            Enables the Grouping feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.GroupBy">
+            <summary>
+            Sets the expression for the Grouping feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowCollapsedGroups">
+            <summary>
+            If true, the groups will initially be collapsed.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowGroupsInfo">
+            <summary>
+            If true, the groups will have additional information about the records in the header of the group.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowMultiPageGroupsInfo">
+            <summary>
+            If true, the groups that appear on multiple pages will have additional information about the records in the header of the group.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowGroupFooter">
+            <summary>
+            If true, a footer row will be added at the bottom of each group.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.HideColumnsWhenGrouping">
+            <summary>
+            If true, the columns that are used for grouping will be hidden.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.GroupingSettings">
+            <summary> 
+            Property used to define the grouping settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.DetailGrids">
+            <summary>
+            Colection of DetailGrid controls.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.MasterDetailSettings">
+            <summary> 
+            Defines the settings for the master/detail feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowHeader">
+            <summary>
+            Show the header of the grid.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowFooter">
+            <summary>
+            Show the footer of the grid.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowColumnsFooter">
+            <summary>
+            Show the a footer cell for each column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FolderLocalization">
+            <summary>
+            Path to folder with xml files for localization
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.Language">
+            <summary>
+            Name of the used language
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.LocalizationSettings">
+            <summary> 
+            Property used to define the Localization Settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.PageSize">
+            <summary>
+            Number of records per page.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CurrentPageIndex">
+            <summary>
+            The index of the current page.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.PageSizeOptions">
+            <summary>
+            The options for the PageSize drop-down list.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowPageSizeSelection">
+            <summary>
+            Show/Hide the Page Size Selector
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowPaging">
+            <summary>
+            Show/Hide the buttons for changing the page
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.NumberOfPagesShownInFooter">
+            <summary>
+            Sets the number of pages displayed in the footer.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowTotalNumberOfPages">
+            <summary>
+            If true, the total number of pages will be shown in the footer.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowManualPaging">
+            <summary>
+            If true, the user will be able to navigate to any page by specifying its number in a textbox.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.TotalRowCount">
+            <summary>
+            Gets or sets a value indicating the total number of records from the Grid.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.PagingSettings">
+            <summary> 
+            Property used to define the paging settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ScrollingSettings">
+            <summary> 
+            Property used to define the scrolling settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ScrollHeight">
+            <summary>
+            The height for the body containing the records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ScrollWidth">
+            <summary>
+            The width for the body containing the records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ScrollTop">
+            <summary>
+            The number of pixels that will be used to scroll the Grid vertically.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ScrollLeft">
+            <summary>
+            The number of pixels that will be used to scroll the Grid horizontally.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowRecordSelection">
+            <summary>
+            If set to true, records will be selectable
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowMultiRecordSelection">
+            <summary>
+            If set to true, records will be selectable using CTRL+Click or drag and drop
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.KeepSelectedRecords">
+            <summary>
+            If set to true, the selected records will keep their state through callbacks/postbacks
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AutoPostBackOnSelect">
+            <summary>
+            If true, the page will be posted back to the server when a record from the Grid is selected
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.CallbackMode">
+            <summary>
+            Enables/disables the callback mode
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.EnableRecordHover">
+            <summary>
+            If set to true, the records will have an hover effect when the mouse is over the record.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.GenerateRecordIds">
+            <summary>
+            If set to true, the grid will generate IDs for the TR elements that contain the records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.Serialize">
+            <summary>
+            Enables DataSource serialization into ViewState
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ShowLoadingMessage">
+            <summary>
+            Enables/disables the displaying of the Loading message.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowSorting">
+            <summary>
+            Enable the sorting feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.SortExpression">
+            <summary>
+            The sorting expression.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.SortOrder">
+            <summary>
+            The sorting order: asc/desc.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.Templates">
+            <summary>
+            A collection containing all templates for the gird.
+            <remarks>
+            Each template is of type ITemplate.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.TemplateSettings">
+            <summary> 
+            Property used to define the template settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FilterShowButton_TemplateId">
+            <summary>
+            Template for the "Show Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FilterHideButton_TemplateId">
+            <summary>
+            Template for the "Hide Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FilterApplyButton_TemplateId">
+            <summary>
+            Template for the "Apply Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FilterRemoveButton_TemplateId">
+            <summary>
+            Template for the "Remove Filter" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ManualPagingTemplateId">
+            <summary>
+            Template for the manual paging section from the footer.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.NewRecord_TemplateId">
+            <summary>
+            Template for the "Add new" button.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.NewRecord_EditTemplateId">
+            <summary>
+            Template for the \"Save | Cancel\" buttons.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.MultiRecordSaveCancel_TemplateId">
+            <summary>
+            Template for the \"Save All | Cancel All\" buttons.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.RowEditTemplateId">
+            <summary>
+            Template that will be used for the entire row.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FolderScript">
+            <summary>
+            Path to Grid javascript file.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.Rows">
+            <summary>
+            Collection of GridRow controls where each control represents
+            a table row
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ExportingSettings">
+            <summary> 
+            Property used to define the exporting settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FolderExports">
+            <summary>
+            The name of the folder where the exported Excel/Word files will be written
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ExportedFilesLifeTime">
+            <summary>
+            Sets the life time for the exported files
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.ExportedFilesTargetWindow">
+            <summary>
+            The browser window where the exported file should be opened.
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.Exporting">
+            <summary>
+            Event raised before the grid is exported
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.Exported">
+            <summary>
+            Event raised when the grid is exported
+            </summary>
+        </member>
+        <member name="E:Obout.Grid.Grid.RowExported">
+            <summary>
+            Event raised when a row is exported
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FilteringSettings">
+            <summary> 
+            Property used to define the filtering settings for the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.AllowFiltering">
+            <summary>
+            Enables/disables the Filtering feature.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FilterExpression">
+            <summary>
+            The expression that will be used for filtering.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.EmbedFilterInSortExpression">
+            <summary>
+            If true, the filtering expression will be embedded into the sort expression passed to DataSourceControls.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.Grid.FilterType">
+            <summary>
+            The type of filter to be used.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.CheckBoxSelectColumn.ShowHeaderCheckBox">
+            <summary>
+            Gets or sets a value indicating whether the checkbox for selecting / deselecting all records will be displayed in the header of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.CheckBoxSelectColumn.ControlType">
+            <summary>
+            Gets or sets a value indicating the type of the control used by the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplate.ControlID">
+            <summary>
+            The ID of the control to be used
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplate.ControlPropertyName">
+            <summary>
+            The name of the property of the control used to update the database
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridTemplate.UseQuotes">
+            <summary>
+            If true, the value will be surrounded by double quotes
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridGroupingSettings.AllowChanges">
+            <summary>
+            Gets or sets a value indicating whether end users will be allowed to change the initial grouping.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.CheckBoxColumn.ControlType">
+            <summary>
+            Gets or sets a value indicating the type of the control used by the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.AddLink">
+            <summary>
+            The text for the "Add New" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.EditLink">
+            <summary>
+            The text for the "Edit" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.DeleteLink">
+            <summary>
+            The text for the "Delete" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.UpdateLink">
+            <summary>
+            The text for the "Update" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.CancelLink">
+            <summary>
+            The text for the "Cancel" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.SaveLink">
+            <summary>
+            The text for the "Save" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.SaveAllLink">
+            <summary>
+            The text for the "Save All" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.CancelAllLink">
+            <summary>
+            The text for the "Cancel All" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.RemoveLink">
+            <summary>
+            The text for the "Remove" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.ModifyLink">
+            <summary>
+            The text for the "Modify" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.UndeleteLink">
+            <summary>
+            The text for the "Undelete" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.LoadingText">
+            <summary>
+            The text for the "Loading..." text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.NoRecordsText">
+            <summary>
+            The text for the "There are no records available." text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.ResizingTooltipWidth">
+            <summary>
+            The text for the "Width:" text from the resizing tooltip.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.ResizingTooltipPixels">
+            <summary>
+            The text for the "pixels" text from the resizing tooltip.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.TypeValidationError">
+            <summary>
+            The text for type validation error.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.MaxLengthValidationError">
+            <summary>
+            The text for max length validation error.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Filter_ShowLink">
+            <summary>
+            The text for the "Show Filter" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Filter_HideLink">
+            <summary>
+            The text for the "Hide Filter" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Filter_ApplyLink">
+            <summary>
+            The text for the "Apply Filter" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Filter_RemoveLink">
+            <summary>
+            The text for the "Remove Filter" link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_NoFilter">
+            <summary>
+            The text for the "No Filter" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_Contains">
+            <summary>
+            The text for the "Contains" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_DoesNotContain">
+            <summary>
+            The text for the "Does Not Contain" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_StartsWith">
+            <summary>
+            The text for the "Starts With" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_EndsWith">
+            <summary>
+            The text for the "Ends With" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_EqualTo">
+            <summary>
+            The text for the "Equal To" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_NotEqualTo">
+            <summary>
+            The text for the "Not Equal To" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_SmallerThan">
+            <summary>
+            The text for the "Smaller Than" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_GreaterThan">
+            <summary>
+            The text for the "Greater Than" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_SmallerThanOrEqualTo">
+            <summary>
+            The text for the "Smaller Than Or Equal To" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_GreaterThanOrEqualTo">
+            <summary>
+            The text for the "Greater Than Or Equal To" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_IsNull">
+            <summary>
+            The text for the "Is Null" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_IsNotNull">
+            <summary>
+            The text for the "Is Not Null" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_IsEmpty">
+            <summary>
+            The text for the "Is Empty" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.FilterCriteria_IsNotEmpty">
+            <summary>
+            The text for the "Is Not Empty" filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Grouping_GroupingAreaText">
+            <summary>
+            The text for the grouping area.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Grouping_GroupInformationCount">
+            <summary>
+            The text for group information.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Grouping_GroupInformationCountSingle">
+            <summary>
+            The text for group information, when the group contains a single record.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Grouping_GroupInformationNextPage">
+            <summary>
+            The text for group information about the records on the next page.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Grouping_GroupInformationPreviousPage">
+            <summary>
+            The text for group information about the records on the previous page.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Grouping_GroupInformationPreviousNextPage">
+            <summary>
+            The text for group information about the records on the previous and next page.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.JSWarning">
+            <summary>
+            The warning message that is displayed to the user if a client-side exception is raised.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_PageSizeText">
+            <summary>
+            The "Records per page:" text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_RecordsText">
+            <summary>
+            The "Records:" text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_ToText">
+            <summary>
+            The "-" text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_OfText">
+            <summary>
+            The "to" text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_PagesText">
+            <summary>
+            The "Pages:" text.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_TotalNumberOfPages">
+            <summary>
+            The text for the total number of pages.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_ManualPagingLink">
+            <summary>
+            The text for the manual paging link.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridLocalizationSettings.Paging_PageSizeOptions_All">
+            <summary>
+            The text for the "All" option of the page size selector.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.Value">
+            <summary>
+            The Value of the container
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.DataItem">
+            <summary>
+            The DataItem collection of the container
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.DataObject">
+            <summary>
+            The Object containing the data from the record.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.RecordIndex">
+            <summary>
+            The index of the current record (relative to the entire grid)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.PageRecordIndex">
+            <summary>
+            The index of the current record (relative to the current page)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.DataRecordIndex">
+            <summary>
+            The index of the current record (relative to the entire grid)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.PageDataRecordIndex">
+            <summary>
+            The index of the current record (relative to the current page)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.ColumnIndex">
+            <summary>
+            The index of the current column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.Column">
+            <summary>
+            The current column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.Group">
+            <summary>
+            Provides information about the current group
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.TemplateContainer.GridClientID">
+            <summary>
+            The index of the current column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSContainer">
+            <summary>
+            CSS class for the grid container
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaContainer">
+            <summary>
+            CSS class for the grouping area container
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSHeaderContainer">
+            <summary>
+            CSS class for the DIV containing the grid header
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSHeaderContainerWithoutGrouping">
+            <summary>
+            CSS class for the DIV containing the grid header, when grouping is disabled
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSHeader">
+            <summary>
+            CSS class for the grid header
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSHeaderFirstCell">
+            <summary>
+            CSS class for the first cell from the header
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSColumnHeader">
+            <summary>
+            CSS class for the header of each column
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSColumnHeaderArrow">
+            <summary>
+            CSS class for the up/down arrows (from the header)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSColumnHeaderArrowCenter">
+            <summary>
+            CSS class for the up/down arrows (from the header)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSColumnHeaderArrowRight">
+            <summary>
+            CSS class for the up/down arrows (from the header)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSResizeButton">
+            <summary>
+            CSS class for the resize button
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSBodyHeader">
+            <summary>
+            CSS class for the small horizontal bar at the top of the grid's body
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSScrollingSpacer">
+            <summary>
+            CSS class for the small cell above the vertical scrollbar
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSResizingTooltip">
+            <summary>
+            CSS Class for the tooltip that appears when columns are resized
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingArea">
+            <summary>
+            CSS Class for the area where columns are dropped in order to group them
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaDefaultColumn">
+            <summary>
+            CSS Class for the default column which appears in the grouping area
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaColumn">
+            <summary>
+            CSS Class for the columns in the grouping area - content.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaColumnLeft">
+            <summary>
+            CSS Class for the columns in the grouping area - left side.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaColumnContent">
+            <summary>
+            CSS Class for the columns in the grouping area - content.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaColumnRight">
+            <summary>
+            CSS Class for the columns in the grouping area - right side.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaColumnSpacer">
+            <summary>
+            CSS Class for the spacer that is placed between the columns moved in the grouping area.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupDraggingColumn">
+            <summary>
+            CSS Class for the moving column that is dragged with the mouse for grouping.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSHeaderColumnHighlightedWhenGrouping">
+            <summary>
+            CSS Class that is used to highlight the column from the header when it's dragged with the mouse.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaColumnHighlightedWhenDragging">
+            <summary>
+            CSS Class that is used to highlight the column from the grouping area when it's dragged with the mouse.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaTopArrow">
+            <summary>
+            CSS Class for the top arrow which indicates the destination of the moving column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSGroupingAreaBottomArrow">
+            <summary>
+            CSS Class for the bottom arrow which indicates the destination of the moving column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSBodyContainer">
+            <summary>
+            CSS class for the DIV containing the body of the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSBody">
+            <summary>
+            CSS class for the body of the Grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecordGroupHeader">
+            <summary>
+            CSS class for the header of a group of records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecordGroupHeaderCell">
+            <summary>
+            CSS class for the cell inside header of a group of records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecordGroupHeaderButton">
+            <summary>
+            CSS class for the +/- image from the header of a group of records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecordGroupFooter">
+            <summary>
+            CSS class for the footer row of the groups.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecord">
+            <summary>
+            CSS class for the records of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecordAlternate">
+            <summary>
+            CSS class for the alternate records of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecordSelected">
+            <summary>
+            CSS class for the selected records of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRecordHover">
+            <summary>
+            The background of the records when the mouse is over them.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSCellPadding">
+            <summary>
+            CSS Class for the small div used as left padding for the cells
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSCell">
+            <summary>
+            CSS class for the cells of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFirstCell">
+            <summary>
+            CSS class for the first cell of each row
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSResizableContent">
+            <summary>
+            CSS class for the divs inside the cells
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSResizableContentWithWrap">
+            <summary>
+            CSS class for the divs inside the cells - with wrap
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSSelectionArea">
+            <summary>
+            CSS class for the selection area that appears when dragging with the mouse for selecting records
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSActionLink">
+            <summary>
+            CSS class for the add/edit/delete/cancel/update links
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSEditControl">
+            <summary>
+            CSS class for the default controls used in the templates for edit
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSLoadingMessage">
+            <summary>
+            CSS class for loading message that is displayed when the grid loads data.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSResizeLines">
+            <summary>
+            CSS class for the resizing vertical bars.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSNoRecordsMessage">
+            <summary>
+            CSS class for the cell containing the message displayed when the grid has no records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSData">
+            <summary>
+            CSS Class for the hidden data
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSRowEditTemplate">
+            <summary>
+            CSS class for the row edit template
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSCellTemporaryAdded">
+            <summary>
+            CSS class for the temporary added records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSCellTemporaryEdited">
+            <summary>
+            CSS class for the temporary edited records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSCellTemporaryDeleted">
+            <summary>
+            CSS class for the temporary deleted records.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSDetailGridContainer">
+            <summary>
+            CSS class for the row containing a detail grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSDetailGridLeftSpacer">
+            <summary>
+            CSS class for the spacer placed on the left side of the details grids.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSBodyFooter">
+            <summary>
+            CSS class for the small horizontal bar at the bottom of the grid's body
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFooter">
+            <summary>
+            CSS class for the footer of the grid
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFooterPageNavContainer">
+            <summary>
+            CSS class for the container of the pagination/navigation buttons
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSPageSizeText">
+            <summary>
+            CSS class for the text near the page size selector.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSPageSizeSelector">
+            <summary>
+            CSS class for the page size selector
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSActionLinkFooter">
+            <summary>
+            CSS class for the add/save/cancel links from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFooterRecordsPages">
+            <summary>
+            CSS class for the "Records: ... Pages: ..." text from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSNavigationImage">
+            <summary>
+            CSS class for the navigation buttons inside the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSNavigationLink">
+            <summary>
+            CSS class for the paging links from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSNavigationLinkHover">
+            <summary>
+            CSS class for the paging links from the footer, hover state
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSNavigationText">
+            <summary>
+            CSS class for the selected page from the footer
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSNavigationSeparator">
+            <summary>
+            CSS class for the pages separator from the footer.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterCell">
+            <summary>
+            CSS class for the cells of the filter.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterFirstCell">
+            <summary>
+            CSS class for the first cell of the filter.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterCriteriaTextbox">
+            <summary>
+            CSS class for the textbox which contains the filter criteria.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterCriteriasButton">
+            <summary>
+            CSS class for the button that opens the filter criterias selector.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterScrollingSpacer">
+            <summary>
+            CSS class for the small cell of the filter under the vertical scrollbar.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterCriteriasContainer">
+            <summary>
+            CSS class for the container of the filter criterias.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterCriteria">
+            <summary>
+            CSS class for the filter criterias.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFilterCriteriaHover">
+            <summary>
+            CSS class for the filter criterias.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSColumnsFooter">
+            <summary>
+            CSS class for the row containing the columns footer.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSExportTableStyle">
+            <summary>
+            Style for the table with data from the exported file (Excel / Word)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSExportHeaderCellStyle">
+            <summary>
+            Style for the header cells from the exported file (Excel / Word)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSExportCellStyle">
+            <summary>
+            Style for the cells from the exported file (Excel / Word)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridCssSettings.CSSFolderImages">
+            <summary>
+            Path to folder with images
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.TemplateId">
+            <summary>
+            The id of the template that is used for the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.EditTemplateId">
+            <summary>
+            The id of the template that is used for the column in edit mode.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.HeaderTemplateId">
+            <summary>
+            The id of the template that is used for the header of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.FilterTemplateId">
+            <summary>
+            The id of the template that is used for the filter of the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.GroupHeaderTemplateId">
+            <summary>
+            The id of the template that is used in the Header of the Groups.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.RowEditTemplateControlId">
+            <summary>
+            The id of the control from the row template which will be used to update the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.RowEditTemplateControlPropertyName">
+            <summary>
+            The name of the property of the control from the row template which will be used to update the column.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.RowEditTemplateUseQuotes">
+            <summary>
+            If true, the value will be surrounded by double quotes.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.ModifyTemporaryEditedRecord_TemplateId">
+            <summary>
+            The id of the template that is used for the "Modify | Delete" buttons (for the temporary edited records)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.CancelTemporaryEditedRecord_TemplateId">
+            <summary>
+            The id of the template that is used for the "Cancel | Delete" buttons of the column (for the temporary edited records)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.ModifyTemporaryAddedRecord_TemplateId">
+            <summary>
+            The id of the template that is used for the "Modify | Remove" buttons of the column (for the temporary added records)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.CancelTemporaryAddedRecord_TemplateId">
+            <summary>
+            The id of the template that is used for the "Cancel | Remove" buttons of the column (for the temporary added records)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.RemoveTemporaryAddedRecord_TemplateId">
+            <summary>
+            The id of the template that is used for the "Remove" button of the column (for the temporary added records)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.ColumnTemplateSettings.UndeleteTemporaryDeletedRecord_TemplateId">
+            <summary>
+            The id of the template that is used for the "Undelete" button of the column (for the temporary deleted records)
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridPagingSettings.PageSizeSelectorPosition">
+            <summary>
+            Gets or sets a value indicating the location where the page size selector will be displayed.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridPagingSettings.Position">
+            <summary>
+            Gets or sets a value indicating the location where the paging buttons will be displayed.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.GridPagingSettings.ShowRecordsCount">
+            <summary>
+            Gets or sets a property indicating whether the number of records will be displayed next to the paging buttons.
+            </summary>
+        </member>
+        <member name="P:Obout.Grid.DetailGrid.ForeignKeys">
+            <summary>
+            Sets the expression for the Grouping feature.
+            </summary>
+        </member>
+    </members>
+</doc>

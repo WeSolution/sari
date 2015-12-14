@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BE56AA8-2107-4E96-B805-5118A64F0A83}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\SLNSARI\SLNSARI\SARI\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Obout.Ajax.UI, Version=2.13.925.3, Culture=neutral, PublicKeyToken=24f3c5cea456f322, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Obout.Ajax.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Calendar2_Net, Version=3.0.7.0, Culture=neutral, PublicKeyToken=b114d8766feff9ce, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\obout_Calendar2_Net.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Grid_NET, Version=7.0.10.0, Culture=neutral, PublicKeyToken=5ddc49d3b53e3f98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\obout_Grid_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_ImageZoom_NET, Version=1.6.0.4, Culture=neutral, PublicKeyToken=c5bb29a21fa7230b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\obout_ImageZoom_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Interface, Version=4.0.10.0, Culture=neutral, PublicKeyToken=d5dff6913a9d6649, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\obout_Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="CSS\bootstrap-theme.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="dll\AjaxControlToolkit.dll" />
+    <Content Include="dll\itextsharp.dll" />
+    <Content Include="dll\Obout.Ajax.UI.dll" />
+    <Content Include="dll\Obout.Ajax.UI.xml" />
+    <Content Include="dll\obout_Calendar2_Net.dll" />
+    <Content Include="dll\obout_Calendar2_Net.xml" />
+    <Content Include="dll\obout_Grid_NET.dll" />
+    <Content Include="dll\obout_Grid_NET.xml" />
+    <Content Include="dll\obout_ImageZoom_NET.dll" />
+    <Content Include="dll\obout_ImageZoom_NET.xml" />
+    <Content Include="dll\obout_Interface.dll" />
+    <Content Include="dll\obout_Interface.xml" />
+    <Content Include="Finanzas\BootStrap\bootstrap-theme.css" />
+    <Content Include="Finanzas\BootStrap\bootstrap-theme.min.css" />
+    <Content Include="Finanzas\BootStrap\bootstrap.css" />
+    <Content Include="Finanzas\BootStrap\bootstrap.min.css" />
+    <Content Include="Finanzas\BootStrap\MiEstilo.css" />
+    <Content Include="Finanzas\Default.aspx" />
+    <Content Include="Finanzas\Formularios\AltaProducto.aspx" />
+    <Content Include="Finanzas\Formularios\AltaProveedor.aspx" />
+    <Content Include="Finanzas\Formularios\AltaServicio.aspx" />
+    <Content Include="Finanzas\Formularios\ReporteMensual.aspx" />
+    <Content Include="Finanzas\Formularios\Solicitudes.aspx" />
+    <Content Include="Finanzas\Formularios\ValidarProveedor.aspx" />
+    <Content Include="Finanzas\Imagenes\cuenta_icon.png" />
+    <Content Include="Finanzas\Imagenes\finance.ico" />
+    <Content Include="Finanzas\Imagenes\ico-finanzas.png" />
+    <Content Include="Finanzas\Imagenes\prod-icon.png" />
+    <Content Include="Finanzas\Imagenes\product.ico" />
+    <Content Include="Finanzas\Imagenes\provider-icon.png" />
+    <Content Include="Finanzas\Imagenes\provider.ico" />
+    <Content Include="Finanzas\Imagenes\reports-icon.png" />
+    <Content Include="Finanzas\Imagenes\reports.png" />
+    <Content Include="Finanzas\Imagenes\requi-icon.png" />
+    <Content Include="Finanzas\Imagenes\service.png" />
+    <Content Include="Finanzas\Imagenes\serv_icon.png" />
+    <Content Include="Finanzas\JQuery\bootstrap.js" />
+    <Content Include="Finanzas\JQuery\bootstrap.min.js" />
+    <Content Include="Finanzas\JQuery\jquery-1.11.2.js" />
+    <Content Include="Finanzas\JQuery\jquery.js" />
+    <Content Include="Finanzas\JQuery\js_miscript.js" />
+    <Content Include="Finanzas\JQuery\npm.js" />
+    <Content Include="Finanzas\JQuery\validaciones.js" />
+    <Content Include="JQuery\bootstrap.js" />
+    <Content Include="JQuery\bootstrap.min.js" />
+    <Content Include="JQuery\jquery.js" />
+    <Content Include="JQuery\js_miscript.js" />
+    <Content Include="JQuery\npm.js" />
+    <Content Include="JQuery\validaciones.js" />
+    <Content Include="login.css" />
+    <Content Include="Materiales\Almacén\Consultas.aspx" />
+    <Content Include="Materiales\BootStrap\bootstrap-theme.css" />
+    <Content Include="Materiales\BootStrap\bootstrap-theme.min.css" />
+    <Content Include="Materiales\BootStrap\bootstrap.css" />
+    <Content Include="Materiales\BootStrap\bootstrap.min.css" />
+    <Content Include="Materiales\BootStrap\MiEstilo.css" />
+    <Content Include="Materiales\Entradas\Consultas.aspx" />
+    <Content Include="Materiales\Entradas\Nueva Entrada.aspx" />
+    <Content Include="Materiales\Entradas\Reportes.aspx" />
+    <Content Include="Materiales\Imagenes\imagen1.jpg" />
+    <Content Include="Materiales\Imagenes\imagen2.png" />
+    <Content Include="Materiales\Imagenes\in.png" />
+    <Content Include="Materiales\Imagenes\new.png" />
+    <Content Include="Materiales\Imagenes\out.png" />
+    <Content Include="Materiales\itextsharp.xtra.dll" />
+    <Content Include="Materiales\JQuery\bootstrap.js" />
+    <Content Include="Materiales\JQuery\bootstrap.min.js" />
+    <Content Include="Materiales\JQuery\jquery.js" />
+    <Content Include="Materiales\JQuery\js_miscript.js" />
+    <Content Include="Materiales\JQuery\npm.js" />
+    <Content Include="Materiales\JQuery\validaciones.js" />
+    <Content Include="Materiales\Default.aspx" />
+    <Content Include="Materiales\Recursos Materiales.csproj" />
+    <Content Include="Materiales\Recursos Materiales.csproj.user" />
+    <Content Include="Materiales\Recursos Materiales.Publish.xml" />
+    <Content Include="Materiales\Requisiciones\Busqueda de Requisiciones.aspx" />
+    <Content Include="Materiales\Requisiciones\Carrito.aspx" />
+    <Content Include="Materiales\Requisiciones\Detalle de Requisicion.aspx" />
+    <Content Include="Materiales\Requisiciones\Nueva Requisicion.aspx" />
+    <Content Include="Materiales\Requisiciones\Producto.aspx" />
+    <Content Include="Materiales\Requisiciones\Servicio.aspx" />
+    <Content Include="Materiales\Salidas\Consultas.aspx" />
+    <Content Include="Materiales\Salidas\Nueva Salida.aspx" />
+    <Content Include="Materiales\Salidas\Reportes.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="RH2\BootStrap\bootstrap-theme.css" />
+    <Content Include="RH2\BootStrap\bootstrap-theme.min.css" />
+    <Content Include="RH2\BootStrap\bootstrap.css" />
+    <Content Include="RH2\BootStrap\bootstrap.min.css" />
+    <Content Include="RH2\BootStrap\MiEstilo.css" />
+    <Content Include="RH2\Capsule152\Direccion.aspx" />
+    <Content Include="RH2\Capsule152\Estudios.aspx" />
+    <Content Include="RH2\Capsule152\HistoriaLaboral.aspx" />
+    <Content Include="RH2\Capsule152\Mas_Info.aspx" />
+    <Content Include="RH2\Capsule152\PreferenciasLaborales.aspx" />
+    <Content Include="RH2\Capsule152\Referencias.aspx" />
+    <Content Include="RH2\Capsule152\Registro.aspx" />
+    <Content Include="RH2\Capsule152\Test_Psic.aspx" />
+    <Content Include="RH2\Default.aspx" />
+    <Content Include="RH2\JQuery\bootstrap.js" />
+    <Content Include="RH2\JQuery\bootstrap.min.js" />
+    <Content Include="RH2\JQuery\jquery.js" />
+    <Content Include="RH2\JQuery\js_miscript.js" />
+    <Content Include="RH2\JQuery\npm.js" />
+    <Content Include="RH2\JQuery\validaciones.js" />
+    <Content Include="RH\BootStrap\bootstrap-theme.css" />
+    <Content Include="RH\BootStrap\bootstrap-theme.min.css" />
+    <Content Include="RH\BootStrap\bootstrap.css" />
+    <Content Include="RH\BootStrap\bootstrap.min.css" />
+    <Content Include="RH\BootStrap\MiEstilo.css" />
+    <Content Include="RH\Buscar.aspx" />
+    <Content Include="RH\Consulta.aspx" />
+    <Content Include="RH\Default.aspx" />
+    <Content Include="RH\es.xml" />
+    <Content Include="RH\Foto\leeme.txt" />
+    <Content Include="RH\Global.asax" />
+    <Content Include="RH\images\1422194782_old-edit-find.png" />
+    <Content Include="RH\images\1422260694_Delete.png" />
+    <Content Include="RH\images\1422260797_sign-up.png" />
+    <Content Include="RH\images\1422260817_Log Out.png" />
+    <Content Include="RH\images\1422279555_empty_filter.png" />
+    <Content Include="RH\images\1422279573_filter-32.png" />
+    <Content Include="RH\images\1426422923_lock.png" />
+    <Content Include="RH\images\1426476809_tick.png" />
+    <Content Include="RH\images\1426476820_error.png" />
+    <Content Include="RH\images\1439283695_business.png" />
+    <Content Include="RH\images\1439283768_user-alt.png" />
+    <Content Include="RH\images\1439283774_user-group.png" />
+    <Content Include="RH\images\1439283793_address-book-alt.png" />
+    <Content Include="RH\images\1439283815_computer.png" />
+    <Content Include="RH\images\1439283823_search.png" />
+    <Content Include="RH\images\1439283880_english_ime.png" />
+    <Content Include="RH\images\alerta.png" />
+    <Content Include="RH\images\calendar %282%29.png" />
+    <Content Include="RH\images\calendar.png" />
+    <Content Include="RH\images\consulta %282%29.png" />
+    <Content Include="RH\images\consulta.png" />
+    <Content Include="RH\images\correcto.png" />
+    <Content Include="RH\images\delete.png" />
+    <Content Include="RH\images\empleado.png" />
+    <Content Include="RH\images\error.png" />
+    <Content Include="RH\images\generate_keys.png" />
+    <Content Include="RH\images\gnome_edit_delete.png" />
+    <Content Include="RH\images\human-resources.png" />
+    <Content Include="RH\images\Human_resource_icons-09-512.png" />
+    <Content Include="RH\images\Human_resource_strategy-05-512.png" />
+    <Content Include="RH\images\login.png" />
+    <Content Include="RH\images\map.png" />
+    <Content Include="RH\images\perfil.png" />
+    <Content Include="RH\images\pie_chart.png" />
+    <Content Include="RH\images\product_documentation.png" />
+    <Content Include="RH\images\recursos_humanos.png" />
+    <Content Include="RH\Insertar.aspx" />
+    <Content Include="RH\JQuery\bootstrap.js" />
+    <Content Include="RH\JQuery\bootstrap.min.js" />
+    <Content Include="RH\JQuery\jquery.js" />
+    <Content Include="RH\JQuery\js_miscript.js" />
+    <Content Include="RH\JQuery\npm.js" />
+    <Content Include="RH\JQuery\validaciones.js" />
+    <Content Include="RH\SARI.csproj" />
+    <Content Include="Finanzas\Principal.Master" />
+    <Content Include="Finanzas\BootStrap\bootstrap-theme.css.map" />
+    <Content Include="Finanzas\BootStrap\bootstrap.css.map" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="Materiales\Almacén\Catalogo.master" />
+    <Content Include="Materiales\BootStrap\bootstrap-theme.css.map" />
+    <Content Include="Materiales\BootStrap\bootstrap.css.map" />
+    <Content Include="Materiales\Entradas\Entradas.master" />
+    <Content Include="Materiales\MasterPage\Principal.Master" />
+    <Content Include="Materiales\Requisiciones\Requisiciones.master" />
+    <Content Include="Materiales\Salidas\Salidas.master" />
+    <None Include="Properties\PublishProfiles\extraible.pubxml" />
+    <None Include="Properties\PublishProfiles\sari.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="RH2\Principal.Master" />
+    <Content Include="RH2\BootStrap\bootstrap-theme.css.map" />
+    <Content Include="RH2\BootStrap\bootstrap.css.map" />
+    <Content Include="RH\MasterPage\Principal.Master" />
+    <None Include="RH\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="RH\Scripts\jquery-1.4.1.js" />
+    <Content Include="RH\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="RH\Styles\Site.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Conexion\AccesoDatos.cs" />
+    <Compile Include="Finanzas\Conexion\AccesoLogica.cs" />
+    <Compile Include="Finanzas\Conexion\Conexion.cs" />
+    <Compile Include="Finanzas\Conexion\ConsultarBD.cs" />
+    <Compile Include="Finanzas\Conexion\DBMetodos.cs" />
+    <Compile Include="Finanzas\Conexion\DocumentoPDF.cs" />
+    <Compile Include="Finanzas\Conexion\Estandar.cs" />
+    <Compile Include="Finanzas\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\AltaProducto.aspx.cs">
+      <DependentUpon>AltaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\AltaProducto.aspx.designer.cs">
+      <DependentUpon>AltaProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\AltaProveedor.aspx.cs">
+      <DependentUpon>AltaProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\AltaProveedor.aspx.designer.cs">
+      <DependentUpon>AltaProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\AltaServicio.aspx.cs">
+      <DependentUpon>AltaServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\AltaServicio.aspx.designer.cs">
+      <DependentUpon>AltaServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\ReporteMensual.aspx.cs">
+      <DependentUpon>ReporteMensual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\ReporteMensual.aspx.designer.cs">
+      <DependentUpon>ReporteMensual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\Solicitudes.aspx.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\Solicitudes.aspx.designer.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\ValidarProveedor.aspx.cs">
+      <DependentUpon>ValidarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Formularios\ValidarProveedor.aspx.designer.cs">
+      <DependentUpon>ValidarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Almacén\Catalogo.master.cs">
+      <DependentUpon>Catalogo.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Almacén\Catalogo.master.designer.cs">
+      <DependentUpon>Catalogo.master</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Almacén\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Almacén\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Clases\Conexion.cs" />
+    <Compile Include="Materiales\Clases\Conexion1.cs" />
+    <Compile Include="Materiales\Clases\ConexionBL.cs" />
+    <Compile Include="Materiales\Clases\ConsultarTablas.cs" />
+    <Compile Include="Materiales\Clases\DatosPedido.cs" />
+    <Compile Include="Materiales\Clases\DetalleProducto.cs" />
+    <Compile Include="Materiales\Clases\DetalleServicio.cs" />
+    <Compile Include="Materiales\Clases\Metodos.cs" />
+    <Compile Include="Materiales\Clases\MetodosCarrito.cs" />
+    <Compile Include="Materiales\Entradas\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Entradas\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Entradas\Document.cs" />
+    <Compile Include="Materiales\Entradas\Entradas.master.cs">
+      <DependentUpon>Entradas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Entradas\Entradas.master.designer.cs">
+      <DependentUpon>Entradas.master</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Entradas\HTMLWorker.cs" />
+    <Compile Include="Materiales\Entradas\Nueva Entrada.aspx.cs">
+      <DependentUpon>Nueva Entrada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Entradas\Nueva Entrada.aspx.designer.cs">
+      <DependentUpon>Nueva Entrada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Entradas\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Entradas\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\MasterPage\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\MasterPage\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Busqueda de Requisiciones.aspx.cs">
+      <DependentUpon>Busqueda de Requisiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Busqueda de Requisiciones.aspx.designer.cs">
+      <DependentUpon>Busqueda de Requisiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Detalle de Requisicion.aspx.cs">
+      <DependentUpon>Detalle de Requisicion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Detalle de Requisicion.aspx.designer.cs">
+      <DependentUpon>Detalle de Requisicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Nueva Requisicion.aspx.cs">
+      <DependentUpon>Nueva Requisicion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Nueva Requisicion.aspx.designer.cs">
+      <DependentUpon>Nueva Requisicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Producto.aspx.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Producto.aspx.designer.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Requisiciones.master.cs">
+      <DependentUpon>Requisiciones.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Requisiciones.master.designer.cs">
+      <DependentUpon>Requisiciones.master</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Servicio.aspx.cs">
+      <DependentUpon>Servicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Requisiciones\Servicio.aspx.designer.cs">
+      <DependentUpon>Servicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Nueva Salida.aspx.cs">
+      <DependentUpon>Nueva Salida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Nueva Salida.aspx.designer.cs">
+      <DependentUpon>Nueva Salida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Salidas.master.cs">
+      <DependentUpon>Salidas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Materiales\Salidas\Salidas.master.designer.cs">
+      <DependentUpon>Salidas.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registerclass.cs" />
+    <Compile Include="RH2\Capsule152\Direccion.aspx.cs">
+      <DependentUpon>Direccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Direccion.aspx.designer.cs">
+      <DependentUpon>Direccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Estudios.aspx.cs">
+      <DependentUpon>Estudios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Estudios.aspx.designer.cs">
+      <DependentUpon>Estudios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\HistoriaLaboral.aspx.cs">
+      <DependentUpon>HistoriaLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\HistoriaLaboral.aspx.designer.cs">
+      <DependentUpon>HistoriaLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Mas_Info.aspx.cs">
+      <DependentUpon>Mas_Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Mas_Info.aspx.designer.cs">
+      <DependentUpon>Mas_Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\MessageBox.cs" />
+    <Compile Include="RH2\Capsule152\PreferenciasLaborales.aspx.cs">
+      <DependentUpon>PreferenciasLaborales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\PreferenciasLaborales.aspx.designer.cs">
+      <DependentUpon>PreferenciasLaborales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Referencias.aspx.cs">
+      <DependentUpon>Referencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Referencias.aspx.designer.cs">
+      <DependentUpon>Referencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Capsule152\SQLServer.cs" />
+    <Compile Include="RH2\Capsule152\Test_Psic.aspx.cs">
+      <DependentUpon>Test_Psic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Capsule152\Test_Psic.aspx.designer.cs">
+      <DependentUpon>Test_Psic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH2\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH2\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RH\Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH\Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH\Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH\Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="RH\Insertar.aspx.cs">
+      <DependentUpon>Insertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH\Insertar.aspx.designer.cs">
+      <DependentUpon>Insertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RH\MasterPage\Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH\MasterPage\Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RH\MVC\Academico.cs" />
+    <Compile Include="RH\MVC\Direccion.cs" />
+    <Compile Include="RH\MVC\Empleado.cs" />
+    <Compile Include="RH\MVC\Habilidad.cs" />
+    <Compile Include="RH\MVC\Idioma.cs" />
+    <Compile Include="RH\MVC\Jornada.cs" />
+    <Compile Include="RH\MVC\Modelo.cs" />
+    <Compile Include="RH\MVC\Persona.cs" />
+    <Compile Include="RH\MVC\SQL.cs" />
+    <Compile Include="RH\MVC\Telefono.cs" />
+    <Compile Include="RH\MVC\Vista.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="RH2\Properties\" />
+    <Folder Include="RH\App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\local.pubxml" />
+    <Content Include="RH\BootStrap\bootstrap-theme.css.map" />
+    <Content Include="RH\BootStrap\bootstrap.css.map" />
+    <Content Include="RH\ClassDiagram1.cd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6430</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

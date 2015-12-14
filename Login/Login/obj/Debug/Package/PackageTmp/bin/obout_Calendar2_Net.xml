@@ -1,0 +1,1085 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>obout_Calendar2_Net</name>
+    </assembly>
+    <members>
+        <member name="F:OboutInc.Calendar2.Constants.myVersion">
+            Version information
+            
+        </member>
+        <member name="T:OboutInc.Calendar2.Timestamp">
+            <summary>
+            Static Timestamp related data.
+            </summary>
+            <remarks>
+            THIS FILE IS CHANGED BY EXTERNAL PROGRAMS.
+            Do not modify the namespace, as it may be overwritten. You can
+               set the namespace with the /N option.
+            Do not modify the definition of BuildAt as your changes will be discarded.
+            </remarks>
+        </member>
+        <member name="P:OboutInc.Calendar2.Timestamp.BuildAt">
+            <summary>
+            The time stamp
+            </summary>
+            <remarks>
+            Do not modify the definition of BuildAt as your changes will be discarded.
+            </remarks>
+        </member>
+        <member name="T:OboutInc.Calendar2.DateChangedEventHandler">
+            <summary>
+            Delegates the Event for Date change
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:OboutInc.Calendar2.Calendar">
+            <summary>
+            Summary for Calendar entity
+            </summary>    
+        </member>
+        <member name="F:OboutInc.Calendar2.Calendar.EventDateChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.OnDateChanged(System.EventArgs)">
+            <summary>
+            Represents the method to handle the event raised on change of  date
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.RaisePostBackEvent(System.String)">
+            <summary>
+            Calls the handler for DateChanged event with no event data
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.OnBubbleEvent(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="source"></param>
+            <param name="args"></param>
+            <returns>true</returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.RaisePostDataChangedEvent">
+            <summary>
+            Calls the handler for DateChanged event with no event data
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Loads all dates from post data
+            </summary>
+            <param name="postDataKey"></param>
+            <param name="postCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.LoadViewState(System.Object)">
+            <summary>
+            Overrides the LoadViewState from System.Web.UI.Control from a saved state object and loads the calendar items.
+            </summary>
+            <param name="savedState"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.SaveViewState">
+            <summary>
+            Overrides the SaveViewState from System.Web.UI.Control, saves the Calendar items in state.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.DateTime)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.DateTime,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.DateTime,System.String,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.DateTime,System.String,System.String,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.DateTime,System.String,System.String,System.String,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.AddSpecialDate(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Add a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.RemoveSpecialDate(System.Int32)">
+            <summary>
+            Remove a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.RemoveSpecialDate(System.DateTime)">
+            <summary>
+            Remove a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.RemoveSpecialDate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Remove a special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.RemoveAllSpecialDates">
+            <summary>
+            Remove all special date.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.createScript">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.OnPreRender(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.CreateChildControls">
+            <summary>
+            Create child controls
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetYear(System.DateTime)">
+            <summary>
+            Get Year
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetMonth(System.DateTime)">
+            <summary>
+            Get Month
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetHour(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetMinute(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetSecond(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetYearSelectorContainer">
+            <summary>
+            get the html for the year selector container when in html list mode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetYearSelector">
+            <summary>
+            get the html for the year selector
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetMonthSelectorContainer">
+            <summary>
+            get the html for the month selector container when in html list mode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetMonthSelector">
+            <summary>
+            get the html for the month selector
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetTimeSelector">
+            <summary>
+            get the html for the time selector
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.GetTimeSelectorContainer">
+            <summary>
+            get the html for the time selector container when in html list mode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Renders the markup for calendar control
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.Page_Unload(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.findControl(System.Web.UI.Control,System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="where"></param>
+            <param name="type"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.IsDefaultStyleRendered">
+            <summary>
+            specifies if the calendar default style was rendered, stores in the page session
+            </summary>
+        </member>
+        <member name="E:OboutInc.Calendar2.Calendar.DateChanged">
+            <summary>
+            Raises event when a date is changed
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.StyleFolder">
+            <summary>
+            Path to folder with style for calendar.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSPath">
+            <summary>
+            Path to CSS file.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSCalendar">
+            <summary>
+            CSS class for whole calendar.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSTitle">
+            <summary>
+            CSS class for title.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSArrowLeft">
+            <summary>
+            CSS class for left arrow.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSArrowRight">
+            <summary>
+            CSS class for right arrow.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonth">
+            <summary>
+            CSS class for each month.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonthTitle">
+            <summary>
+            CSS class for each month title.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDayName">
+            <summary>
+            CSS class for each day name.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDay">
+            <summary>
+            CSS class for each day.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDayOver">
+            <summary>
+            CSS class for each day when the mouse is over.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDayToday">
+            <summary>
+            CSS class for today.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDayTodayOver">
+            <summary>
+            CSS class for today when the mouse is over.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDayDisabled">
+            <summary>
+            CSS class for each disabled day.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDayDisabledOver">
+            <summary>
+            CSS class for each disabled day when the mouse is over.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDaySelected">
+            <summary>
+            CSS class for selected day.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDaySelectedOver">
+            <summary>
+            CSS class for selected day when the mouse is over.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDaySpecial">
+            <summary>
+            CSS class for each special day.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDaySpecialOver">
+            <summary>
+            CSS class for each special day when the mouse is over.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSYearSelectorTitle">
+            <summary>
+            CSS class for year selector title when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSYearSelectorContainer">
+            <summary>
+            CSS class for year selector container when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSYearSelectorArrowUp">
+            <summary>
+            CSS class for year selector's arrow up.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSYearSelectorArrowDown">
+            <summary>
+            CSS class for year selector's arrow down.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSYearSelector">
+            <summary>
+            CSS class for year from the year selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSYearSelected">
+            <summary>
+            CSS class for selected year from the year selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonthSelectorTitle">
+            <summary>
+            CSS class for month selector title when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonthSelectorContainer">
+            <summary>
+            CSS class for month selector container when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonthSelectorArrowUp">
+            <summary>
+            CSS class for month selector's arrow up.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonthSelectorArrowDown">
+            <summary>
+            CSS class for month selector's arrow down.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonthSelector">
+            <summary>
+            CSS class for month from the month selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMonthSelected">
+            <summary>
+            CSS class for selected month from the month selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSSelectTime">
+            <summary>
+            CSS class for selecting time button.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSHourSelectorTitle">
+            <summary>
+            CSS class for hour selector title when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSHourSelectorContainer">
+            <summary>
+            CSS class for hour selector container when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSHourSelectorArrowUp">
+            <summary>
+            CSS class for year selector's arrow up.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSHourSelectorArrowDown">
+            <summary>
+            CSS class for hour selector's arrow down.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSHourSelector">
+            <summary>
+            CSS class for hour from the hour selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSHourSelected">
+            <summary>
+            CSS class for selected hour from the hour selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMinuteSelectorTitle">
+            <summary>
+            CSS class for minute selector title when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMinuteSelectorContainer">
+            <summary>
+            CSS class for minute selector container when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMinuteSelectorArrowUp">
+            <summary>
+            CSS class for minute selector's arrow up.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMinuteSelectorArrowDown">
+            <summary>
+            CSS class for minute selector's arrow down.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMinuteSelector">
+            <summary>
+            CSS class for minute from the minute selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSMinuteSelected">
+            <summary>
+            CSS class for selected minute from the minute selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSSecondSelectorTitle">
+            <summary>
+            CSS class for second selector title when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSSecondSelectorContainer">
+            <summary>
+            CSS class for second selector container when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSSecondSelectorArrowUp">
+            <summary>
+            CSS class for second selector's arrow up.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSSecondSelectorArrowDown">
+            <summary>
+            CSS class for second selector's arrow down.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSSecondSelector">
+            <summary>
+            CSS class for second from the second selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSSecondSelected">
+            <summary>
+            CSS class for selected second from the second selector when in html list mode.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.MonthWidth">
+            <summary>
+            Width of each month.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.MonthHeight">
+            <summary>
+            Height of each month.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.MonthMarginWidth">
+            <summary>
+            Width of a margin around each month.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.Columns">
+            <summary>
+            Number of columns in the calendar.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.Rows">
+            <summary>
+            Number of rows in the calendar.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.TitleText">
+            <summary>
+            Text to display in the title.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowYearSelector">
+            <summary>
+            If true, year selector is shown.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.YearSelectorType">
+            <summary>
+            Calendar's year selector type.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowMonthSelector">
+            <summary>
+            If true, month selector is shown.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.MonthSelectorType">
+            <summary>
+            Calendar's month selector type.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowTimeSelector">
+            <summary>
+            If true, time selector is shown.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.TimeSelectorType">
+            <summary>
+            Calendar's TimeSelectorType.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowHourSelector">
+            <summary>
+            If true, hour selector is shown.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ForcePosition">
+            <summary>
+            If true, the date picker's edges may go beyond the visible window.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowMinuteSelector">
+            <summary>
+            If true, minute selector is shown.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowSecondSelector">
+            <summary>
+            If true, second selector is shown.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.TextArrowLeft">
+            <summary>
+            Scroll left text.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.TextArrowRight">
+            <summary>
+            Scroll right text.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowOtherMonthDays">
+            <summary>
+            If true, previous and next month days are also shown in every calendar.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.TextSelectTime">
+            <summary>
+            Select time text.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.Speed">
+            <summary>
+            Scrolling speed.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ScrollBy">
+            <summary>
+            Number of columns to scroll by.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DateToday">
+            <summary>
+            Today's date.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DateFirstMonth">
+            <summary>
+            Date, month of which to show first.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DateMin">
+            <summary>
+            Minimum date to display.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DateMax">
+            <summary>
+            The maximum date to display.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.YearMinScroll">
+            <summary>
+            Minimum year to display without scrolling.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.YearMaxScroll">
+            <summary>
+            The maximum year to display without scrolling.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.SelectedDate">
+            <summary>
+            Get or set the selected date.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.SelectedDates">
+            <summary>
+            Get or set the selected dates.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.AllowDeselect">
+            <summary>
+            If true, dates are allowed to be deselected, otherwise not.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.AllowSelectSpecial">
+            <summary>
+            If true, special dates are allowed to be selected.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.AllowSelectRegular">
+            <summary>
+            If true, regular dates are allowed to be selected.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OnClientDateChanged">
+            <summary>
+            Function to execute on client side when selected date changes.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OnClientDateMouseOver">
+            <summary>
+            Function to execute on client side on date mouseover event.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OnClientDateMouseOut">
+            <summary>
+            Function to execute on client side on date mouseout event.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OnClientMonthScrollLeft">
+            <summary>
+            Function to execute client side on calendar scrolling to left.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OnClientMonthScrollRight">
+            <summary>
+            Function to execute client side on calendar scrolling to right.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OnSwitchView">
+            <summary>
+            Function to execute client side on calendar switching view.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.AutoPostBack">
+            <summary>
+            If true, calendar will post back after date is selected.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.EnabledDateExpression">
+            <summary>
+            An expression that evaluates to a boolean value that determines whether the date should be enabled or not.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.SpecialDates">
+            <summary>
+            A collection containing all special dates.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.YearSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the year selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.FirstYearSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the year selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.HourSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the hour selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.FirstHourSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the hour selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.MinuteSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the minute selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.FirstMinuteSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the minute selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.SecondSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the second selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.FirstSecondSelectorScrollSpeed">
+            <summary>
+            Scrolling speed of the second selector.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.MultiSelectedDates">
+            <summary>
+            If true, calendar will be able to have multiple selected dates.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DatePickerMode">
+            <summary>
+            If true, a text box is displayed for the date and the calendar is hidden.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.TextBoxId">
+            <summary>
+            TextBoxId to display the date in.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DatePickerImagePath">
+            <summary>
+            Path to the image for a date picker button.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DatePickerImageTooltip">
+            <summary>
+            Tooltip text for the image for a date picker button.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CSSDatePickerButton">
+            <summary>
+            CSS class for DatePicker button.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.Enabled">
+            <summary>
+            If true, calendar is disabled.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.Align">
+            <summary>
+            Calendar's DisplayStyle.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.BeginDateCalendarId">
+            <summary>
+            Calendar ID that is used for beginning date of a date span.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DatePickerSynchronize">
+            <summary>
+            If true, calendar is synchronized with the textbox modifications.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OffsetLeft">
+            <summary>
+            Left offset from left edge of datepicker icon (can be negative).
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.OffsetTop">
+            <summary>
+            Top offset from top edge of datepicker icon (can be negative).
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CultureName">
+            <summary>
+            Sets culture name which will be used to regionalize the calendar.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.FullMonthNames">
+            <summary>
+            Comma delimetered full month names.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShortMonthNames">
+            <summary>
+            Comma delimetered abbreviated month names.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.FullDayNames">
+            <summary>
+            Comma delimetered full day names
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShortDayNames">
+            <summary>
+            Comma delimetered abbreviated day names
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.FirstDayOfWeek">
+            <summary>
+            First day of week.  Sunday = 0
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DateFormat">
+            <summary>
+            Date format.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.YearMonthFormat">
+            <summary>
+            Month and year format for every month title.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.ShowErrorAlert">
+            <summary>
+            If true, the alert message in case of some error is visible.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.DisableEmbeddedScriptFileResource">
+            <summary>
+            If true, the script file resource is disabled.
+            </summary>
+        </member>
+        <member name="T:OboutInc.Calendar2.Calendar.CalendarSpecialDates">
+            <summary> 
+            Special dates class.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.CalendarSpecialDates.Add(OboutInc.Calendar2.SpecialDate)">
+            <summary>
+            
+            </summary>
+            <param name="newDate"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.CalendarSpecialDates.Remove(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.CalendarSpecialDates.Remove(OboutInc.Calendar2.SpecialDate)">
+            <summary>
+            
+            </summary>
+            <param name="existingDate"></param>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.CalendarSpecialDates.Insert(System.Int32,OboutInc.Calendar2.SpecialDate)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.CalendarSpecialDates.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OboutInc.Calendar2.Calendar.SelectedDatesList">
+            <summary>
+            Summary for SelectedDatesList entity
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Calendar.SelectedDatesList.Add(System.DateTime)">
+            <summary>
+            Adds a date to the SelectedDateList
+            </summary>
+            <param name="date"></param>
+        </member>
+        <member name="P:OboutInc.Calendar2.Calendar.SelectedDatesList.Item(System.Int32)">
+            <summary>
+            Gets a date in an index from the SelectedDate List
+            </summary>
+            <param name="index"></param>
+            <returns>Date object</returns>
+        </member>
+        <member name="T:OboutInc.Calendar2.Align">
+            <summary>
+            Contains options for Calendar alignment in Datepicker mode
+            </summary>
+        </member>
+        <member name="F:OboutInc.Calendar2.Align.Cursor">
+            <summary>
+            Aligns calendar with the cursor
+            </summary>
+        </member>
+        <member name="F:OboutInc.Calendar2.Align.Above">
+            <summary>
+            Aligns calendar above the datepicker image
+            </summary>
+        </member>
+        <member name="F:OboutInc.Calendar2.Align.Under">
+            <summary>
+             Aligns calendar below the datepicker image
+            </summary>
+        </member>
+        <member name="F:OboutInc.Calendar2.Align.Left">
+            <summary>
+             Aligns calendar on left of the datepicker image
+            </summary>
+        </member>
+        <member name="F:OboutInc.Calendar2.Align.Right">
+            <summary>
+            Aligns calendar on right of the datepicker image
+            </summary>
+        </member>
+        <member name="T:OboutInc.Calendar2.SelectorType">
+            <summary>
+            Contains options for types of month, year, time selector
+            </summary>
+        </member>
+        <member name="F:OboutInc.Calendar2.SelectorType.DropDownList">
+            <summary>
+            Creates the selector as a dropdown list
+            </summary>
+        </member>
+        <member name="F:OboutInc.Calendar2.SelectorType.HtmlList">
+            <summary>
+            Creates the selector as Html List
+            </summary>
+        </member>
+        <member name="T:OboutInc.Calendar2.Designer.CalendarDesigner">
+            <summary> 
+            Extends design-time behavior.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Designer.CalendarDesigner.GetDesignTimeHtml">
+            <summary> 
+            Generates design-time HTML for control.
+            </summary>
+        </member>
+        <member name="M:OboutInc.Calendar2.Designer.CalendarDesigner.GetYear(System.DateTime,OboutInc.Calendar2.Calendar)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="calendar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Designer.CalendarDesigner.GetMonth(System.DateTime,OboutInc.Calendar2.Calendar)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="calendar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Designer.CalendarDesigner.GetTimeSelector(OboutInc.Calendar2.Calendar)">
+            <summary>
+            get the html for the time selector
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Designer.CalendarDesigner.GetMonthSelector(OboutInc.Calendar2.Calendar)">
+            <summary>
+            get the html for the month selector
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.Designer.CalendarDesigner.GetYearSelector(OboutInc.Calendar2.Calendar)">
+            <summary>
+            get the html for the year selector
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OboutInc.Calendar2.SpecialDate.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:OboutInc.Calendar2.SpecialDate.Year">
+            <summary>
+            Special date year.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.SpecialDate.Month">
+            <summary>
+            Special date month.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.SpecialDate.Day">
+            <summary>
+            Special date day.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.SpecialDate.ToolTip">
+            <summary>
+            Special date tooltip.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.SpecialDate.CSSClass">
+            <summary>
+            CSS class name to apply to this special date.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.SpecialDate.CSSClassOver">
+            <summary>
+            CSS class name to apply to this special date when the mouse is over.
+            </summary>
+        </member>
+        <member name="P:OboutInc.Calendar2.SpecialDate.Url">
+            <summary>
+            Special date URL.
+            </summary>
+        </member>
+    </members>
+</doc>
