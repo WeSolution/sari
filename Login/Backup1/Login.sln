@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
+Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2010
+VisualStudioVersion = 10
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{7BE56AA8-2107-4E96-B805-5118A64F0A83}"
 EndProject
 Global
