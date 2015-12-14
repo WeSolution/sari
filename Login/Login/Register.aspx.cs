@@ -20,7 +20,7 @@ namespace Login
        registerclass obj1 = new registerclass();
         protected void Page_Load(object sender, EventArgs e)
         {
-            obj1.cadena = "Initial Catalog = sari;Persist Security Info=False; Data Source=localhost;Integrated Security=True";
+            obj1.cadena = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
             Privilegio.Items.Add("Superadministrador");
             Privilegio.Items.Add("administrador");
             Privilegio.Items.Add("usuario");
