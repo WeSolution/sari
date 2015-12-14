@@ -80,7 +80,7 @@ namespace SARI.MVC
         {
             result = new SQL(cadConexion).QueryReader("select * from Persona where idpersona=" + id);
             result.Read();
-            return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()), result[7].ToString(), result[8].ToString(), Convert.ToInt32(result[9].ToString()), Convert.ToInt32(result[0].ToString()));
+            return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()), result[7].ToString(), result[8].ToString(), result[9].ToString(), Convert.ToInt32(result[10].ToString()), Convert.ToInt32(result[0].ToString()));
         }
         public Persona BuscarPersonaRFC(String rfc)
         {
@@ -88,7 +88,7 @@ namespace SARI.MVC
             result.Read();
             return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(),
                 result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()),
-                result[7].ToString(), result[8].ToString(), Convert.ToInt32(result[9].ToString()),
+                result[7].ToString(), result[8].ToString(), result[9].ToString(), Convert.ToInt32(result[10].ToString()),
                 Convert.ToInt32(result[0].ToString()));
         }
 
@@ -98,7 +98,7 @@ namespace SARI.MVC
             result.Read();
             return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(),
                 result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()),
-                result[7].ToString(), result[8].ToString(), Convert.ToInt32(result[9].ToString()),
+                result[7].ToString(), result[8].ToString(), result[9].ToString(), Convert.ToInt32(result[10].ToString()),
                 Convert.ToInt32(result[0].ToString()));
         }
         public Empleado BuscarEmpleado(int id)
