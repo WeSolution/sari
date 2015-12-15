@@ -90,7 +90,7 @@ namespace Recursos_Financieros.Formularios
             int id = Convert.ToInt32(nombre);
             int i = 7;
             SqlConnection conexion = new SqlConnection();
-            conexion.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings[3].ToString();
+            conexion.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
             conexion.Open();
 
             if (conexion != null)

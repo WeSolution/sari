@@ -10,7 +10,7 @@ namespace Recursos_Financieros.Conexion
     public class DBMetodos
     {
         private Conexion con = new Conexion();
-        private string cadena = System.Configuration.ConfigurationManager.ConnectionStrings[3].ToString();
+        private string cadena = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
         /*Este método ejecuta el procedimiento almacenado que se crea anteriormente, 
          * para insertar la información que se almacenará */
         public  int EjecutarComandoInsert(SqlCommand comando)
