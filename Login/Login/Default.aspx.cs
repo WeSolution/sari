@@ -28,7 +28,7 @@ namespace Login
         {
            
             registerclass obj1 = new registerclass();
-            obj1.cadena = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
+            obj1.cadena = System.Configuration.ConfigurationManager.ConnectionStrings[2].ToString();
            
            // obj1.cadena = "Initial Catalog = sari;Persist Security Info=False; Data Source=MAURIWOLFF\\DEAMAU;Integrated Security=True";
             con = obj1.Conectar(ref men);
@@ -37,7 +37,7 @@ namespace Login
                 almacen = obj1.consultas(cons, con);
                 if (almacen.Tables[0].Rows.Count == 0)
                 {
-                    Page.ClientScript.RegisterStartupScript(GetType(), "MiScript", "alert('Contraseña incorrecta')", true);
+                    Page.ClientScript.RegisterStartupScript(GetType(), "MiScript", "alert('Datos incorrectos, vuelva a rellenar los campos plox')", true);
                    
                 }
                 else

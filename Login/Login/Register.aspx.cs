@@ -18,21 +18,42 @@ namespace Login
         DataSet almacen = new DataSet();
         int id_empleado, user;
        registerclass obj1 = new registerclass();
+      
         protected void Page_Load(object sender, EventArgs e)
         {
-            obj1.cadena = "Initial Catalog = sari;Persist Security Info=False; Data Source=localhost;Integrated Security=True";
+            obj1.cadena = System.Configuration.ConfigurationManager.ConnectionStrings[2].ToString();
+            con = obj1.Conectar(ref men);
             Privilegio.Items.Add("Superadministrador");
             Privilegio.Items.Add("administrador");
             Privilegio.Items.Add("usuario");
-            Privilegio.Items.Add("Invitado");
- 
-            area.Items.Add("Recursos Humanos");
-            area.Items.Add("Finanzas");
-            area.Items.Add("Recursos Materiales");
 
-            Sexo.Items.Add("Masculino");
-            Sexo.Items.Add("Femenino");
-
+            String cons = "Select idempleado,nombre,apaterno,amaterno from Empleado inner join persona on persona.idpersona = Empleado.fkpersona";
+            almacen = obj1.consultas(cons, con);
+            if (almacen.Tables[0].Rows.Count > 0)
+            {
+                EmpleadoCombo.DataSource = almacen.Tables[0];
+                //Indicale directamente el nombre de la columna
+                EmpleadoCombo.DataTextField = "nombre";
+                EmpleadoCombo.DataValueField = "idempleado";
+                EmpleadoCombo.SelectedIndex = 0;
+                this.EmpleadoCombo.DataBind();
+                this.EmpleadoCombo.Items.Insert(0, new ListItem("Elija una Opcion..", "0"));
+            }
+          /*  foreach (DataRow fill in almacen.Tables[0].Rows)
+            {
+                //usuario = fill["usuario"].ToString();
+                this.EmpleadoCombo.DataSource = almacen;
+                this.EmpleadoCombo.DataValueField = "idempleado";
+                this.EmpleadoCombo.DataTextField = "Empleado";
+                this.EmpleadoCombo.DataBind();
+                this.EmpleadoCombo.Items.Insert(0, new ListItem("Elija una Opcion..", "0"));
+                CBID_Personero.DataSource = Data.Tables(0);
+                //Indicale directamente el nombre de la columna
+                CBID_Personero.DataTextField = "Nombre_de_columna_mostrar";
+                CBID_Personero.DataValueField = "Nombre_de_columna_valor";
+                CBID_Personero.SelectedIndex = 0;
+            } */
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -52,16 +73,23 @@ namespace Login
             else
             {
 
-                id_empleado = obj1.insertarEmpleados(con, Nombre_empleado.Text, Apellido_p.Text, Apellido_m.Text, Direccion.Text, Telefono.Text, Correo.Text, Sexo.Text, ref men);
+             //   id_empleado = obj1.insertarEmpleados(con, Nombre_empleado.Text, Apellido_p.Text, Apellido_m.Text, Direccion.Text, Telefono.Text, Correo.Text, Sexo.Text, ref men);
 
-                obj1.InsertarUsuario(con, txtusuario.Text, txtpass.Text, id_empleado, Privilegio.Text, ref men);
+            //  obj1.InsertarUsuario(con, txtusuario.Text, txtpass.Text, id_empleado, Privilegio.Text, ref men);
 
-                obj1.InsertarArea(con, area.Text, descripcion.Text, telearea.Text,id_empleado, ref men); 
+                obj1.InsertarUsuario(con, txtusuario.Text, txtpass.Text,Convert.ToInt32(EmpleadoCombo.Text), Privilegio.Text, ref men);
 
+             //   obj1.InsertarArea(con, area.Text, descripcion.Text, telearea.Text,id_empleado, ref men); 
+                EmpleadoCombo.SelectedIndex = -1;
+                txtusuario.Text = "";
+                txtpass.Text = "";
                 Page.ClientScript.RegisterStartupScript(GetType(), "MiScript", "alert('Registrado')", true);
                  
             }
 
         }
+
+         
+    
     }
 }

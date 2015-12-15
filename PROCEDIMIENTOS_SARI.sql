@@ -379,6 +379,19 @@ GO
 SET ANSI_PADDING ON
 GO
 
+SELECT * FROM empleado;
+select * from persona;
+SELECT * FROM usuario;
+CREATE PROCEDURE dbo.GetEmpleados AS
+SET NOCOUNT ON 
+SELECT * FROM empleado;
+RETURN
+INSERT INTO Empleado(area,puesto,foto,fkpersona) values('Recursos Humanos','Gerente','sinfot.jpg',1);
+INSERT INTO Empleado(area,puesto,foto,fkpersona) values('Finanzas','Empleado Normal','sinfoto.jpg',3);
+insert into Persona(nombre, apaterno,amaterno ,curp, rfc ,fechanac ,sexo ,estadocivil, estatus, fkdireccion) values( 'Mauricio','Daza','Aquno','HDAZ34657','2354365','1995-01-29','Hombre','Casado','Vivo',Null)
+insert into Persona(nombre, apaterno,amaterno ,curp, rfc ,fechanac ,sexo ,estadocivil, estatus, fkdireccion) values( 'Juan','Daza','Aquino','HDAZA2342453','34645','1995-05-30','Hombre','Soltero','Vivo',Null)
+
+---------------------------------
 --RECURSOS HUMANOS EMPLEADOS--
 --Procedimiento insertaPersona--
 Create Procedure insertaPersona
@@ -397,7 +410,7 @@ as
 insert into Persona(nombre, apaterno,amaterno ,curp, rfc ,fechanac ,sexo ,estadocivil, estatus, fkdireccion) values (@nombre,@apaterno,@amaterno,@curp,@rfc,@fechaNac,@sexo,@estadocivil,@estatus,@fkdireccion)
 set @return = (select @@IDENTITY)
 go
-
+ 
 Create proc insertarDireccion 
 @calle varchar(50), 
 @numerointerior char(15),

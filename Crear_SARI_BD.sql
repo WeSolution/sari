@@ -1,6 +1,6 @@
 --modificado por daniel --
 --Crear Base de datos SARI_BD--
-create database SARI_BD;
+create database SARI_BD; --
 go
 use SARI_BD;
 go
@@ -352,3 +352,4 @@ GO
 ALTER TABLE [dbo].[detalle_servicio]  WITH CHECK ADD FOREIGN KEY([id_servicio])
 REFERENCES [dbo].[servicios] ([id_servicio])
 GO
+

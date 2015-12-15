@@ -20,32 +20,18 @@
             <div class="account-wall">
                  
                 <form id="Form1"   class="form-signin" runat="server">
-                <asp:TextBox ID="Nombre_empleado" runat="server" class="form-control" required autofocus placeholder="Nombre del empleado"></asp:TextBox>
-                <asp:TextBox ID="Apellido_p" runat="server" class="form-control" required autofocus placeholder="Apellido paterno"></asp:TextBox>
-                <asp:TextBox ID="Apellido_m" runat="server" class="form-control" required autofocus placeholder="Apellido materno"></asp:TextBox> 
-                
-                
+                 
+                 <asp:Label ID="Empleado" runat="server" Text="Empleado:"></asp:Label>
+                <asp:DropDownList ID="EmpleadoCombo" class="form-control" runat="server" required autofocus> </asp:DropDownList>
+                <br />
                 <asp:TextBox ID="txtusuario" runat="server" type="text"  class="form-control" 
                     placeholder="usuario" required autofocus  ></asp:TextBox>
                 <asp:TextBox ID="txtpass" runat="server" type="password" class="form-control" placeholder="Password" required></asp:TextBox> 
-
-                <asp:TextBox ID="Direccion" runat="server" class="form-control" required autofocus placeholder="Dirección"></asp:TextBox>
-                <asp:TextBox ID="Telefono" runat="server" class="form-control" required autofocus placeholder="Telefono "></asp:TextBox> 
-                <asp:TextBox ID="Correo" runat="server" class="form-control" required autofocus placeholder="Correo"></asp:TextBox> 
-                
-                <asp:Label ID="Label3" runat="server" Text="Sexo:"></asp:Label>
-                <asp:DropDownList ID="Sexo" class="form-control" runat="server" required autofocus> </asp:DropDownList>
-
+                 
                 <asp:Label ID="Label1" runat="server" Text="Privelegio:"></asp:Label>
                 <asp:DropDownList ID="Privilegio" class="form-control" runat="server" required autofocus> </asp:DropDownList>
 
-                <asp:Label ID="Label2" runat="server" Text="Nombre del area"></asp:Label>
-                <asp:DropDownList ID="area" runat="server" class="form-control" required autofocus placeholder="Nombre del area"> </asp:DropDownList>
-                <br />
-                <asp:TextBox ID="descripcion" runat="server" class="form-control" required autofocus placeholder="Descripción del area" ></asp:TextBox>
-                 <br />
-                <asp:TextBox ID="telearea" runat="server" class="form-control" required autofocus placeholder="Telefono del area" ></asp:TextBox>
-                <br />
+                
                 <asp:Button ID="Button1" runat="server"  
                     class="btn btn-lg btn-primary btn-block" Text="Registrarse" onclick="Button1_Click" 
                     />

@@ -113,22 +113,7 @@ namespace Login
                 SqlParameter empleados = new SqlParameter("@id_empleado", SqlDbType.Int);
                 empleados.Value = id_empleado;
                 comando.Parameters.Add(empleados);
-
-               /* string fecha = "";
-               / fecha = DateTime.Now.ToString("dd/MM/yyyy");
-
-                SqlParameter fecha_in = new SqlParameter("@fecha_ingreso", SqlDbType.VarChar, 50);
-                fecha_in.Value = fecha;
-                comando.Parameters.Add(fecha_in);
-
-                SqlParameter estado = new SqlParameter("@estatus", SqlDbType.VarChar, 50);
-                estado.Value = "A";
-                comando.Parameters.Add(estado);
-
-                SqlParameter ultimoidinsertado = new SqlParameter("@ultimoid", SqlDbType.Int);
-                ultimoidinsertado.Direction = ParameterDirection.Output;
-                comando.Parameters.Add(ultimoidinsertado);
-                */
+ 
                 try
                 {
                     comando.ExecuteNonQuery();
@@ -137,8 +122,7 @@ namespace Login
                 catch (Exception error)
                 {
                     m = error.Message;
-                }
-                //return (int)ultimoidinsertado.Value;
+                } 
             }
 
             public void InsertarArea(SqlConnection con, String nombre_area, string descripcion, string telefono,int id_empleado,  ref String m)
