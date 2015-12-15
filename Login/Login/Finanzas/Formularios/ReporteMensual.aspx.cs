@@ -12,7 +12,7 @@ namespace Recursos_Financieros.Formularios
 {
     public partial class ReporteMensual : System.Web.UI.Page
     {
-        private string cadena = System.Configuration.ConfigurationManager.ConnectionStrings[3].ToString();
+        private string cadena = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
         private DocumentoPDF doc;
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -13,7 +13,7 @@ namespace Recursos_Financieros.AltaProducto
     public partial class WebForm1 : System.Web.UI.Page
     {
         private Conexion.Conexion con = new Conexion.Conexion();
-        private string cadena = System.Configuration.ConfigurationManager.ConnectionStrings[3].ToString();//ma cai que me estoy durmiendo
+        private string cadena = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();//ma cai que me estoy durmiendo
         protected void Page_Load(object sender, EventArgs e)
         {
             string mensaje = "";

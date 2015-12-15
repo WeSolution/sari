@@ -10,7 +10,7 @@ namespace Recursos_Financieros.Formularios
 {
     public partial class Solicitudes : System.Web.UI.Page
     {
-        public string Cadena_Conexion = System.Configuration.ConfigurationManager.ConnectionStrings[3].ToString();
+        public string Cadena_Conexion = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
         protected void Page_Load(object sender, EventArgs e)
         {
 

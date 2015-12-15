@@ -10,7 +10,7 @@ namespace Recursos_Financieros.Formularios
 {
     public partial class ValidarProveedor : System.Web.UI.Page
     {
-        public Clases.estandar es = new Clases.estandar(System.Configuration.ConfigurationManager.ConnectionStrings[3].ToString());
+        public Clases.estandar es = new Clases.estandar(System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString());
         protected void Page_Load(object sender, EventArgs e)
         {
             // se crea el evento IsPostBack que hace que los elementos se carguen soloamente una vez y ademas tambien se crea

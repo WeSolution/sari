@@ -10,7 +10,7 @@ namespace Recursos_Financieros.Formularios
 {
     public partial class AltaProveedor : System.Web.UI.Page
     {
-        private Clases.estandar es = new Clases.estandar(System.Configuration.ConfigurationManager.ConnectionStrings[3].ToString());
+        private Clases.estandar es = new Clases.estandar(System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString());
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
