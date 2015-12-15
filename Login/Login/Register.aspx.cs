@@ -72,15 +72,9 @@ namespace Login
             }
             else
             {
-
-             //   id_empleado = obj1.insertarEmpleados(con, Nombre_empleado.Text, Apellido_p.Text, Apellido_m.Text, Direccion.Text, Telefono.Text, Correo.Text, Sexo.Text, ref men);
-
-            //  obj1.InsertarUsuario(con, txtusuario.Text, txtpass.Text, id_empleado, Privilegio.Text, ref men);
-
+ 
                 obj1.InsertarUsuario(con, txtusuario.Text, txtpass.Text,Convert.ToInt32(EmpleadoCombo.Text), Privilegio.Text, ref men);
-
-             //   obj1.InsertarArea(con, area.Text, descripcion.Text, telearea.Text,id_empleado, ref men); 
-                EmpleadoCombo.SelectedIndex = -1;
+                   EmpleadoCombo.SelectedIndex = -1;
                 txtusuario.Text = "";
                 txtpass.Text = "";
                 Page.ClientScript.RegisterStartupScript(GetType(), "MiScript", "alert('Registrado')", true);
