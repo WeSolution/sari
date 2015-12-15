@@ -15,7 +15,6 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-        
             <hr __designer:mapid="712" /><div style="margin:0 auto 0 auto; width:995px;">
     <p>
  <asp:Label ID="Label9" runat="server" Text="CURP:"></asp:Label>

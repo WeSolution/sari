@@ -17,7 +17,7 @@ namespace Recursos_Humanos.MasterPage
             {
                 u = (User)Application["user"];
                 Menu y = NavigationMenu;
-                y.Items[3].ChildItems[0].Text = "Usuario: " + u.user;
+                y.Items[4].ChildItems[0].Text = "Usuario: " + u.user;
                 verificaUsuario();
             }
             catch (Exception x) { Response.Redirect("/"); }

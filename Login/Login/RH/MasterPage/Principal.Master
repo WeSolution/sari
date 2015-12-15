@@ -27,13 +27,14 @@
                     <div class="navbar-header">
                         <asp:Image ID="Image1" runat="server" Height="53px" ImageUrl="~/RH/images/human-resources.png" Width="57px" />
                         <a class="navbar-brand" href="Default.aspx">S.A.R.I - Recursos Humanos</a></div>
-                     <div style="background-position: right top; margin: 0% 0px 0px 55%; width:489px;  text-align:right; position: relative; z-index: inherit; vertical-align: bottom; line-height: normal; text-indent: inherit; white-space: normal; background-repeat: repeat; background-attachment: scroll; top: 10px; right: -16px; height: 32px;" aria-multiline="True" aria-orientation="vertical" title="algo" translate="yes">
+                     <div style="background-position: right top; margin: 0% 0px 0px 45%; width:582px;  text-align:right; position: relative; z-index: inherit; vertical-align: bottom; line-height: normal; text-indent: inherit; white-space: normal; background-repeat: repeat; background-attachment: scroll; top: 10px; right: -16px; height: 32px;" aria-multiline="True" aria-orientation="vertical" title="algo" translate="yes">
                     <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="False" Orientation="Horizontal" style="background-color:transparente;" EnableTheming="True" Font-Bold="True" RenderingMode="List" OnMenuItemClick="NavigationMenu_MenuItemClick">
                     <DynamicItemTemplate>
                         <%# Eval("Text") %>
                     </DynamicItemTemplate>
                     <Items>
                         <asp:MenuItem NavigateUrl="~/RH/Insertar.aspx" Text="Nuevo Empleado" Value="Nuevo" ImageUrl="~/RH/images/1439283768_user-alt.png" PopOutImageUrl="~/RH/images/1422260797_sign-up.png" ToolTip="Inserta nuevo Empleado"/>
+                        <asp:MenuItem ImageUrl="~/RH/images/Human_resource_strategy-05-512.png" Text="Candidato" Value="Candidato" NavigateUrl="~/RH/Candidatos.aspx"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/RH/Buscar.aspx" Text="Buscar Empleado" Value="Buscar" ImageUrl="~/RH/images/1439283823_search.png" ToolTip="Buscar Empleado"/>
                         <asp:MenuItem ImageUrl="~/RH/images/pie_chart.png" Text="Consultas" Value="Consultas" NavigateUrl="~/RH/Consulta.aspx"></asp:MenuItem>
                         <asp:MenuItem ImageUrl="~/RH/images/1426422923_lock.png" Selectable="False">

@@ -461,10 +461,10 @@ namespace SARI
                 Direccion d = m.BuscarDireccion(p.idDir); Session.Remove("sdireccion"); Session["sdireccion"] = d;
                 Empleado em = m.BuscarEmpleado(p.id); Session.Remove("sempleado"); Session["sempleado"] = em;
                 telefono = m.BuscarTelefono(p.id); Session.Remove("stelefono"); Session["stelefono"] = telefono;
-                idioma = m.BuscarIdiomaID(p.id); Session.Remove("sidioma"); Session["sidioma"] = idioma;
-                habilidad = m.BuscarHabilidadID(p.id); Session.Remove("shabilidad"); Session["shabilidad"] = habilidad;
-                academico = m.BuscarGrado(p.id); Session.Remove("sacademico"); Session["sacademico"] = academico;
-                jornada = m.BuscarJornada(p.id); Session.Remove("sjornada"); Session["sjornada"] = jornada;
+                idioma = m.BuscarIdiomaID(em.id); Session.Remove("sidioma"); Session["sidioma"] = idioma;
+                habilidad = m.BuscarHabilidadID(em.id); Session.Remove("shabilidad"); Session["shabilidad"] = habilidad;
+                academico = m.BuscarGrado(em.id); Session.Remove("sacademico"); Session["sacademico"] = academico;
+                jornada = m.BuscarJornada(em.id); Session.Remove("sjornada"); Session["sjornada"] = jornada;
                 loadPersona(); v.mostrarAcademica(); v.mostrarHabilidades(); v.mostrarIdiomas(); v.mostrarJornada(); v.mostrarTelefonos();
                 enableButtonsEdit(enableButtonSearch(false));
                 if (telefono.Count > 0)

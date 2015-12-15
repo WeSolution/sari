@@ -110,7 +110,7 @@ namespace SARI
             switch (cbMain.SelectedIndex)
             {
                 case 1:
-                    loadTabla("SELECT [idpersona] as 'Id Persona' ,[nombre] as 'Nombre',[apaterno] as 'Apellido Paterno',[amaterno] as'Apellido Materno' ,[curp] as 'CURP',[rfc],[fechanac] as 'Fecha de Nacimiento',[sexo] as 'Sexo',[estadocivil] as 'Estado Civil' FROM [RH].[dbo].[Persona]");
+                    loadTabla("SELECT [idpersona] as 'Id Persona' ,[nombre] as 'Nombre',[apaterno] as 'Apellido Paterno',[amaterno] as'Apellido Materno' ,[curp] as 'CURP',[rfc],[fechanac] as 'Fecha de Nacimiento',[sexo] as 'Sexo',[estadocivil] as 'Estado Civil' FROM Persona");
                     break;
                 case 2:
                     loadTabla("SELECT * FROM Direccion");
@@ -126,7 +126,7 @@ namespace SARI
                     break;
                 default:
                     visibleOption(false);
-                    loadTabla("SELECT TOP 0 nombre as 'Busqueda S.A.R.I.' FROM [RH].[dbo].[Persona]");
+                    loadTabla("SELECT TOP 0 nombre as 'Busqueda S.A.R.I.' FROM Persona");
                     break;
             }
         }

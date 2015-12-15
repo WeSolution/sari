@@ -9,12 +9,12 @@ namespace SARI.MVC
 {
     public class Modelo
     {
-        public string cadConexion =System.Configuration.ConfigurationManager.ConnectionStrings[0].ToString();
+        public string cadConexion =System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
         private SqlDataReader result;
         public int AlmacenaPersona(Persona p) 
         {
             SqlParameterOut r = new SqlParameterOut();
-            new SQL(cadConexion).ProcedimientoAl("insertaPersona", new SqlParameter("@nombre", p.Nombre), new SqlParameter("@apaterno", p.ApPaterno), new SqlParameter("@amaterno", p.ApMaterno), new SqlParameter("@curp", p.Curp), new SqlParameter("@rfc", p.RFC), new SqlParameter("@fechaNac", p.FechaNac.ToShortDateString()), new SqlParameter("@sexo", p.Sexo), new SqlParameter("@estadocivil", p.EstCivil), new SqlParameter("@fkdireccion", p.idDir), r.getSqlParameterOut("@return"));
+            new SQL(cadConexion).ProcedimientoAl("insertaPersona", new SqlParameter("@nombre", p.Nombre), new SqlParameter("@apaterno", p.ApPaterno), new SqlParameter("@amaterno", p.ApMaterno), new SqlParameter("@curp", p.Curp), new SqlParameter("@rfc", p.RFC), new SqlParameter("@fechaNac", p.FechaNac.ToShortDateString()), new SqlParameter("@sexo", p.Sexo), new SqlParameter("@estadocivil", p.EstCivil), new SqlParameter("@estatus", p.estatus), new SqlParameter("@fkdireccion", p.idDir), r.getSqlParameterOut("@return"));
             return (int)r.SqlParameterOutput.Value;
         }
         public int AlmacenaDireccion(Direccion d)
@@ -80,7 +80,7 @@ namespace SARI.MVC
         {
             result = new SQL(cadConexion).QueryReader("select * from Persona where idpersona=" + id);
             result.Read();
-            return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()), result[7].ToString(), result[8].ToString(), Convert.ToInt32(result[9].ToString()), Convert.ToInt32(result[0].ToString()));
+            return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()), result[7].ToString(), result[8].ToString(), result[9].ToString(), Convert.ToInt32(result[10].ToString()), Convert.ToInt32(result[0].ToString()));
         }
         public Persona BuscarPersonaRFC(String rfc)
         {
@@ -88,7 +88,7 @@ namespace SARI.MVC
             result.Read();
             return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(),
                 result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()),
-                result[7].ToString(), result[8].ToString(), Convert.ToInt32(result[9].ToString()),
+                result[7].ToString(), result[8].ToString(), result[9].ToString(), Convert.ToInt32(result[10].ToString()),
                 Convert.ToInt32(result[0].ToString()));
         }
 
@@ -98,7 +98,7 @@ namespace SARI.MVC
             result.Read();
             return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(),
                 result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()),
-                result[7].ToString(), result[8].ToString(), Convert.ToInt32(result[9].ToString()),
+                result[7].ToString(), result[8].ToString(), result[9].ToString(), Convert.ToInt32(result[10].ToString()),
                 Convert.ToInt32(result[0].ToString()));
         }
         public Empleado BuscarEmpleado(int id)
@@ -225,7 +225,7 @@ namespace SARI.MVC
         }
         public int EditaPersona(Persona p)
         {
-            return new SQL(cadConexion).ProcedimientoAl("editaPersona",new SqlParameter("@id",p.id), new SqlParameter("@nombre", p.Nombre), new SqlParameter("@apaterno", p.ApPaterno), new SqlParameter("@amaterno", p.ApMaterno), new SqlParameter("@curp", p.Curp), new SqlParameter("@rfc", p.RFC), new SqlParameter("@fechaNac", p.FechaNac.ToShortDateString()), new SqlParameter("@sexo", p.Sexo), new SqlParameter("@estadocivil", p.EstCivil), new SqlParameter("@fkdireccion", p.idDir));
+            return new SQL(cadConexion).ProcedimientoAl("editaPersona",new SqlParameter("@id",p.id), new SqlParameter("@nombre", p.Nombre), new SqlParameter("@apaterno", p.ApPaterno), new SqlParameter("@amaterno", p.ApMaterno), new SqlParameter("@curp", p.Curp), new SqlParameter("@rfc", p.RFC), new SqlParameter("@fechaNac", p.FechaNac.ToShortDateString()), new SqlParameter("@sexo", p.Sexo), new SqlParameter("@estadocivil", p.EstCivil), new SqlParameter("@estatus", p.EstCivil), new SqlParameter("@fkdireccion", p.idDir));
         }
         public int EditaDireccion(Direccion d)
         {
@@ -285,6 +285,36 @@ namespace SARI.MVC
         public DataTable obtTabla(string query) 
         {
             return new SQL(cadConexion).QueryTable(query);
+        }
+        public void loadCandidatos(System.Web.UI.WebControls.DropDownList l) 
+        {
+            l.Items.Clear();
+            l.Items.Add("Ninguno");
+            SqlDataReader r = new SQL(cadConexion).QueryReader("select curp+ ' '+nombre + ' ' +apaterno+' '+amaterno as Nombre from Persona where estatus!='Empleado'");
+            while (r.Read())
+                l.Items.Add(r[0].ToString());
+        }
+        public Persona BuscarCandidato(String referencia)
+        {
+            result = new SQL(cadConexion).QueryReader("select * from Persona where estatus!='Empleado' and curp+ ' '+nombre + ' ' +apaterno+' '+amaterno='"+referencia+"'");
+            result.Read();
+            return new Persona(result[1].ToString(), result[2].ToString(), result[3].ToString(),
+                result[4].ToString(), result[5].ToString(), Convert.ToDateTime(result[6].ToString()),
+                result[7].ToString(), result[8].ToString(), result[9].ToString(), Convert.ToInt32(result[10].ToString()),
+                Convert.ToInt32(result[0].ToString()));
+        }
+        public ArrayList telCandidatos(int id) 
+        {
+            ArrayList l = new ArrayList();
+            SqlDataReader r = new SQL(cadConexion).QueryReader("select telefono1,Telefono2 from persona p,candidatos c where p.idpersona=c.id_Persona and p.idpersona="+id.ToString()+";");
+            if (r.Read())
+            {
+                if (r[0].ToString() != "")
+                    l.Add(new Telefono("Telefono 1", r[0].ToString()));
+                if (r[1].ToString() != "")
+                    l.Add(new Telefono("Telefono 2", r[1].ToString()));
+            }
+            return l;
         }
     }
     
