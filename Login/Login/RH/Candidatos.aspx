@@ -12,7 +12,7 @@
         <br />
         <br />
         <asp:Label ID="Label46" runat="server" Text="Estatus del Registro: "></asp:Label>
-        <asp:DropDownList ID="cbEstatus" runat="server" Height="23px" Width="203px" AutoPostBack="True" OnSelectedIndexChanged="cbEstatus_SelectedIndexChanged">
+        <asp:DropDownList ID="cbEstatus" runat="server" Height="23px" Width="203px" AutoPostBack="True" OnSelectedIndexChanged="cbEstatus_SelectedIndexChanged" Enabled="False">
             <asp:ListItem>Candidato</asp:ListItem>
             <asp:ListItem>Empleado</asp:ListItem>
         </asp:DropDownList>
@@ -89,6 +89,7 @@
         </p>
                 <hr __designer:mapid="712" />
         <div align="right">
+                <asp:Label ID="lblerror" runat="server" ForeColor="Red"></asp:Label>
                 <asp:Button ID="btnGuardar" class="btn btn-primary" runat="server" OnClick="btnGuardar_Click" Text="Cambiar Estatus" Enabled="False" ValidationGroup="InformacionPersonal" />
             </div>
     

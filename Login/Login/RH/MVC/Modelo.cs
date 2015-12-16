@@ -310,11 +310,15 @@ namespace SARI.MVC
             if (r.Read())
             {
                 if (r[0].ToString() != "")
-                    l.Add(new Telefono("Telefono 1", r[0].ToString()));
+                    l.Add(new Telefono( r[0].ToString(),"Telefono 1"));
                 if (r[1].ToString() != "")
-                    l.Add(new Telefono("Telefono 2", r[1].ToString()));
+                    l.Add(new Telefono( r[1].ToString(),"Telefono 2"));
             }
             return l;
+        }
+        public void changeStatus(string status,int id) 
+        {
+            new SQL(cadConexion).Query("Update persona set estatus='"+status+"' where idpersona="+id.ToString());
         }
     }
     

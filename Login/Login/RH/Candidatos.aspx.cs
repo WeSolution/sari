@@ -99,7 +99,19 @@ namespace Login.RH
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                per = (Persona)Session["spersona"];
+                m.AlmacenaTelefonos(m.telCandidatos(per.id),m.AlmacenaEmpleado(new Empleado(txtPuesto.Text, txtArea.Text, "~/RH/images/perfil.png", per.id)));
+                m.changeStatus(cbEstatus.SelectedItem.Text, per.id);
+                cbEstatus.SelectedIndex = 0;
+                cbEstatus.Enabled = false;
+                txtArea.Enabled = txtPuesto.Enabled = btnGuardar.Enabled = false;
+                clearPersona(); m.loadCandidatos(cbCandidatos); lblerror.ForeColor = System.Drawing.Color.Green;
+                lblerror.Text = "Operacion correcta!";
 
+            }
+            catch (Exception x) { lblerror.ForeColor = System.Drawing.Color.Red; lblerror.Text = x.Message; }
         }
        
     }

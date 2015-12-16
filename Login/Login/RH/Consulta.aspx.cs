@@ -107,6 +107,7 @@ namespace SARI
         protected void cbMain_SelectedIndexChanged(object sender, EventArgs e)
         {
             visibleOption(true);
+            visibleParam(false);
             switch (cbMain.SelectedIndex)
             {
                 case 1:

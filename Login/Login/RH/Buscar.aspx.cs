@@ -432,7 +432,9 @@ namespace SARI
                     v.Error("Se elimino el Registro!", System.Drawing.Color.Green);
                 else
                     v.Error("Se no se pudo eliminar el Registro!", System.Drawing.Color.Red);
+                resetVars(); clearSearch();
                 enableButtonsEdit(enableButtonSearch(true));
+                cbAcademica.Items.Clear(); cbTelefono.Items.Clear(); cbHabilidad.Items.Clear(); cbJornada.Items.Clear(); cbIdioma.Items.Clear();
             }
         }
         public void Perfil() 
