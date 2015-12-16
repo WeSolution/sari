@@ -210,6 +210,7 @@
     <Content Include="RH\BootStrap\bootstrap.min.css" />
     <Content Include="RH\BootStrap\MiEstilo.css" />
     <Content Include="RH\Buscar.aspx" />
+    <Content Include="RH\Candidatos.aspx" />
     <Content Include="RH\Consulta.aspx" />
     <Content Include="RH\Default.aspx" />
     <Content Include="RH\es.xml" />
@@ -638,6 +639,13 @@
     <Compile Include="RH\Buscar.aspx.designer.cs">
       <DependentUpon>Buscar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RH\Candidatos.aspx.cs">
+      <DependentUpon>Candidatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RH\Candidatos.aspx.designer.cs">
+      <DependentUpon>Candidatos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RH\Consulta.aspx.cs">
       <DependentUpon>Consulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -698,7 +706,6 @@
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <Content Include="RH\BootStrap\bootstrap-theme.css.map" />
     <Content Include="RH\BootStrap\bootstrap.css.map" />
-    <Content Include="RH\ClassDiagram1.cd" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
