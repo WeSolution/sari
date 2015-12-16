@@ -13,7 +13,7 @@ namespace Recursos_Materiales.Entradas
     {
         Conexion1 con = new Conexion1();
         DataTable tab;
-
+        int index;
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -42,7 +42,7 @@ namespace Recursos_Materiales.Entradas
         {
             try
             {
-                int index = Convert.ToInt32(e.CommandArgument);
+                index = Convert.ToInt32(e.CommandArgument);
                 string ide = GridView1.Rows[index].Cells[1].Text;
                 GridView2.DataSource = con.Consultas("Select p.nombre as Producto,p.precio_compra as Precio,de.no_articulos as Cantidad from entradas as e,detalle_entradas as de,producto as p" +
                     " where e.id_entrada = de.id_entrada and de.id_producto = p.id_producto and e.id_entrada =" + ide);
@@ -60,6 +60,15 @@ namespace Recursos_Materiales.Entradas
             {
 
             }
+        }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            con.DML("DELETE from detalle_entradas where id_entrada=" + GridView1.Rows[index].Cells[1].Text);
+            con.DML("DELETE from entradas where id_entrada=" + GridView1.Rows[index].Cells[1].Text);
+            string script = @"alert('Registro Eliminado');
+                        window.location.href='../Entradas/Consultas.aspx'";
+            ScriptManager.RegisterStartupScript(this, typeof(Page), "Mensaje", script, true);
         }
     }
 }

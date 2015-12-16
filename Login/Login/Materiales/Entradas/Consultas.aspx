@@ -44,7 +44,7 @@
                 CellPadding="4" BackColor="White" BorderColor="#3366CC" BorderStyle="None" 
                 BorderWidth="1px" onrowcommand="GridView1_RowCommand">
                 <Columns>
-                <asp:CommandField ButtonType="Button" SelectText="Detalles" 
+                <asp:CommandField ButtonType="Button" SelectText="Seleccionar" 
                     ShowSelectButton="True" />
                 </Columns>
                 <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
@@ -79,6 +79,18 @@
             <asp:Button CssClass="btn-success" ID="btnBuscar" runat="server" Text="Buscar" 
                 onclick="btnBuscar_Click" Width="1143px" />
         </div>
+        <div class="form-group">
+        <div class="col-md-6">
+            <asp:Button CssClass="btn-primary" ID="btnModificar" runat="server" 
+                Text="Modificar" Width="534px" />
+       </div>
+       <div class="col-md-6">
+            <asp:Button CssClass="btn-primary" ID="btnEliminar" runat="server" 
+                Text="Eliminar" Width="535px" onclick="btnEliminar_Click" />
+       </div>
+            <br />
+        </div>
     </div>
 </form>
+    </form>
 </asp:Content>

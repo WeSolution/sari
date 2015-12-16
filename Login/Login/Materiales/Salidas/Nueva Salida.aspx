@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Materiales/Salidas/Salidas.master" AutoEventWireup="true" EnableEventValidation="false"   CodeBehind="Nueva Salida.aspx.cs" Inherits="Recursos_Materiales.Salidas.Nueva_Salida" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Contenedor" runat="server">
+<!DOCTYPE>
+
+<html>
+<head>
+<script type="text/javascript">
+    function AbrirVentana() {
+        window.open('ListaProd.aspx', 'popup', 'width=1200,height=500');
+    } 
+</script>
+</head>
     <form>
     <div class="container">
     <h1 class="page-header">Salida de Almacén</h1>
@@ -24,7 +34,9 @@
                 <br />
             <b><big><asp:Label ID="Label4" runat="server" Text="Producto"></asp:Label></big></b>
                 <asp:TextBox CssClass="form-control" ID="txtProducto" runat="server"></asp:TextBox>
-
+                <asp:Button CssClass="btn-primary" ID="btnBuscar" runat="server" 
+                    Text="Buscar Producto" UseSubmitBehavior="False" 
+                    Width="260px" onclick="btnBuscar_Click"/>
                 <br />
                 <b><big><asp:Label ID="Label7" runat="server" Text="Cantidad que sale"></asp:Label></big></b>
                 <asp:TextBox CssClass="form-control" ID="txtCantidad" runat="server"></asp:TextBox>
@@ -62,4 +74,5 @@
             
         </div>
 </form>
+</html>
 </asp:Content>

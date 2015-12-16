@@ -10,7 +10,7 @@ namespace Recursos_Materiales.Clases
 {
     public class Conexion1
     {
-        private string cadcon = System.Configuration.ConfigurationManager.ConnectionStrings[5].ToString();
+        private string cadcon = System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString();
         //private string cadcon = @"Data Source = sari.servehttp.com; Initial Catalog = SARI; user= Server; pwd=F46987DE89;";
 
         public SqlConnection conectar()

@@ -131,7 +131,7 @@ namespace Recursos_Materiales.Entradas
                 for (int i = 0; i <= dgvDatos.Rows.Count - 1; i++)
                 {
                     con.DML("UPDATE producto set stock = stock + " + objdtTabla.Rows[i][3].ToString() + " where id_producto = " + objdtTabla.Rows[i][0].ToString());
-                    con.DML("UPDATE producto set localizacion = " + objdtTabla.Rows[i][5].ToString() + " where id_producto = " + objdtTabla.Rows[i][0].ToString());
+                    con.DML("UPDATE producto set localizacion = '" + objdtTabla.Rows[i][5].ToString() + "' where id_producto = " + objdtTabla.Rows[i][0].ToString());
                     // Comando que ejecuta el insert en la tabla detalle_producto
                     SqlCommand cmd2 = new SqlCommand("insert into detalle_entradas values(@ide,@idprod,@cantidad)", con.conectar());
                     // Lista de parámetros
@@ -148,6 +148,11 @@ namespace Recursos_Materiales.Entradas
             {
                 Response.Write("<script>window.alert('" + ex.Message + "');</script>");
             }
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this.btnBuscar, GetType(), "mensaje", "AbrirVentana()", true);
         }
     }
 }

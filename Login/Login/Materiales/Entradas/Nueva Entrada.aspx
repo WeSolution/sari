@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Materiales/Entradas/Entradas.master" AutoEventWireup="true" CodeBehind="Nueva Entrada.aspx.cs" EnableEventValidation="false"  Inherits="Recursos_Materiales.Entradas.Nueva_Entrada" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Contenedor" runat="server">
+<!DOCTYPE>
+
+<html>
+<head>
+<script type="text/javascript">
+    function AbrirVentana() {
+        window.open('ListaProd.aspx', 'popup', 'width=1200,height=500'); 
+    } 
+</script>
+</head>
 <form>
     <div class="container">
     <h1 class="page-header">Entrada al Almacén</h1>
@@ -26,7 +36,10 @@
             <div class="col-md-6">
             <b><big><asp:Label ID="Label3" runat="server" Text="Producto" autocomplete="off"></asp:Label></big></b>
                 <asp:TextBox CssClass="form-control" ID="txtProducto" runat="server"></asp:TextBox>
-                 
+                 <asp:Button CssClass="btn-primary" ID="btnBuscar" runat="server" 
+                    Text="Buscar Producto" UseSubmitBehavior="False" 
+                    Width="260px" onclick="btnBuscar_Click"/>
+                <br />
                 <br />
                 <b><big><asp:Label ID="Label4" runat="server" Text="Proveedor"></asp:Label></big></b>
                 <asp:DropDownList CssClass="form-control" ID="cmbProveedores" runat="server">
@@ -69,4 +82,5 @@
         </div>
     </div>
 </form>
+</html>
 </asp:Content>

@@ -14,8 +14,8 @@ namespace Recursos_Materiales.Salidas
         Conexion1 con = new Conexion1();
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = con.Consultas("Select id_salida as Folio, Convert(char,fecha,103) as Fecha,Convert(nvarchar,hora,108) as Hora, descripcion as Descripción, nombre + ' ' + apellido_p + ' ' + apellido_m as Empleado  from salida, empleado" +
-                    " where salida.id_empleado = empleado.id_empleado");
+            GridView1.DataSource = con.Consultas("Select id_salida as Folio, Convert(char,fecha,103) as Fecha,Convert(nvarchar,hora,108) as Hora, descripcion as Descripción, nombre + ' ' + apaterno + ' ' + amaterno as Empleado  from salida, Persona" +
+                   " where salida.id_empleado = Persona.idpersona");
             GridView1.DataBind();
         }
         public override void VerifyRenderingInServerForm(Control control)

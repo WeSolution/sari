@@ -16,7 +16,7 @@ namespace Altaderequisicion
         public ConexionBL()
         {
             // Inicializar la conexión
-            cn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings[5].ToString());
+            cn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString());
         }
 
         // Retornar la conexión

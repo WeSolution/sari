@@ -79,6 +79,17 @@
             <asp:Button CssClass="btn-success" ID="btnBuscar" runat="server" Text="Buscar" 
                 onclick="btnBuscar_Click" Width="1143px" />
         </div>
+        <div class="form-group">
+        <div class="col-md-6">
+            <asp:Button CssClass="btn-primary" ID="btnModificar" runat="server" 
+                Text="Modificar" Width="534px" />
+       </div>
+       <div class="col-md-6">
+            <asp:Button CssClass="btn-primary" ID="btnEliminar" runat="server" 
+                Text="Eliminar" Width="535px" onclick="btnEliminar_Click" />
+       </div>
+            <br />
+        </div>
     </div>
 </form>
 </asp:Content>

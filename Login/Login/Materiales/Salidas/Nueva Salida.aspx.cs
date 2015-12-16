@@ -41,7 +41,7 @@ namespace Recursos_Materiales.Salidas
                 this.Form.Attributes.Add("autocomplete", "off");
                 temporal = new DataTable();
                 CrearTabla();
-                cmbQuien.DataSource = con.Consultas("Select nombre + ' ' + apellido_p + ' ' + apellido_m as Nombre from empleado");
+                cmbQuien.DataSource = con.Consultas("Select nombre + ' ' + apaterno + ' ' + amaterno as Nombre from Persona where idpersona = (select idpersona from Empleado);");
                 cmbQuien.DataValueField = "Nombre";
                 cmbQuien.DataTextField = "Nombre";
                 cmbQuien.DataBind();
@@ -104,7 +104,7 @@ namespace Recursos_Materiales.Salidas
         {
             try
             {
-                string ide = con.Consultas("Select id_empleado from empleado where nombre + ' ' + apellido_p + ' ' + apellido_m = '" + cmbQuien.Text + "'").Rows[0][0].ToString();
+                string ide = con.Consultas("Select idempleado from Empleado where idempleado In(select idpersona from Persona where nombre + ' ' + apaterno + ' ' + amaterno = '" + cmbQuien.Text + "')").Rows[0][0].ToString();
                 // Comando que ejecuta el insert en la tabla detalle_producto
                 SqlCommand cmd = new SqlCommand("insert into salida values(@fecha,@hora,@desc,@ide)", con.conectar());
                 // Lista de parámetros
@@ -126,7 +126,7 @@ namespace Recursos_Materiales.Salidas
                     }
                     else
                     {
-                        con.DML("UPDATE producto set stock = stock - " + txtCantidad.Text + " where id_producto = " + objdtTabla.Rows[i][0].ToString());
+                        con.DML("UPDATE producto set stock = stock - " + objdtTabla.Rows[i][2].ToString() + " where id_producto = " + objdtTabla.Rows[i][0].ToString());
                         // Comando que ejecuta el insert en la tabla detalle_producto
                         SqlCommand cmd2 = new SqlCommand("insert into detalle_salida values(@ide,@idprod,@cantidad)", con.conectar());
                         // Lista de parámetros
@@ -134,16 +134,21 @@ namespace Recursos_Materiales.Salidas
                         cmd2.Parameters.Add("@idprod", SqlDbType.Int).Value = Convert.ToInt32(objdtTabla.Rows[i][0].ToString());
                         cmd2.Parameters.Add("@cantidad", SqlDbType.Int).Value = Convert.ToInt32(objdtTabla.Rows[i][2].ToString());
                         cmd2.ExecuteNonQuery(); // ejecuto
+                        string script = @"alert('Salida registrada satisfactoriamente');
+                        window.location.href='../Salidas/Nueva Salida.aspx'";
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Mensaje", script, true);
                     }
                 }
-                string script = @"alert('Salida registrada satisfactoriamente');
-                        window.location.href='../Salidas/Nueva Salida.aspx'";
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "Mensaje", script, true);
             }
             catch (Exception ex)
             {
                 Response.Write("<script>window.alert('" + ex.Message + "');</script>");
             }
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this.btnBuscar, GetType(), "mensaje", "AbrirVentana()", true);
         }
     }
 }

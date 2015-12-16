@@ -19,14 +19,14 @@
         <p class="text-center">terminada como producto dentro del almacén.</p>
       </div>
       <div class="col-md-4">
-          <img class="img-responsive" src="/Materiales/Imágenes/out.png" height="80" width="80" align="center"  />
+          <img class="img-responsive" src="/Materiales/Imagenes/out.png" height="80" width="80" align="center"  />
         <br />
         <big><b><p class="text-center">Salidas</p></b></big>
         <p class="text-center">Nuevos egresos de materia prima o materia </p>
         <p class="text-center">terminada como producto dentro del almacén.</p>
         </div>
       <div class="col-md-4">
-          <img class="img-responsive" src="/Materiales/Imágenes/new.png" height="80" width="80" align="center"  />
+          <img class="img-responsive" src="/Materiales/Imagenes/new.png" height="80" width="80" align="center"  />
         <br />
         <big><b><p class="text-center">Requisiciones</p></b></big>
         <p class="text-center">Nueva requisición de productos</p>

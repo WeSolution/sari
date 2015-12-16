@@ -13,7 +13,7 @@ namespace Recursos_Materiales.Clases
 
         public Conexion2()
         {
-            cn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings[5].ToString());
+            cn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings[1].ToString());
         }
 
         public SqlConnection getCn
